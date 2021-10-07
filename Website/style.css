@@ -1,0 +1,77 @@
+/* Everythinh on deftault */
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #E4E4E4;
+    font-family: 'Oxanium', cursive;
+}
+
+/* Background color white */
+.bgWhite {
+    background-color: white;
+}
+
+.gap {
+    width: 100%;
+    height: 23px;
+}
+
+/* Orangje top bar */
+.topBar {
+    background-color: #FFB040;
+    width: 100%;
+    height: 204px;
+    position: absolute;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 102px;
+    margin: 0 179px;
+    z-index: 1;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 222px;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Logo image */
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    background-color: transparent;
+}
+
+/* We are AedionStudio text div */
+.weAreDiv {
+    margin: auto 0px;
+}
+
+/* First text */
+.firstHeaderText {
+    font-size: 2.875rem;
+    font-weight: lighter;
+}
+
+/* Second text */
+.secondHeaderText {
+    font-size: 2.875rem;
+    font-weight: 900;
+}
+
+/* Our team div */
+.teamDiv {
+    width: 100%;
+    height: 50px;
+    border-left: 13px solid #FF9C0E;
+    padding-left: 25px;
+    padding-top: 17px;
+}
