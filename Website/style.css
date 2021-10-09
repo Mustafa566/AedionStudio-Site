@@ -45,6 +45,10 @@
     width: 100%;
 }
 
+.h100 {
+    height: 100%;
+}
+
 /* Vertical ag*/
 .vrAlign {
     display: flex;
