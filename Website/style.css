@@ -11,10 +11,55 @@
     background-color: white;
 }
 
+/* Space */
 .gap {
     width: 100%;
-    height: 23px;
+    height: 30px;
 }
+
+/* Create a row */
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Create subject div */
+.newSubject {
+    width: 100%;
+    height: 98px;
+    border-left: 13px solid #FF9C0E;
+    padding-left: 25px;
+    background-color: white;
+    box-shadow: -3px 3px 10px #888888;
+    z-index: 0;
+}
+
+/* Box shadow */
+.boxShadow {
+    box-shadow: -3px 3px 10px #888888;
+}
+
+/* Width 100%*/
+.w100 {
+    width: 100%;
+}
+
+/* Vertical ag*/
+.vrAlign {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.headerText {
+    margin-top: 30px;
+}
+
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 
 /* Orangje top bar */
 .topBar {
@@ -29,7 +74,8 @@
     display: flex;
     flex-wrap: wrap;
     padding-top: 102px;
-    margin: 0 179px;
+    max-width: 1563px;
+    margin: 0 auto;
     z-index: 1;
 }
 
@@ -67,11 +113,219 @@
     font-weight: 900;
 }
 
-/* Our team div */
-.teamDiv {
+/* Team images */
+.profileImg {
+    margin: 5px 5px;
+    width: 316px;
+    height: 325px;
+    background-color: #B2B2B2;
+}
+
+/* Video */
+.video {
+    margin: 5px 5px;
+    width: 585px;
+    height: 325px;
+    background-color: #B2B2B2;
+}
+
+/* Team names */
+.profileName {
+    margin: 5px 5px;
+    width: 316px;
+    height: 64px;
+    background-color: white;
+}
+
+/* Video name */
+.videoName {
+    margin: 5px 5px;
+    width: 585px;
+    height: 61px;
+    background-color: white;
+}
+
+/* Center names */
+.names {
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 15px;
+}
+
+/* Searchbar input */
+.searchBar {
+    width: 522px;
+    height: 72px;
+    background-color: #7b7b7b24;
+    border: none;
+    margin-top: 10px;
+    margin-left: auto;
+    font-size: 40px;
+}
+
+/* Search icon */
+.searchIcon {
+    z-index: 1;
+    width: 65px;
+    height: 65px;
+    margin-top: 15px;
+}
+
+/* Games */
+.gamesDiv {
     width: 100%;
-    height: 50px;
+    height: 369px;
+    padding-left: 10px;
+    margin-top: 10px;
+    background-color: white;
+}
+
+/* Image of game */
+.gameImg {
+    float: right;
+}
+
+/* Coulumn of game div */
+.column {
+    display: flex;
+    flex-direction: column;
+    padding: 5px 5px;
+    padding-right: 15px;
+    border-right: 5px solid #AF7575;
+}
+
+/* Game button */
+.gameBtn {
+    width: 316px;
+    height: 75px;
+    margin-top: -23px;
+    border-left: 7px solid #D47070;
+}
+
+/* Steam button */
+.buyGameBtn {
+    width: 316px;
+    height: 75px;
+    margin-top: 20px;
+    border-left: 7px solid #D47070;
+}
+
+/* Facebook and trello button */
+.socialAndTrelloBtn {
+    width: 316px;
+    height: 75px;
+    margin-top: 10px;
+    border-left: 7px solid #D47070;
+}
+
+/* Images of buttons */
+.iconSize {
+    width: 53px;
+    height: 53px;
+    margin: 10px;
+}
+
+/* Names of buttons */
+.gameName {
+    font-size: 2.438rem;
+    padding-left: 5px;
+}
+
+/* Information of the game div */
+.gameInfo {
+    width: 619px;
+    margin: 15px 10px;
+}
+
+/* Information of the game text */
+.infoText {
+    font-size: 1.688rem;
+    font-weight: bold;
+}
+
+/* Social media div*/
+.socialDiv {
+    width: 243px;
+    height: 183px;
+    background-color: white;
+    margin-right: 21px;
+    text-align: center;
+    line-height: 170px;
+}
+
+/* Social icons */
+.socicalIcon {
+    width: 133px;
+    height: 133px;
+    vertical-align: middle;
+}
+
+/* Line */
+.line {
+    width: 100%;
+    height: 8px;
+    margin-top: 6px;
+}
+
+.socialDiv:hover {
+    background: rgba(51, 170, 51, .1)
+}
+
+.lineBlue {
+    background-color: #B0BFFC;
+}
+
+.linePink {
+    background-color: #FCB0B0;
+}
+
+.lineBabyBlue {
+    background-color: #CEF2FF;
+}
+
+.lineYellow {
+    background-color: #FFFACE;
+}
+
+.lineBabyPurple {
+    background-color: #FFCEFF;
+}
+
+.lineRed {
+    background-color: #FF8282;
+}
+
+/* Form Div */
+.formDiv {
+    width: 925px;
+    height: 445px;
+}
+
+/* Side div*/
+.sideDiv {
+    width: 622px;
+    height: 445px;
+    margin-left: 15px;
+}
+
+/* Footer */
+.footer {
+    width: 100%;
+    height: 247px;
+    padding-left: 10px;
+    margin-top: 10px;
+    background-color: white;
     border-left: 13px solid #FF9C0E;
-    padding-left: 25px;
-    padding-top: 17px;
+}
+
+/* Copyright div*/
+.copyrightText {
+    font-size: 1.75rem;
+}
+
+.copyrightIcon {
+    width: 95px;
+    height: 95px;
+    margin-left: auto;
+    margin-right: 10px;
 }
