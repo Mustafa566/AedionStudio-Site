@@ -32,6 +32,7 @@
     background-color: white;
     box-shadow: -3px 3px 10px #888888;
     z-index: 0;
+    font-size: 35px;
 }
 
 /* Box shadow */
@@ -111,6 +112,7 @@
 .secondHeaderText {
     font-size: 2.875rem;
     font-weight: 900;
+    color: #FFA92E;
 }
 
 /* Team images */
@@ -240,7 +242,6 @@
 /* Information of the game text */
 .infoText {
     font-size: 1.688rem;
-    font-weight: bold;
 }
 
 /* Social media div*/
@@ -265,10 +266,6 @@
     width: 100%;
     height: 8px;
     margin-top: 6px;
-}
-
-.socialDiv:hover {
-    background: rgba(51, 170, 51, .1)
 }
 
 .lineBlue {
