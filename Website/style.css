@@ -6,6 +6,8 @@
     font-family: 'Oxanium', cursive;
 }
 
+/* --------- Usefull classes --------- */
+
 /* Background color white */
 .bgWhite {
     background-color: white;
@@ -21,6 +23,17 @@
 .row {
     display: flex;
     flex-direction: row;
+}
+
+/* Column */
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Transparant background color */
+.transparant {
+    background-color: transparent;
 }
 
 /* Create subject div */
@@ -56,15 +69,23 @@
     align-items: center;
 }
 
+/* Text of newSubject */
 .headerText {
     margin-top: 30px;
 }
 
+/* Flex wrap */
 .wrap {
     display: flex;
     flex-wrap: wrap;
 }
 
+/* Cursor click mode */
+.pointer {
+    cursor: pointer;
+}
+
+/* --------- html classes --------- */
 
 /* Orangje top bar */
 .topBar {
@@ -192,7 +213,7 @@
 }
 
 /* Coulumn of game div */
-.column {
+.columnGame {
     display: flex;
     flex-direction: column;
     padding: 5px 5px;
@@ -302,6 +323,55 @@
     height: 445px;
 }
 
+/* Title, name, email input div */
+.formColumn {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Input form */
+.formInput {
+    font-size: 2.188rem;
+    width: 279px;
+    height: 68px;
+    margin: 11px 10px 0px 10px;
+    padding-left: 5px;
+    border: none;
+    border-left: 5px solid #FFBE61;
+}
+
+/* Textarea input div*/
+.textareaColumn {
+    display: flex;
+    flex-direction: column;
+    margin-left: auto;
+    margin-right: 10px;
+    margin-top: 10px;
+}
+
+/* Textarea */
+.textarea {
+    border: none;
+    font-size: 2.188rem;
+}
+
+/* Submit button */
+.submitBtn {
+    width: 297px;
+    height: 77px;
+    background-color: #FFBE61;
+    color: white;
+    font-size: 2.188rem;
+    text-align: center;
+    float: right;
+    margin: 20px 10px;
+}
+
+/* Submit text */
+.submitText {
+    margin-top: 20px;
+}
+
 /* Side div*/
 .sideDiv {
     width: 622px;
@@ -317,6 +387,28 @@
     margin-top: 10px;
     background-color: white;
     border-left: 13px solid #FF9C0E;
+}
+
+/**/
+.service {
+    margin: 25px 0px;
+}
+
+.vrLine {
+    margin: 25px 10px;
+    width: 3px;
+    height: 175px;
+    background-color: #A0A0A0;
+}
+
+.footerHead {
+    font-size: 2.188rem;
+    color: #707070;
+}
+
+.li {
+    margin-left: 10px;
+    margin-right: 50px;
 }
 
 /* Copyright div*/
