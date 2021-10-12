@@ -6,6 +6,10 @@
     font-family: 'Oxanium', cursive;
 }
 
+html {
+    zoom: 80%;
+}
+
 /* --------- Usefull classes --------- */
 
 /* Background color white */
@@ -85,6 +89,11 @@
     cursor: pointer;
 }
 
+/* Border input none */
+.outline {
+    outline: none;
+}
+
 /* --------- html classes --------- */
 
 /* Orangje top bar */
@@ -140,6 +149,30 @@
     color: #FFA92E;
 }
 
+/* Header buttons */
+.buttonsDiv {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 50px;
+    background-color: white;
+}
+
+.btnCareer, .btnContact {
+    background: linear-gradient(to right, #FFC97E , #FFB44B);
+    width: 304px;
+    height: 76px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.headerBtnTxt {
+    padding-top: 15px;
+    font-size: 2.625rem;
+    font-weight: bold;
+    color: white;
+}
+
 /* Team images */
 .profileImg {
     margin: 5px 5px;
@@ -150,9 +183,9 @@
 
 /* Video */
 .video {
-    margin: 5px 5px;
-    width: 585px;
-    height: 325px;
+    margin: 5px 0px 5px 14px;
+    width: 570px;
+    height: 326px;
     background-color: #B2B2B2;
 }
 
@@ -166,9 +199,9 @@
 
 /* Video name */
 .videoName {
-    margin: 5px 5px;
-    width: 585px;
-    height: 61px;
+    margin: 5px 0px 5px 14px;
+    width: 570px;
+    height: 64px;
     background-color: white;
 }
 
@@ -210,6 +243,8 @@
 /* Image of game */
 .gameImg {
     float: right;
+    width: 750px;
+    height: 100%;
 }
 
 /* Coulumn of game div */
@@ -218,7 +253,6 @@
     flex-direction: column;
     padding: 5px 5px;
     padding-right: 15px;
-    border-right: 5px solid #AF7575;
 }
 
 /* Game button */
@@ -262,6 +296,15 @@
 .gameInfo {
     width: 619px;
     margin: 15px 10px;
+}
+
+/**/
+.lineCard {
+    width: 5px;
+    height: 330px;
+    background-color: #AF7575;
+    border: 3px solid #AF7575;
+    margin-right: 10px;
 }
 
 /* Information of the game text */
@@ -409,6 +452,35 @@
 .li {
     margin-left: 10px;
     margin-right: 50px;
+}
+
+/* Newsletter div */
+.signUpDiv {
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: 100px;
+}
+
+.signUpTxt {
+    font-size: 2.188rem;
+    color: #707070;
+    line-height: 0.5;
+}
+
+.newsLetterTxt {
+    font-size: 2.063rem;
+    color: #A1A1A1;
+    margin-left: auto;
+}
+
+/* Input form */
+.subsEmail {
+    font-size: 2.188rem;
+    width: 458px;
+    height: 68px;
+    padding-left: 5px;
+    border: none;
+    border-left: 5px solid #FFBE61;
 }
 
 /* Copyright div*/
