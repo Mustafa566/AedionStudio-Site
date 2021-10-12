@@ -15,6 +15,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap" rel="stylesheet">
 
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
     <!-- Title --> 
     <title>Aedion Studio</title>
@@ -27,7 +28,7 @@
     <div class="topBar boxShadow"></div>
 
     <!-- Main container div -->
-    <div class="container">
+    <div class="container" id="app">
 
         <!-- Header -->
         <header class="header bgWhite boxShadow">
@@ -36,18 +37,24 @@
             <img src="./image/AedionStudio.png" class="logo">
 
             <!-- We are AedionStudio div -->
-            <div class="weAreDiv">
-                <p class="firstHeaderText bgWhite">We are</p>
-                <h1 class="secondHeaderText bgWhite">AEDIONSTUDIO</h1>
+            <div class="weAreDiv bgWhite">
+                <button @click="show =! show">
+                    Toggle
+                  </button>
+                <p class="firstHeaderText bgWhite">{{ text.headerTxt }}</p>
+                <transition name="fade">
+                    <h1  v-if="show" class="secondHeaderText bgWhite">{{ text.headerAedionTxt }}</h1>
+                </transition>
+                
             </div>
 
             <!-- Buttons -->
             <div class="buttonsDiv">
                 <div class="btnCareer">
-                    <p class="headerBtnTxt pointer transparant">CAREERS</p>
+                    <p class="headerBtnTxt pointer transparant">{{ text.headerCareerTxt }}</p>
                 </div>
                 <div class="btnContact">
-                    <p class="headerBtnTxt pointer transparant">CONTACT</p>
+                    <p class="headerBtnTxt pointer transparant">{{ text.headerContactTxt }}</p>
                 </div>
             </div>
 
@@ -59,7 +66,7 @@
         
         <!-- Our team div -->
         <div class="newSubject">
-            <p class="headerText bgWhite">OUR TEAM</p>
+            <p class="headerText bgWhite">{{ text.ourTeamTxt }}</p>
         </div>
     
     <!-- Whitespace -->
@@ -67,14 +74,8 @@
         
         <!-- Team -->
         <div class="row">
-            <div class="profileImg boxShadow">
-                <img src="./image/profile/joey.png" class="w100 h100">
-            </div>
-            <div class="profileImg boxShadow">
-                <img src="./image/profile/mustafa.png" class="w100 h100">
-            </div>
-            <div class="profileImg boxShadow">
-                <img src="./image/profile/allesio.png" class="w100 h100">
+            <div class="profileImg boxShadow" v-for="profile in teamProfiles">
+                <img :src="profile.image" class="w100 h100">
             </div>
 
             <!-- Aedion Studio video-->
@@ -90,18 +91,12 @@
             </div>
         </div>
 
-        <!-- Team names-->
+        <!-- Team names -->
         <div class="row">
 
             <!-- Team names -->
-            <div class="profileName boxShadow">
-                <p class="names bgWhite">JOEY MALTA</p>
-            </div>
-            <div class="profileName boxShadow">
-                <p class="names bgWhite">MUSTAFA BOLAT</p>
-            </div>
-            <div class="profileName boxShadow">
-                <p class="names bgWhite">ALESSION BARBOSA</p>
+            <div class="profileName boxShadow" v-for="profile in teamProfiles">
+                <p class="names bgWhite">{{ profile.name }}</p>
             </div>
 
             <!-- Aedion Studio video-->
@@ -114,7 +109,7 @@
 
         <!-- Our games -->
         <div class="newSubject row">
-            <p class="headerText bgWhite">OUR GAMES</p>
+            <p class="headerText bgWhite">{{ text.ourGamesTxt }}</p>
             <!-- <input type="text" placeholder="Search.." class="searchBar">
             <img src="./image/searchIcon.png" class="searchIcon"> -->
         </div>
@@ -129,23 +124,23 @@
                 <!-- Buttons -->
                 <div class="columnGame bgWhite">
                     <div class="gameBtn boxShadow row bgWhite pointer">
-                        <img src="./image/btnIcons/down2dieIcon.png" class="iconSize">
-                        <p class="gameName w100 vrAlign bgWhite">DOWN2DIE</p>
+                        <img :src="down2dieCard.gameLogo" class="iconSize">
+                        <p class="gameName w100 vrAlign bgWhite">{{ down2dieCard.gameNameTxt }}</p>
                     </div>
 
                     <div class="buyGameBtn boxShadow row bgWhite pointer">
-                        <img src="./image/btnIcons/steamIcon.png" class="iconSize">
-                        <p class="gameName w100 vrAlign bgWhite">BUY GAME</p>
+                        <img :src="icons.steamIcon" class="iconSize">
+                        <p class="gameName w100 vrAlign bgWhite">{{ down2dieCard.buyGameTxt }}</p>
                     </div>
 
                     <div class="socialAndTrelloBtn boxShadow row bgWhite pointer">
-                        <img src="./image/btnIcons/facebookIcon.png" class="iconSize">
-                        <p class="gameName w100 vrAlign bgWhite">UPDATES</p>
+                        <img :src="icons.facebookIcon" class="iconSize">
+                        <p class="gameName w100 vrAlign bgWhite">{{ down2dieCard.updateTxt }}</p>
                     </div>
 
                     <div class="socialAndTrelloBtn boxShadow row bgWhite pointer">
-                        <img src="./image/btnIcons/trelloIcon.png" class="iconSize">
-                        <p class="gameName w100 vrAlign bgWhite">TRELLO</p>
+                        <img :src="icons.trelloIcon" class="iconSize">
+                        <p class="gameName w100 vrAlign bgWhite">{{ down2dieCard.trelloTxt }}</p>
                     </div>
                 </div>
 
@@ -153,9 +148,7 @@
                 <div class="gameInfo bgWhite row">
                     <div class="lineCard"></div>
                     <p class="infoText bgWhite">
-                        Down2Die is an advanced zombie survival game that offers many ways of replayability and customization. 
-                        The game features many ways to counteract your enemies with traps and upgrades. 
-                        Work together with a team up to 4 survivors and level through the waves to be at your best when the "unknown" occurs.
+                        {{ down2dieCard.gameInfo }}
                     </p>
                 </div>
             </div>
@@ -165,36 +158,18 @@
 
         <!-- Social media -->
         <div class="newSubject">
-            <p class="headerText bgWhite">SOCIAL MEDIA</p>
+            <p class="headerText bgWhite">{{ text.socialMediaTxt }}</p>
         </div>
 
     <div class="gap"></div>
 
         <!-- Social media buttons -->
         <div class="row">
-            <div class="socialDiv pointer">
-                <img src="./image/socialBtn/facebookIcon.png" class="socicalIcon bgWhite">
-                <div class="line lineBlue"></div>
-            </div>
-            <div class="socialDiv pointer">
-                <img src="./image/socialBtn/instagramIcon.png" class="socicalIcon bgWhite">
-                <div class="line linePink"></div>
-            </div>
-            <div class="socialDiv pointer">
-                <img src="./image/socialBtn/twitterIcon.png" class="socicalIcon bgWhite">
-                <div class="line lineBabyBlue"></div>
-            </div>
-            <div class="socialDiv pointer">
-                <img src="./image/socialBtn/snapchatIcon.png" class="socicalIcon bgWhite">
-                <div class="line lineYellow"></div>
-            </div>
-            <div class="socialDiv pointer">
-                <img src="./image/socialBtn/googleIcon.png" class="socicalIcon bgWhite">
-                <div class="line lineBabyPurple"></div>
-            </div>
-            <div class="socialDiv pointer">
-                <img src="./image/socialBtn/youtubeIcon.png" class="socicalIcon bgWhite ">
-                <div class="line lineRed"></div>
+            <div class="socialDiv pointer" v-for="socialMedia in socialMediaBtn">
+                <a :href="socialMedia.link" target="_blank">
+                    <img :src="socialMedia.image" class="socicalIcon bgWhite">
+                    <div class="line" :class='socialMedia.classColor'></div>
+                </a>
             </div>
         </div>
         
@@ -202,7 +177,7 @@
 
         <!-- Contact form -->
         <div class="newSubject">
-            <p class="headerText bgWhite">CONTACT FORM</p>
+            <p class="headerText bgWhite">{{ text.contactFormTxt }}</p>
         </div>
     
     <div class="gap"></div>
@@ -234,42 +209,17 @@
         <!-- Footer div -->
         <div class="footer">
             <div class="row bgWhite">
-                <div class="vrLine"></div>
-                <div class="service column bgWhite">
-                    <p class="footerHead bgWhite">Service</p>
-                    <li class="li bgWhite">CONTACT</li>
-                    <li class="li bgWhite">CONTACT</li>
-                    <li class="li bgWhite">CONTACT</li>
+                <!-- <div class="vrLine"></div> -->
+                <div class="service column bgWhite" v-for="footer in footerBar">
+                    <p class="footerHead bgWhite">{{ footer.headTxt }}</p>
+                    <li class="li bgWhite" v-for="subject in footer.subjects">{{ subject.text }}</li>
                 </div>
-
-                <div class="vrLine"></div>
-                <div class="service column bgWhite">
-                    <p class="footerHead bgWhite">Unreal</p>
-                    <li class="li bgWhite">CONTACT</li>
-                    <li class="li bgWhite">CONTACT</li>
-                    <li class="li bgWhite">CONTACT</li>
-                </div>
-
-                <div class="vrLine"></div>
-                <div class="service column bgWhite">
-                    <p class="footerHead bgWhite">Info</p>
-                    <li class="li bgWhite">CONTACT</li>
-                    <li class="li bgWhite">CONTACT</li>
-                    <li class="li bgWhite">CONTACT</li>
-                </div>
-
-                <div class="vrLine"></div>
-                <div class="service column bgWhite">
-                    <p class="footerHead bgWhite">Help</p>
-                    <li class="li bgWhite">CONTACT</li>
-                    <li class="li bgWhite">CONTACT</li>
-                    <li class="li bgWhite">CONTACT</li>
-                </div>
+                
 
                 <div class="signUpDiv bgWhite">
                     <form class="bgWhite">
-                            <p class="signUpTxt bgWhite">SIGN-UP FOR OUR</p>
-                            <p class="newsLetterTxt bgWhite">NEWS LETTER</p>
+                            <p class="signUpTxt bgWhite">{{ text.signUpTxt }}</p>
+                            <p class="newsLetterTxt bgWhite">{{ text.newsletterTxt }}</p>
                         <input type="email" placeholder="EMAIL.." class="subsEmail outline" required>
                     </form>
                 </div>
@@ -281,12 +231,13 @@
         <!-- Copyright div -->
         <div class="newSubject">
             <div class="row bgWhite">
-                <p class="headerText bgWhite">@AEDIONSTUDIO 2021</p>
+                <p class="headerText bgWhite">{{ text.copyrightTxt }}</p>
                 <img src="./image/AedionStudio.png" class="copyrightIcon bgWhite">
             </div>
         </div>
 
     <div class="gap"></div>
     </div>
+    <script src="index.js"></script>
 </body>
 </html>
