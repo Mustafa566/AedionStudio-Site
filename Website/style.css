@@ -101,16 +101,43 @@ html {
     outline: none;
 }
 
-/* --------- Animations --------- */
+/* --------- Animations keyframes --------- */
+
 @keyframes socialMedia {
     from {
-        border-bottom: 8px solid #ff9c0e;
+        height: 8px;
     }
     to {
-        border-bottom: 30px solid #ff9c0e;
+        height: 15px;
     }
-  }
+}
 
+@keyframes socialMediaReverse {
+    from {
+        height: 15px;
+    }
+    to {
+        height: 8px;
+    }
+}
+
+@keyframes bgOpacityColor {
+    from {
+        height: 0%;
+    }
+    to {
+        height: 100%;
+    }
+}
+
+@keyframes bgOpacityColorReverse {
+    from {
+        height: 100%;
+    }
+    to {
+        height: 0%;
+    }
+}
 
 /* --------- html classes --------- */
 
@@ -338,15 +365,8 @@ html {
     margin-right: 21px;
     text-align: center;
     line-height: 170px;
-    border-bottom: 8px solid #ff9c0e;
+    position: relative;
 }
-
-.socialDiv:hover {
-    animation-name: socialMedia;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
 
 /* Social icons */
 .socicalIcon {
@@ -355,17 +375,51 @@ html {
     vertical-align: middle;
 }
 
-/* Lines */
-/* .line {
+/* Lines social media */
+.line {
     width: 100%;
     height: 8px;
-    margin-top: 6px;
+    position: absolute;
+    bottom: 0px;
 }
 
-.line:hover {
+/* Social media bar animation */
+.socialDiv:hover .line {
     animation-name: socialMedia;
     animation-duration: 1s;
-} */
+    animation-fill-mode: forwards;
+}
+
+/* Social media bar animation reverse */
+.socialDiv .line {
+    animation-name: socialMediaReverse;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+/* Social media background opacity */
+.lineBg {
+    width: 100%;
+    height: 0%;
+    position: absolute;
+    bottom: 0px;
+    background-color: #B0BFFC;
+    opacity: 0.5;
+}
+
+/* Social media background opacity animation */
+.socialDiv:hover .lineBg {
+    animation-name: bgOpacityColor;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
+
+/* Social media background opacity animation reverse */
+.socialDiv .lineBg {
+    animation-name: bgOpacityColorReverse;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+}
 
 .lineBlue {
     background-color: #B0BFFC;
