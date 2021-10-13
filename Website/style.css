@@ -308,6 +308,12 @@ html {
     border-left: 7px solid #D47070;
 }
 
+.linkGame {
+    display: flex;
+    text-decoration: none;
+    color: black;
+}
+
 /* Steam button */
 .buyGameBtn {
     width: 316px;

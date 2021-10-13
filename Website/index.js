@@ -27,7 +27,9 @@ var app = new Vue({
             trelloTxt: 'TRELLO',
             gameInfo: `Down2Die is an advanced zombie survival game that offers many ways of replayability and customization. 
                        The game features many ways to counteract your enemies with traps and upgrades. 
-                       Work together with a team up to 4 survivors and level through the waves to be at your best when the "unknown" occurs.`
+                       Work together with a team up to 4 survivors and level through the waves to be at your best when the "unknown" occurs.`,
+            steamLink: 'https://store.steampowered.com/app/1272280/Down2Die/',
+            trelloLink: 'https://trello.com/b/4FKTYq5j/down2die-early-access'
         },
         icons: {
             steamIcon: './image/btnIcons/steamIcon.png',
