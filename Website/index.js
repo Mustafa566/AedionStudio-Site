@@ -72,12 +72,20 @@ var app = new Vue({
                 subjects: [
                     {text: 'CONTACT'},
                     {text: 'CONTACT'},
+                    {text: 'CONTACT'},
+                    {text: 'CONTACT'},
+                    {text: 'CONTACT'},
+                    {text: 'CONTACT'},
                     {text: 'CONTACT'}
                 ]
             },
             { 
                 headTxt: 'UNREAL', 
                 subjects: [
+                    {text: 'CONTACT'},
+                    {text: 'CONTACT'},
+                    {text: 'CONTACT'},
+                    {text: 'CONTACT'},
                     {text: 'CONTACT'},
                     {text: 'CONTACT'},
                     {text: 'CONTACT'}
@@ -100,9 +108,17 @@ var app = new Vue({
                 ]
             },
         ],
+        formData: {
+            title: '',
+            name: '',
+            email: '',
+            body: ''
+        },
         show: true
     },
     methods: {
-        
+        formSend() {
+            console.log(this.formData);
+        }
     }
   })

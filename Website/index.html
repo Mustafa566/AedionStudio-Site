@@ -184,18 +184,18 @@
 
         <div class="row">
             <div class="formDiv bgWhite">
-                <form>
+                <form @submit.prevent="formSend()">
                     <div class="row bgWhite">
                         <div class="formColumn bgWhite">
-                            <input type="text" placeholder="TITLE" class="formInput outline" required>
-                            <input type="text" placeholder="NAME" class="formInput outline" required>
-                            <input type="email" placeholder="EMAIL" class="formInput outline" required>
+                            <input type="text" placeholder="TITLE" class="formInput outline" v-model="formData.title" required>
+                            <input type="text" placeholder="NAME" class="formInput outline" v-model="formData.name" required>
+                            <input type="email" placeholder="EMAIL" class="formInput outline" v-model="formData.email" required>
                         </div>
                         <div class="textareaColumn bgWhite">
-                            <textarea rows="7" cols="33" placeholder="MESSAGE.." class="textarea outline"></textarea>
+                            <textarea rows="7" cols="33" placeholder="MESSAGE.." class="textarea outline" v-model="formData.body" required></textarea>
                         </div>
                     </div>
-                    <div class="submitBtn boxShadow bgWhite">
+                    <div class="submitBtn boxShadow bgWhite" @click="formSend()">
                         <p class="submitText transparant pointer">Submit</p>
                     </div>
                 </form>
