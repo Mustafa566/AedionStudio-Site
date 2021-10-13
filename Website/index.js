@@ -17,7 +17,7 @@ var app = new Vue({
         teamProfiles: [
             { image: './image/profile/joey.png', name: 'JOEY MALTA' },
             { image: './image/profile/mustafa.png', name: 'MUSTAFA BOLAT' },
-            { image: './image/profile/allesio.png', name: 'ALESSION BARBOSA' }
+            { image: './image/profile/allesio.png', name: 'ALESSIO BARBOSA' }
         ],
         down2dieCard: {
             gameLogo: './image/btnIcons/down2dieIcon.png',
