@@ -413,6 +413,11 @@ html {
     opacity: 0.5;
 }
 
+.lineBg::after {
+    content: "JOIN US";
+    font-size: 25px;
+}
+
 /* Social media background opacity animation */
 .socialDiv:hover .lineBg {
     animation-name: bgOpacityColor;

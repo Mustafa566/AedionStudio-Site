@@ -3,7 +3,7 @@ var app = new Vue({
     data: {
         text: {
             headerTxt: 'We are',
-            headerAedionTxt: 'AEDIONSTUDIO',
+            headerAedionTxt: 'AEDION STUDIO',
             headerCareerTxt: 'CAREERS',
             headerContactTxt: 'CONTACT',
             ourTeamTxt: 'OUR TEAM',
@@ -116,11 +116,34 @@ var app = new Vue({
             email: '',
             body: ''
         },
-        show: true
+        num: 0
     },
     methods: {
         formSend() {
             console.log(this.formData);
+        },
+        changeTxt() {
+            switch (this.num) {
+                case 0:
+                    this.text.headerAedionTxt = 'AEDION STUDIO'
+                    this.num = 1;
+                    break;
+                case 1:
+                    this.text.headerAedionTxt = 'WEB DEVELOPERS'
+                    this.num = 2;
+                    break;
+                case 2:
+                    this.text.headerAedionTxt = 'GAME DEVELOPERS'
+                    this.num = 0;
+                    break;
+                default:
+                    break;
+            }
         }
+    },
+    created() {
+        setInterval(() => {
+            this.changeTxt();
+        }, 2000)
     }
   })
