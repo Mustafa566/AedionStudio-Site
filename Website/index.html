@@ -6,7 +6,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Add stylesheet --> 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/products.css">
+    <link rel="stylesheet" href="./styles/socialMedia.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+
 
     <!-- Add Google font Oxanium --> 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
@@ -48,7 +54,9 @@
                     <p class="headerBtnTxt pointer transparant">{{ text.headerCareerTxt }}</p>
                 </div>
                 <div class="btnContact">
-                    <p class="headerBtnTxt pointer transparant">{{ text.headerContactTxt }}</p>
+                    <a href="./down2dieSite/index.html">
+                        <p class="headerBtnTxt pointer transparant">{{ text.headerContactTxt }}</p>
+                    </a>
                 </div>
             </div>
 
@@ -169,7 +177,9 @@
                 <a :href="socialMedia.link" target="_blank">
                     <img :src="socialMedia.image" class="socicalIcon bgWhite">
                     <div class="line" :class='socialMedia.classColor'></div>
-                    <div class="lineBg" :class='socialMedia.classColor'></div>
+                    <div class="lineBg" :class='socialMedia.classColor'>
+                        <p class="lineTxt">JOIN US</p>
+                    </div>
                 </a>
             </div>
         </div>
@@ -183,21 +193,27 @@
     
     <div class="gap"></div>
 
-        <div class="row">
-            <div class="formDiv bgWhite">
+        <div class="row w100">
+            <div class="formDiv bgWhite w100">
                 <form @submit.prevent="formSend()">
-                    <div class="row bgWhite">
-                        <div class="formColumn bgWhite">
-                            <input type="text" placeholder="TITLE" class="formInput outline" v-model="formData.title" required>
-                            <input type="text" placeholder="NAME" class="formInput outline" v-model="formData.name" required>
-                            <input type="email" placeholder="EMAIL" class="formInput outline" v-model="formData.email" required>
+                    <div class="row bgWhite w100">
+                        <div class="formColumn bgWhite w100">
+                            <input type="text" placeholder="TITLE" class="formInput outline" v-model="contact.formData.title" required>
                         </div>
-                        <div class="textareaColumn bgWhite">
-                            <textarea rows="7" cols="33" placeholder="MESSAGE.." class="textarea outline" v-model="formData.body" required></textarea>
-                        </div>
+                        
                     </div>
-                    <div class="submitBtn boxShadow bgWhite" @click="formSend()">
-                        <p class="submitText transparant pointer">Submit</p>
+                    <div class="row bgWhite">
+                        <div class="textareaColumn bgWhite">
+                            <textarea rows="7" cols="32" placeholder="MESSAGE.." class="textarea outline" v-model="contact.formData.body" required></textarea>
+                        </div>
+                        <div class="column transparant">
+                            <a :href="`mailto:${contact.aedionStudioEmail}?subject=${contact.formData.title}&body=${contact.formData.body}`" 
+                            class="aBtn transparant submitBtn boxShadow">
+                                <p class="submitText transparant pointer">Submit</p>
+                            </a>
+                            <div class="transparant submitBtn boxShadow"></div>
+                            <div class="transparant submitBtn boxShadow"></div>
+                        </div>
                     </div>
                 </form>
             </div>
@@ -238,7 +254,44 @@
         </div>
 
     <div class="gap"></div>
+
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+          <img src="./image/profile/mustafa.png" style="width:100%" id="img">
+        </div>
+            <div class="mySlides fade">
+                <img src="./image/profile/joey.png" style="width:100%" id="img">
+            </div>
+        <div class="mySlides fade">
+            <img src="./image/profile/allesio.png" style="width:100%" id="img">
+        </div>
+        <div class="arrow row">
+            <div class="prev" onclick="plusSlides(-1)">Prev</div>
+            <div class="next" onclick="plusSlides(1)">Next</div>
+        </div>
+    </div>
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span> 
+            <span class="dot" onclick="currentSlide(2)"></span> 
+            <span class="dot" onclick="currentSlide(3)"></span> 
+        </div>
+        <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow -->
+
+
+        <div class="flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="./image/profile/mustafa.png" alt="Avatar" style="width:300px;height:300px;">
+              </div>
+              <div class="flip-card-back">
+                <h1 class="newBg">Mustafa Bolat</h1> 
+                <p class="newBg">Core developer</p> 
+                <p class="newBg">We love that guy</p>
+              </div>
+            </div>
+          </div>
     </div>
     <script src="index.js"></script>
+    <script src="slide.js"></script>
 </body>
 </html>

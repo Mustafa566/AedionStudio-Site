@@ -68,6 +68,14 @@ var app = new Vue({
                 classColor: 'lineRed' 
             },
         ],
+        contact: {
+            aedionStudioEmail: 'aedionmailservice@gmail.com',
+            isEmpty: false,
+            formData: {
+                title: '',
+                body: ''
+            },
+        },
         footerBar: [
             { 
                 headTxt: 'SERVICE', 
@@ -110,17 +118,11 @@ var app = new Vue({
                 ]
             },
         ],
-        formData: {
-            title: '',
-            name: '',
-            email: '',
-            body: ''
-        },
         num: 0
     },
     methods: {
         formSend() {
-            console.log(this.formData);
+            console.log(this.contact.formData);
         },
         changeTxt() {
             switch (this.num) {

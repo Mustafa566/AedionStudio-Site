@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Add stylesheet --> 
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/gameInfo.css">
+    <link rel="stylesheet" href="./styles/patchNotes.css">
+    <link rel="stylesheet" href="./styles/wiki.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+
+
+    <!-- Add Google font Oxanium --> 
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!-- Title --> 
+    <title>Aedion Studio</title>
+
+    <link rel="icon" href="./image/down2dieIcon.png">
+</head>
+<body>
+
+    <!-- Topbar orangje background --> 
+    <div class="topBar boxShadow"></div>
+
+    <!-- Main container div -->
+    <div class="container" id="app">
+
+        <!-- Header -->
+        <header class="header bgLightBlack boxShadow">
+
+            <!-- Logo of Down 2 Die-->
+            <img src="./image/down2dieIcon.png" class="logo">
+
+            <!-- AedionStudio Down2Die div -->
+            <div class="d2dHeadText bgLightBlack">
+                <p class="firstHeaderText bgLightBlack">{{ text.headerTxt }}</p>
+                <h1 class="secondHeaderText bgLightBlack">{{ text.headerDown2DieTxt }}</h1>
+            </div>
+
+            <!-- Buttons -->
+            <div class="buttonsDiv">
+                <div class="btnPurchase">
+                    <p class="headerBtnTxt pointer transparant">{{ text.headerPurchaseTxt }}</p>
+                </div>
+                <div class="btnContact">
+                    <a href="../index.html">
+                        <p class="headerBtnTxt pointer transparant">{{ text.headerContactTxt }}</p>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+    <!-- Whitespace -->
+    <div class="gap"></div>
+        
+        <!-- Screenshot div -->
+        <div class="newSubject">
+            <p class="headerText bgLightBlack">{{ text.screenShotTxt }}</p>
+        </div>
+    
+    <!-- Whitespace -->
+    <div class="gap"></div>
+        
+        <!-- Screenshots -->
+        <div class="row">
+            <div class="gameImgList boxShadow" v-for="game in gameImage">
+                <img :src="game.image" class="w100 h100">
+            </div>
+        </div>
+
+    <div class="gap"></div>
+
+        <!-- About Down2Die -->
+        <div class="newSubject row">
+            <p class="headerText bgLightBlack">{{ text.aboutD2d }}</p>
+            <!-- <input type="text" placeholder="Search.." class="searchBar">
+            <img src="./image/searchIcon.png" class="searchIcon"> -->
+        </div>
+    
+    <div class="gap"></div>
+
+        <!-- Game card div -->
+        <div class="gamesDiv">
+            <img src="./image/d2dBanner.jpg" class="gameImg bgLighterBlack">
+            <div class="row bgLightBlack">
+                <!-- Game info -->
+                <div class="gameInfo bgLightBlack column">
+                    <div class="row bgLightBlack">
+                        <div class="lineCard"></div>
+                        <p class="infoText bgLightBlack">
+                            {{ down2dieCard.gameInfo }}
+                        </p>
+                    </div>
+
+                    <div class="secondRow row bgLightBlack">
+                        <div class="lineCard"></div>
+                        <p class="infoText bgLightBlack">
+                            {{ down2dieCard.secondGameInfo }}
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    <div class="gap"></div>
+
+        <!-- Patch notes -->
+        <div class="newSubject">
+            <p class="headerText bgLightBlack">{{ text.patchNotesTxt }}</p>
+        </div>
+
+    <div class="gap"></div>
+
+        <!-- Patch notes -->
+        <div class="row">
+            <div class="patchNoteDiv" v-for="index in 3">
+                
+            </div>
+        </div>
+        
+    <div class="gap"></div>
+
+        <!-- Down2die wiki -->
+        <div class="newSubject">
+            <p class="headerText bgLightBlack">{{ text.wikiTxt }}</p>
+        </div>
+    
+    <div class="gap"></div>
+
+        <!-- Wiki div -->
+        <div class="wikiDiv bgLightBlack"></div>
+
+    <div class="gap"></div>
+
+        <!-- Footer div -->
+        <div class="footer">
+            <div class="row bgLightBlack">
+                <div class="service column bgLightBlack" v-for="footer in footerBar">
+                    <p class="footerHead bgLightBlack">{{ footer.headTxt }}</p>
+                    <li class="li bgLightBlack" v-for="subject in footer.subjects">{{ subject.text }}</li>
+                </div>
+                
+
+                <div class="signUpDiv bgLightBlack">
+                    <form class="bgLightBlack">
+                            <p class="signUpTxt bgLightBlack">{{ text.signUpTxt }}</p>
+                            <p class="newsLetterTxt bgLightBlack">{{ text.down2dieTxt }}</p>
+                        <input type="email" placeholder="EMAIL.." class="subsEmail outline" required>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    <div class="gap"></div>
+
+        <!-- Copyright div -->
+        <div class="newSubject">
+            <div class="row bgLightBlack">
+                <p class="headerText bgLightBlack">{{ text.copyrightTxt }}</p>
+                <img src="./image/AedionStudio.png" class="copyrightIcon bgLightBlack">
+            </div>
+        </div>
+
+    <div class="gap"></div>
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

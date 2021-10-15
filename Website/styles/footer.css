@@ -1,0 +1,75 @@
+/* Footer */
+.footer {
+    width: 100%;
+    height: 247px;
+    padding-left: 10px;
+    margin-top: 10px;
+    background-color: white;
+    border-left: 13px solid #FF9C0E;
+}
+
+/* Footer text */
+.service {
+    margin: 25px 10px;
+    padding-left: 15px;
+    border-left: 3px solid #A0A0A0;
+    text-align: center;
+}
+
+.vrLine {
+    margin: 25px 10px;
+    width: 3px;
+    height: 175px;
+    background-color: #A0A0A0;
+}
+
+.footerHead {
+    font-size: 2.188rem;
+    color: #707070;
+}
+
+.li {
+    margin-left: 10px;
+    margin-right: 50px;
+}
+
+/* Newsletter div */
+.signUpDiv {
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: 100px;
+}
+
+.signUpTxt {
+    font-size: 2.188rem;
+    color: #707070;
+    line-height: 0.5;
+}
+
+.newsLetterTxt {
+    font-size: 2.063rem;
+    color: #A1A1A1;
+    margin-left: auto;
+}
+
+/* Input form */
+.subsEmail {
+    font-size: 2.188rem;
+    width: 458px;
+    height: 68px;
+    padding-left: 5px;
+    border: none;
+    border-left: 5px solid #FFBE61;
+}
+
+/* Copyright div*/
+.copyrightText {
+    font-size: 1.75rem;
+}
+
+.copyrightIcon {
+    width: 95px;
+    height: 95px;
+    margin-left: auto;
+    margin-right: 10px;
+}

@@ -1,0 +1,76 @@
+/* Orangje top bar */
+.topBar {
+    background-color: #FFB040;
+    width: 100%;
+    height: 204px;
+    position: absolute;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 102px;
+    max-width: 1563px;
+    margin: 0 auto;
+    z-index: 1;
+}
+
+/* Header */
+.header {
+    width: 100%;
+    height: 222px;
+    z-index: 2;
+    display: flex;
+    flex-direction: row;
+}
+
+/* Logo image */
+.logo {
+    display: inline-block;
+    vertical-align: middle;
+    height: 100%;
+    background-color: transparent;
+}
+
+/* We are AedionStudio text div */
+.weAreDiv {
+    margin: auto 0px;
+}
+
+/* First text */
+.firstHeaderText {
+    font-size: 2.875rem;
+    font-weight: lighter;
+}
+
+/* Second text */
+.secondHeaderText {
+    font-size: 2.875rem;
+    font-weight: 900;
+    color: #FFA92E;
+}
+
+/* Header buttons */
+.buttonsDiv {
+    margin-left: auto;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-right: 50px;
+    background-color: white;
+}
+
+.btnCareer, .btnContact {
+    background: linear-gradient(to right, #FFC97E , #FFB44B);
+    width: 304px;
+    height: 76px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.headerBtnTxt {
+    padding-top: 15px;
+    font-size: 2.625rem;
+    font-weight: bold;
+    color: white;
+}
