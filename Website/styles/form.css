@@ -4,6 +4,11 @@
     height: 445px;
 }
 
+/**/
+.form {
+    margin-top: 15px;
+}
+
 /* Title, name, email input div */
 .formColumn {
     display: flex;
@@ -27,13 +32,13 @@
     flex-direction: column;
     margin-left: 11px;
     margin-top: 10px;
-    border-left: 5px solid #FFBE61;
 }
 
 /* Textarea */
 .textarea {
     border: none;
     font-size: 2.188rem;
+    border-left: 5px solid #FFBE61;
 }
 
 /* a href btn */
@@ -45,23 +50,30 @@
 /* Submit button */
 .submitBtn {
     width: 297px;
-    height: 77px;
-    background-color: #FFBE61;
+    height: 85px;
     color: white;
-    font-size: 2.188rem;
+    font-size: 2.88rem;
     text-align: center;
     float: right;
-    margin: 12px 10px;
+    margin: 5px 15px;
+}
+
+/**/
+.contactColor {
+    background-color: #A8CCEB;
+}
+
+/**/
+.supportColor {
+    background-color: #9AE5A6 ;
+}
+
+/**/
+.submitColor {
+    background-color: #FFBE61;
 }
 
 /* Submit text */
 .submitText {
     margin-top: 20px;
-}
-
-/* Side div*/
-.sideDiv {
-    width: 622px;
-    height: 445px;
-    margin-left: 15px;
 }

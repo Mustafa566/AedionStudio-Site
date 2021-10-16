@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="./styles/products.css">
     <link rel="stylesheet" href="./styles/socialMedia.css">
     <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/service.css">
     <link rel="stylesheet" href="./styles/footer.css">
 
 
@@ -76,8 +77,17 @@
         
         <!-- Team -->
         <div class="row">
-            <div class="profileImg boxShadow" v-for="profile in teamProfiles">
-                <img :src="profile.image" class="w100 h100">
+            <div class="flip-card profileImg boxShadow pointer" v-for="profile in teamProfiles">
+                <div class="flip-card-inner">
+                    <div class="flip-card-front">
+                        <img :src="profile.image" class="w100 h100">
+                    </div>
+                    <div class="flip-card-back">
+                        <h1 class="txtBackground">{{ profile.name }}</h1> 
+                        <p class="txtBackground">{{ profile.function }}</p> 
+                        <p class="txtBackground">We love that guy</p>
+                    </div>
+                </div>
             </div>
 
             <!-- Aedion Studio video-->
@@ -193,32 +203,48 @@
     
     <div class="gap"></div>
 
+        <!-- Form -->
         <div class="row w100">
             <div class="formDiv bgWhite w100">
-                <form @submit.prevent="formSend()">
+                <form @submit.prevent="formSend()" class="form">
                     <div class="row bgWhite w100">
                         <div class="formColumn bgWhite w100">
                             <input type="text" placeholder="TITLE" class="formInput outline" v-model="contact.formData.title" required>
                         </div>
-                        
                     </div>
                     <div class="row bgWhite">
                         <div class="textareaColumn bgWhite">
                             <textarea rows="7" cols="32" placeholder="MESSAGE.." class="textarea outline" v-model="contact.formData.body" required></textarea>
                         </div>
                         <div class="column transparant">
+                            <div class="gap transparant"></div>
+                            <div class="transparant contactColor submitBtn boxShadow">
+                                <p class="submitText transparant pointer">CONTACT</p>
+                            </div>
+                            <div class="transparant supportColor submitBtn boxShadow">
+                                <p class="submitText transparant pointer">SUPPORT</p>
+                            </div>
                             <a :href="`mailto:${contact.aedionStudioEmail}?subject=${contact.formData.title}&body=${contact.formData.body}`" 
-                            class="aBtn transparant submitBtn boxShadow">
-                                <p class="submitText transparant pointer">Submit</p>
+                            class="aBtn submitBtn submitColor transparant boxShadow">
+                                <p class="submitText transparant pointer">SUBMIT</p>
                             </a>
-                            <div class="transparant submitBtn boxShadow"></div>
-                            <div class="transparant submitBtn boxShadow"></div>
                         </div>
                     </div>
                 </form>
             </div>
 
-            <div class="sideDiv bgWhite"></div>
+            <!-- Service Div -->
+            <div class="serviceDiv bgWhite">
+                <div class="serviceHeader boxShadow bgWhite">
+                    <p class="serviceText bgWhite">{{ text.servicesTxt }}</p>
+                </div>
+                <div class="ourServices bgWhite w100">
+                    <div class="serviceProduct bgWhite boxShadow" v-for="service in services">
+                        <p class="productHeadText bgWhite">{{ service.serviceText }}</p>
+                        <p class="productInfo bgWhite">{{ service.serviceInfo }}</p>
+                    </div>
+                </div>
+            </div>
         </div>
 
     <div class="gap"></div>
@@ -270,26 +296,15 @@
             <div class="next" onclick="plusSlides(1)">Next</div>
         </div>
     </div>
-        <div style="text-align:center">
-            <span class="dot" onclick="currentSlide(1)"></span> 
-            <span class="dot" onclick="currentSlide(2)"></span> 
-            <span class="dot" onclick="currentSlide(3)"></span> 
-        </div>
+    <!-- <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span> 
+        <span class="dot" onclick="currentSlide(2)"></span> 
+        <span class="dot" onclick="currentSlide(3)"></span> 
+    </div> -->
         <!-- https://www.w3schools.com/howto/tryit.asp?filename=tryhow_js_slideshow -->
 
 
-        <div class="flip-card">
-            <div class="flip-card-inner">
-              <div class="flip-card-front">
-                <img src="./image/profile/mustafa.png" alt="Avatar" style="width:300px;height:300px;">
-              </div>
-              <div class="flip-card-back">
-                <h1 class="newBg">Mustafa Bolat</h1> 
-                <p class="newBg">Core developer</p> 
-                <p class="newBg">We love that guy</p>
-              </div>
-            </div>
-          </div>
+        
     </div>
     <script src="index.js"></script>
     <script src="slide.js"></script>

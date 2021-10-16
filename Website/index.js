@@ -10,14 +10,27 @@ var app = new Vue({
             ourGamesTxt: 'OUR GAMES',
             socialMediaTxt: 'SOCIAL MEDIA',
             contactFormTxt: 'CONTACT FORM',
+            servicesTxt: 'SERVICES',
             signUpTxt: 'SIGN-UP FOR OUR',
             newsletterTxt: 'NEWS LETTER',
             copyrightTxt: '@AEDIONSTUDIO 2021'
         },
         teamProfiles: [
-            { image: './image/profile/joey.png', name: 'JOEY MALTA' },
-            { image: './image/profile/mustafa.png', name: 'MUSTAFA BOLAT' },
-            { image: './image/profile/allesio.png', name: 'ALESSIO BARBOSA' }
+            { 
+                image: './image/profile/joey.png', 
+                name: 'JOEY MALTA',
+                function: 'CEO'
+            },
+            { 
+                image: './image/profile/mustafa.png', 
+                name: 'MUSTAFA BOLAT',
+                function: 'DEVELOPER'
+            },
+            { 
+                image: './image/profile/allesio.png', 
+                name: 'ALESSIO BARBOSA',
+                function: 'DEVELOPER'
+            }
         ],
         down2dieCard: {
             gameLogo: './image/btnIcons/down2dieIcon.png',
@@ -76,6 +89,23 @@ var app = new Vue({
                 body: ''
             },
         },
+        services: [
+            {
+                serviceText: 'WEBSITES',
+                serviceInfo: 'Here at AedionStudio we create the most beautiful websites at low cost',
+                serviceBgImg: ''
+            },
+            {
+                serviceText: 'GAMES',
+                serviceInfo: 'AedionStudio aims to create complexand fun game mechanics in eachgame we create.',
+                serviceBgImg: ''
+            },
+            {
+                serviceText: 'MUSIC',
+                serviceInfo: 'Here at AedionStudio we create the most beautiful music at low cost',
+                serviceBgImg: ''
+            },
+        ],
         footerBar: [
             { 
                 headTxt: 'SERVICE', 
