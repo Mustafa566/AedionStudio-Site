@@ -5,6 +5,10 @@
     margin-left: 15px;
 }
 
+.serviceDiv, .serviceDiv *, .ourServices {
+    background-color: white;
+}
+
 .serviceHeader {
     margin: 15px;
     height: 58px;
@@ -22,20 +26,17 @@
     overflow-y: scroll;
 }
 
-.ourServices::-webkit-scrollbar-track
-{
+.ourServices::-webkit-scrollbar-track {
 	-webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
 	background-color: white;
 }
 
-.ourServices::-webkit-scrollbar
-{
+.ourServices::-webkit-scrollbar {
 	width: 17px;
 	background-color: white;
 }
 
-.ourServices::-webkit-scrollbar-thumb
-{
+.ourServices::-webkit-scrollbar-thumb {
 	background-color: #FFBE61;
 }
 
@@ -44,6 +45,10 @@
     padding: 5px;
     border-left: 7px solid #FFBE61;
     height: 150px;
+}
+
+.serviceProduct:hover *, .serviceProduct:hover {
+    background-color: #e4e4e4;
 }
 
 .productHeadText {
