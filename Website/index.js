@@ -157,18 +157,16 @@ var app = new Vue({
         changeTxt() {
             switch (this.num) {
                 case 0:
-                    this.text.headerAedionTxt = 'AEDION STUDIO'
+                    this.text.headerAedionTxt = 'WEB DEVELOPERS'
                     this.num = 1;
                     break;
                 case 1:
-                    this.text.headerAedionTxt = 'WEB DEVELOPERS'
+                    this.text.headerAedionTxt = 'GAME DEVELOPERS'
                     this.num = 2;
                     break;
-                case 2:
-                    this.text.headerAedionTxt = 'GAME DEVELOPERS'
-                    this.num = 0;
-                    break;
                 default:
+                    this.text.headerAedionTxt = 'AEDION STUDIO'
+                    this.num = 0;
                     break;
             }
         }
@@ -176,6 +174,6 @@ var app = new Vue({
     created() {
         setInterval(() => {
             this.changeTxt();
-        }, 2000)
+        }, 4000)
     }
   })

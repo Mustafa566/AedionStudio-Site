@@ -51,7 +51,9 @@
             <!-- Buttons -->
             <div class="buttonsDiv">
                 <div class="btnPurchase">
-                    <p class="headerBtnTxt pointer transparant">{{ text.headerPurchaseTxt }}</p>
+                    <a href="https://store.steampowered.com/app/1272280/Down2Die/" target="_blank">
+                        <p class="headerBtnTxt pointer transparant">{{ text.headerPurchaseTxt }}</p>
+                    </a>
                 </div>
                 <div class="btnContact">
                     <a href="../index.html">
@@ -73,6 +75,22 @@
     <div class="gap"></div>
         
         <!-- Screenshots -->
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+              <img src="./image/d2d/d2dImg1.png" style="width:100%" id="img">
+            </div>
+                <div class="mySlides fade">
+                    <img src="./image/d2d/d2dImg2.png" style="width:100%" id="img">
+                </div>
+            <div class="mySlides fade">
+                <img src="./image/d2d/d2dImg3.png" style="width:100%" id="img">
+            </div>
+            <div class="arrow row">
+                <div class="prev" onclick="plusSlides(-1)">Prev</div>
+                <div class="next" onclick="plusSlides(1)">Next</div>
+            </div>
+        </div>
+
         <div class="row">
             <div class="gameImgList boxShadow" v-for="game in gameImage">
                 <img :src="game.image" class="w100 h100">
@@ -174,6 +192,7 @@
 
     <div class="gap"></div>
     </div>
+    <script src="slide.js"></script>
     <script src="index.js"></script>
 </body>
 </html>

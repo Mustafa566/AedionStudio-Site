@@ -48,7 +48,21 @@
 .secondHeaderText {
     font-size: 2.875rem;
     font-weight: 900;
+    opacity: 0;
     color: #FFA92E;
+}
+
+@keyframes animate {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+.secondHeaderText {
+    animation: animate 3.95s infinite;
 }
 
 /* Header buttons */
