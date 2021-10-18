@@ -137,24 +137,3 @@ a, a:active, a:hover, a:focus {
         height: 0%;
     }
 }
-
-
-
-/* Slide show*/
-.slick-initialized {
-    width: 500px !important;
-	height: 100% !important;
-}
-
-.slick-list {
-    width: 1563px !important;
-}
-
-.slick-slide {
-    margin-right: 10px !important;
-    border: 7px solid #683F3F !important;
-}
-
-.slick-dots {
-    display: none !important;
-}
