@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Add stylesheet --> 
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/wiki.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+
+    <!-- Add Google font Oxanium --> 
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap" rel="stylesheet">
+
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@800&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+
+    <!-- Title --> 
+    <title>Aedion Studio</title>
+
+    <link rel="icon" href="./image/down2dieIcon.png">
+</head>
+<body>
+
+    <!-- Topbar orangje background --> 
+    <div class="topBar boxShadow"></div>
+
+    <!-- Main container div -->
+    <div class="container" id="app">
+
+        <!-- Header -->
+        <header class="header bgLightBlack boxShadow">
+
+            <!-- Logo of Down 2 Die-->
+            <img src="./image/down2dieIcon.png" class="logo">
+
+            <!-- AedionStudio Down2Die div -->
+            <div class="d2dHeadText bgLightBlack">
+                <p class="firstHeaderText bgLightBlack">{{ text.headerTxt }}</p>
+                <h1 class="secondHeaderText bgLightBlack">{{ text.headerDown2DieTxt }}</h1>
+            </div>
+
+            <!-- Buttons -->
+            <div class="buttonsDiv">
+                <div class="btnPurchase">
+                    <a href="https://store.steampowered.com/app/1272280/Down2Die/" target="_blank">
+                        <p class="headerBtnTxt pointer transparant">{{ text.headerPurchaseTxt }}</p>
+                    </a>
+                </div>
+                <div class="btnContact">
+                    <a href="../index.html">
+                        <p class="headerBtnTxt pointer transparant">{{ text.headerContactTxt }}</p>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+    <!-- Whitespace -->
+    <div class="gap"></div>
+        
+        <!-- recipes header div -->
+        <div class="newSubject">
+            <p class="headerText bgLightBlack">{{ text.recipesTxt }}</p>
+        </div>
+    
+    <!-- Whitespace -->
+    <div class="gap"></div>
+
+    <div class="w100">
+        
+    </div>
+
+    <div class="gap"></div>
+
+        <!-- Footer div -->
+        <div class="footer">
+            <div class="row bgLightBlack">
+                <div class="service column bgLightBlack" v-for="footer in footerBar">
+                    <p class="footerHead bgLightBlack">{{ footer.headTxt }}</p>
+                    <li class="li bgLightBlack" v-for="subject in footer.subjects">{{ subject.text }}</li>
+                </div>
+                
+
+                <div class="signUpDiv bgLightBlack">
+                    <form class="bgLightBlack">
+                            <p class="signUpTxt bgLightBlack">{{ text.signUpTxt }}</p>
+                            <p class="newsLetterTxt bgLightBlack">{{ text.down2dieTxt }}</p>
+                        <input type="email" placeholder="EMAIL.." class="subsEmail outline" required>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+    <div class="gap"></div>
+
+        <!-- Copyright div -->
+        <div class="newSubject">
+            <div class="row bgLightBlack">
+                <p class="headerText bgLightBlack">{{ text.copyrightTxt }}</p>
+                <img src="./image/AedionStudio.png" class="copyrightIcon bgLightBlack">
+            </div>
+        </div>
+
+    <div class="gap"></div>
+    </div>
+
+    <script src="panel.js"></script>
+    <script src="index.js"></script>
+</body>
+</html>
