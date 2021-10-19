@@ -73,9 +73,37 @@
     <!-- Whitespace -->
     <div class="gap"></div>
 
-    <div class="w100">
-        
-    </div>
+        <!-- <div class="newSubject2 row" @click="toggle">
+            <p class="headerText2 bgLightBlack">{{ text.recipesTxt }}</p>
+            <span class="toggleIcon bgLightBlack">{{toggleIcon}}</span>
+        </div>
+        <div class="body" v-show="showSection">
+           <p>HALLO</p>
+        </div> -->
+
+        <!-- Section of accordion wiki -->
+        <section>
+            <div class="w100">
+                <div class="accordionDiv">
+                    <!-- Accordion item div -->
+                    <div class="accordionHeader" v-for="(accordionItem, index) in accordionItems" :key="index" :id="'question' + index">
+                        <a class="accordionLink" :href="'#question' + index" @click="getTheSelectedOne(index)">
+                            <div class="flex bgLightBlack">
+                                <h3 class="bgLightBlack">{{ accordionItem.headerText }}</h3>
+                            </div>
+                        </a>
+                            <div class="scroll">
+                                <div class="accordionItem transparant" v-for="item in accordionItem.items">
+                                    <div class="rowItem transparant row">
+                                        <div class="itemImg"></div>
+                                        <p class="itemInfo transparant">{{ item.name }}</p>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+          </section>
 
     <div class="gap"></div>
 
@@ -111,7 +139,6 @@
     <div class="gap"></div>
     </div>
 
-    <script src="panel.js"></script>
     <script src="index.js"></script>
 </body>
 </html>
