@@ -8,7 +8,7 @@
     <!-- Add stylesheet --> 
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/wiki.css">
+    <link rel="stylesheet" href="./styles/accordion.css">
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/responsive.css">
 
@@ -73,39 +73,166 @@
     <!-- Whitespace -->
     <div class="gap"></div>
 
-        <!-- <div class="newSubject2 row" @click="toggle">
-            <p class="headerText2 bgLightBlack">{{ text.recipesTxt }}</p>
-            <span class="toggleIcon bgLightBlack">{{toggleIcon}}</span>
-        </div>
-        <div class="body" v-show="showSection">
-           <p>HALLO</p>
-        </div> -->
-
-        <!-- Section of accordion wiki -->
+        <!-- Section of accordion RECIPES wiki -->
         <section>
             <div class="w100">
+                <!-- Accordion Div full -->
                 <div class="accordionDiv">
                     <!-- Accordion item div -->
-                    <div class="accordionHeader" v-for="(accordionItem, index) in accordionItems" :key="index" :id="'question' + index">
-                        <a class="accordionLink" :href="'#question' + index" @click="getTheSelectedOne(index)">
+                    <div class="accordionHeader" v-for="(accordionItem, index) in recipesItems" :key="index" :id="'question' + index">
+                        <!-- A href link to id div -->
+                        <a class="accordionLink" :href="'#question' + index">
                             <div class="flex bgLightBlack">
                                 <h3 class="bgLightBlack">{{ accordionItem.headerText }}</h3>
                             </div>
                         </a>
+                            <!-- Enable scroll items -->
                             <div class="scroll">
+                                <!-- Get all items in array foreach -->
                                 <div class="accordionItem transparant" v-for="item in accordionItem.items">
+                                    <!-- Add row -->
                                     <div class="rowItem transparant row">
-                                        <div class="itemImg"></div>
-                                        <p class="itemInfo transparant">{{ item.name }}</p>
+                                        <!-- Image item -->
+                                        <div class="itemImg transparant">
+                                            <img :src="item.image" class="imgItem">
+                                        </div>
+                                        <!-- Item info row -->
+                                        <div class="row transparant">
+                                            <!-- get item: Name, id, row in a column -->
+                                            <div class="column transparant">
+                                                <div class="itemDiv">
+                                                    <p class="itemInfo transparant"><span class="span transparant">NAME:</span> {{ item.name }}</p>
+                                                </div>
+                                                <div class="itemDiv">
+                                                    <p class="itemInfo transparant"><span class="span transparant">ID:</span> {{ item.itemId }}</p>
+                                                </div>
+                                                <div class="itemDiv">
+                                                    <p class="itemInfo transparant"><span class="span transparant">ROW:</span> {{ item.rows }}</p>
+                                                </div>
+                                            </div>
+                                            <!-- get item: description in a column -->
+                                            <div class="column transparant">
+                                                <div class="itemDescDiv">
+                                                    <p class="itemInfo transparant"><span class="span transparant">{{ text.itemDescTxt }}</span></p>
+                                                </div>
+                                                <div class="itemDesc">
+                                                    <p class="transparant">{{ item.descr }}</p>
+                                                </div>
+                                            </div>
+                                            <!-- get item: crafting in a column -->
+                                            <div class="column transparant">
+                                                <div class="itemCraftDiv">
+                                                    <p class="itemInfo transparant"><span class="span transparant">{{ text.itemCraftTxt }}</span></p>
+                                                </div>
+                                                <div class="itemCraftRow row transparant">
+                                                    <div class="itemCraft" v-for="craft in item.craft">
+                                                        <img :src="craft.craftImg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- get item: info in a column -->
+                                            <div class="itemInfoDiv column transparant">
+                                                <div class="itemInfoTextDiv">
+                                                    <p class="itemInfo transparant"><span class="span transparant">{{ text.itemInfoTxt }}</span></p>
+                                                </div>
+                                                <div class="itemInfoBtn">
+                                                    <p class="itemInfoBtnText transparant"><span class="transparant">{{ text.itemMoreInfoTxt }}</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                     </div>
                 </div>
             </div>
-          </section>
+        </section>
 
     <div class="gap"></div>
+
+        <!-- recipes header div -->
+        <div class="newSubject">
+            <p class="headerText bgLightBlack">{{ text.itemTxt }}</p>
+        </div>
+
+    <div class="gap"></div>
+
+        <!-- Section of accordion ITEMS wiki -->
+        <section>
+            <div class="w100">
+                <!-- Accordion Div full -->
+                <div class="accordionDiv">
+                    <!-- Accordion item div -->
+                    <div class="accordionHeader" v-for="(itemId, index) in itemIds" :key="index" :id="'questions' + index">
+                        <!-- A href link to id div -->
+                        <a class="accordionLink" :href="'#questions' + index">
+                            <div class="flex bgLightBlack">
+                                <h3 class="bgLightBlack">{{ itemId.headerText }}</h3>
+                            </div>
+                        </a>
+                            <!-- Enable scroll items -->
+                            <div class="scroll">
+                                <!-- Get all items in array foreach -->
+                                <div class="accordionItem transparant" v-for="item in itemId.items">
+                                    <!-- Add row -->
+                                    <div class="rowItem transparant row">
+                                        <!-- Image item -->
+                                        <div class="itemImg transparant">
+                                            <img :src="item.image" class="imgItem">
+                                        </div>
+                                        <!-- Item info row -->
+                                        <div class="row transparant">
+                                            <!-- get item: Name, id, row in a column -->
+                                            <div class="column transparant">
+                                                <div class="itemDiv">
+                                                    <p class="itemInfo transparant"><span class="span transparant">NAME:</span> {{ item.name }}</p>
+                                                </div>
+                                                <div class="itemDiv">
+                                                    <p class="itemInfo transparant"><span class="span transparant">ID:</span> {{ item.itemId }}</p>
+                                                </div>
+                                                <div class="itemDiv">
+                                                    <p class="itemInfo transparant"><span class="span transparant">ROW:</span> {{ item.rows }}</p>
+                                                </div>
+                                            </div>
+                                            <!-- get item: description in a column -->
+                                            <div class="column transparant">
+                                                <div class="itemDescDiv">
+                                                    <p class="itemInfo transparant"><span class="span transparant">{{ text.itemDescTxt }}</span></p>
+                                                </div>
+                                                <div class="itemDesc">
+                                                    <p class="transparant">{{ item.descr }}</p>
+                                                </div>
+                                            </div>
+                                            <!-- get item: specifications in a column -->
+                                            <div class="column transparant">
+                                                <div class="itemCraftDiv">
+                                                    <p class="itemInfo transparant"><span class="span transparant">{{ text.itemSpecTxt }}</span></p>
+                                                </div>
+                                                <div class="itemCraftRow row transparant">
+                                                    <div class="itemCraft" v-for="craft in item.craft">
+                                                        <img :src="craft.craftImg">
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!-- get item: info in a column -->
+                                            <div class="itemInfoDiv column transparant">
+                                                <div class="itemInfoTextDiv">
+                                                    <p class="itemInfo transparant"><span class="span transparant">{{ text.itemInfoTxt }}</span></p>
+                                                </div>
+                                                <div class="itemInfoBtn">
+                                                    <p class="itemInfoBtnText transparant"><span class="transparant">{{ text.itemMoreInfoTxt }}</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <div class="gap"></div>
 
         <!-- Footer div -->
         <div class="footer">
@@ -138,7 +265,14 @@
 
     <div class="gap"></div>
     </div>
-
+    <script>
+        var accordionLink = document.getElementsByClassName('accordionLink');
+        accordionLink.onclick=function(e){
+            e.preventDefault();
+            // code
+            return false;
+        }
+    </script>
     <script src="index.js"></script>
 </body>
 </html>
