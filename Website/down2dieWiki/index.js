@@ -230,10 +230,43 @@ var app = new Vue({
                     // CONSUMABLES
                     {
                         image: './image/recipes/gun.png',
-                        name: 'M249',
+                        name: 'Pumpkin',
                         itemId: '1001',
                         rows: '1000',
-                        descr: 'DFGDFGDFGDFGDFGDGDFVBNVNVBNVNB',
+                        descr: 'Pumpkins can be used for fertilizer.',
+                        craft: [
+                            {
+                                id: 1,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 2,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 3,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 4,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 5,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 6,
+                                craftImg: './image/recipes/test.png',
+                            }
+                        ],
+                    },
+                    {
+                        image: './image/recipes/gun.png',
+                        name: 'WaterBottle',
+                        itemId: '1002',
+                        rows: '1000',
+                        descr: 'Wateriest water bottle you will ever see!',
                         craft: [
                             {
                                 id: 1,
@@ -271,10 +304,142 @@ var app = new Vue({
                     // RECOOURCES
                     {
                         image: './image/recipes/gun.png',
-                        name: 'M249',
+                        name: 'Wood',
                         itemId: '2001',
                         rows: '2000',
-                        descr: 'DFGDFGDFGDFGDFGDGDFVBNVNVBNVNB',
+                        descr: 'Wood can be used to craft. It can also be used as fuel.',
+                        craft: [
+                            {
+                                id: 1,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 2,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 3,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 4,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 5,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 6,
+                                craftImg: './image/recipes/test.png',
+                            }
+                        ],
+                    },
+                    {
+                        image: './image/recipes/gun.png',
+                        name: 'Stone',
+                        itemId: '2002',
+                        rows: '2000',
+                        descr: 'Stone can be used to craft.',
+                        craft: [
+                            {
+                                id: 1,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 2,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 3,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 4,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 5,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 6,
+                                craftImg: './image/recipes/test.png',
+                            }
+                        ],
+                    },
+                    {
+                        image: './image/recipes/gun.png',
+                        name: 'Charcoal',
+                        itemId: '2003',
+                        rows: '2000',
+                        descr: 'Charcoal can be used to create sulfur.',
+                        craft: [
+                            {
+                                id: 1,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 2,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 3,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 4,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 5,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 6,
+                                craftImg: './image/recipes/test.png',
+                            }
+                        ],
+                    },
+                    {
+                        image: './image/recipes/gun.png',
+                        name: 'Sulfur',
+                        itemId: '2004',
+                        rows: '2000',
+                        descr: 'Sulfur can be used to create gun powder.',
+                        craft: [
+                            {
+                                id: 1,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 2,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 3,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 4,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 5,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 6,
+                                craftImg: './image/recipes/test.png',
+                            }
+                        ],
+                    },
+                    {
+                        image: './image/recipes/gun.png',
+                        name: 'BioFuel',
+                        itemId: '2005',
+                        rows: '2000',
+                        descr: 'Biofuel can be used to power machines.',
                         craft: [
                             {
                                 id: 1,
@@ -315,7 +480,7 @@ var app = new Vue({
                         name: 'M249',
                         itemId: '3001',
                         rows: '3000',
-                        descr: 'DFGDFGDFGDFGDFGDGDFVBNVNVBNVNB',
+                        descr: 'Machine gun. Uses 5.56mm bullets.',
                         craft: [
                             {
                                 id: 1,
@@ -353,10 +518,10 @@ var app = new Vue({
                     // AMMUNITION
                     {
                         image: './image/recipes/gun.png',
-                        name: 'M249',
+                        name: '5.56mm',
                         itemId: '4001',
                         rows: '4000',
-                        descr: 'DFGDFGDFGDFGDFGDGDFVBNVNVBNVNB',
+                        descr: '5.56mm bullets. Used in heavy machine guns.',
                         craft: [
                             {
                                 id: 1,
@@ -394,10 +559,142 @@ var app = new Vue({
                     // DEPLOYABLES
                     {
                         image: './image/recipes/gun.png',
-                        name: 'M249',
+                        name: 'LargeChest',
                         itemId: '5001',
                         rows: '5000',
-                        descr: 'DFGDFGDFGDFGDFGDGDFVBNVNVBNVNB',
+                        descr: 'LargeChest used to store items.',
+                        craft: [
+                            {
+                                id: 1,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 2,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 3,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 4,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 5,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 6,
+                                craftImg: './image/recipes/test.png',
+                            }
+                        ],
+                    },
+                    {
+                        image: './image/recipes/gun.png',
+                        name: 'LargeChest',
+                        itemId: '5002',
+                        rows: '5000',
+                        descr: 'LargeChest used to store items.',
+                        craft: [
+                            {
+                                id: 1,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 2,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 3,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 4,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 5,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 6,
+                                craftImg: './image/recipes/test.png',
+                            }
+                        ],
+                    },
+                    {
+                        image: './image/recipes/gun.png',
+                        name: 'Recycler',
+                        itemId: '5003',
+                        rows: '5000',
+                        descr: 'Recycler to recycle items into components.',
+                        craft: [
+                            {
+                                id: 1,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 2,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 3,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 4,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 5,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 6,
+                                craftImg: './image/recipes/test.png',
+                            }
+                        ],
+                    },
+                    {
+                        image: './image/recipes/gun.png',
+                        name: 'Composter',
+                        itemId: '5004',
+                        rows: '5000',
+                        descr: 'Composter ferments items into compost.',
+                        craft: [
+                            {
+                                id: 1,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 2,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 3,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 4,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 5,
+                                craftImg: './image/recipes/test.png',
+                            },
+                            {
+                                id: 6,
+                                craftImg: './image/recipes/test.png',
+                            }
+                        ],
+                    },
+                    {
+                        image: './image/recipes/gun.png',
+                        name: 'WaterCatcher',
+                        itemId: '5005',
+                        rows: '5000',
+                        descr: 'Watercatcher fills up with rain water to consume.',
                         craft: [
                             {
                                 id: 1,
@@ -435,10 +732,10 @@ var app = new Vue({
                     // CURRENCY
                     {
                         image: './image/recipes/gun.png',
-                        name: 'M249',
+                        name: 'Money',
                         itemId: '6001',
                         rows: '6000',
-                        descr: 'DFGDFGDFGDFGDFGDGDFVBNVNVBNVNB',
+                        descr: 'Cubits are used as currency.',
                         craft: [
                             {
                                 id: 1,
@@ -476,10 +773,10 @@ var app = new Vue({
                     // DESTRUCTABLES
                     {
                         image: './image/recipes/gun.png',
-                        name: 'M249',
+                        name: 'M249_R',
                         itemId: '7001',
                         rows: '7000',
-                        descr: 'DFGDFGDFGDFGDFGDGDFVBNVNVBNVNB',
+                        descr: 'Broken version of M249.',
                         craft: [
                             {
                                 id: 1,
@@ -517,10 +814,10 @@ var app = new Vue({
                     // FARMABLES
                     {
                         image: './image/recipes/gun.png',
-                        name: 'M249',
+                        name: 'PumpkinSeeds',
                         itemId: '8001',
                         rows: '8000',
-                        descr: 'DFGDFGDFGDFGDFGDGDFVBNVNVBNVNB',
+                        descr: 'Seeds to plant in a farmbox.',
                         craft: [
                             {
                                 id: 1,
@@ -558,10 +855,10 @@ var app = new Vue({
                     // TOOLS
                     {
                         image: './image/recipes/gun.png',
-                        name: 'M249',
+                        name: 'Hammer',
                         itemId: '9001',
                         rows: '9000',
-                        descr: 'DFGDFGDFGDFGDFGDGDFVBNVNVBNVNB',
+                        descr: 'Tool to pick up deployables.',
                         craft: [
                             {
                                 id: 1,
