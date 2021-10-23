@@ -229,7 +229,7 @@ var app = new Vue({
                 items: [
                     // CONSUMABLES
                     {
-                        image: './image/recipes/gun.png',
+                        image: './image/recipes/1001.png',
                         name: 'Pumpkin',
                         itemId: '1001',
                         rows: '1000',
@@ -262,7 +262,7 @@ var app = new Vue({
                         ],
                     },
                     {
-                        image: './image/recipes/gun.png',
+                        image: './image/recipes/1002.png',
                         name: 'WaterBottle',
                         itemId: '1002',
                         rows: '1000',
@@ -303,7 +303,7 @@ var app = new Vue({
                 items: [
                     // RECOOURCES
                     {
-                        image: './image/recipes/gun.png',
+                        image: './image/recipes/2001.png',
                         name: 'Wood',
                         itemId: '2001',
                         rows: '2000',
@@ -336,7 +336,7 @@ var app = new Vue({
                         ],
                     },
                     {
-                        image: './image/recipes/gun.png',
+                        image: './image/recipes/2002.png',
                         name: 'Stone',
                         itemId: '2002',
                         rows: '2000',
@@ -369,7 +369,7 @@ var app = new Vue({
                         ],
                     },
                     {
-                        image: './image/recipes/gun.png',
+                        image: './image/recipes/2003.png',
                         name: 'Charcoal',
                         itemId: '2003',
                         rows: '2000',
@@ -402,7 +402,7 @@ var app = new Vue({
                         ],
                     },
                     {
-                        image: './image/recipes/gun.png',
+                        image: './image/recipes/2004.png',
                         name: 'Sulfur',
                         itemId: '2004',
                         rows: '2000',
@@ -476,7 +476,7 @@ var app = new Vue({
                 items: [
                     // WEAPONS
                     {
-                        image: './image/recipes/gun.png',
+                        image: './image/recipes/3001.png',
                         name: 'M249',
                         itemId: '3001',
                         rows: '3000',
@@ -517,7 +517,7 @@ var app = new Vue({
                 items: [
                     // AMMUNITION
                     {
-                        image: './image/recipes/gun.png',
+                        image: './image/recipes/4001.png',
                         name: '5.56mm',
                         itemId: '4001',
                         rows: '4000',
@@ -592,10 +592,10 @@ var app = new Vue({
                     },
                     {
                         image: './image/recipes/gun.png',
-                        name: 'LargeChest',
+                        name: 'FarmBox',
                         itemId: '5002',
                         rows: '5000',
-                        descr: 'LargeChest used to store items.',
+                        descr: 'Farming bitch slavery',
                         craft: [
                             {
                                 id: 1,
@@ -690,7 +690,7 @@ var app = new Vue({
                         ],
                     },
                     {
-                        image: './image/recipes/gun.png',
+                        image: './image/recipes/5005.png',
                         name: 'WaterCatcher',
                         itemId: '5005',
                         rows: '5000',
@@ -731,7 +731,7 @@ var app = new Vue({
                 items: [
                     // CURRENCY
                     {
-                        image: './image/recipes/gun.png',
+                        image: './image/recipes/6001.png',
                         name: 'Money',
                         itemId: '6001',
                         rows: '6000',
@@ -814,7 +814,7 @@ var app = new Vue({
                     // FARMABLES
                     {
                         image: './image/recipes/gun.png',
-                        name: 'PumpkinSeeds',
+                        name: 'PumpkinSeed',
                         itemId: '8001',
                         rows: '8000',
                         descr: 'Seeds to plant in a farmbox.',
