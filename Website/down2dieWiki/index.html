@@ -21,6 +21,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@800&display=swap" rel="stylesheet">
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
 
     <!-- Title --> 
     <title>Aedion Studio</title>
@@ -163,7 +164,7 @@
                 <!-- Accordion Div full -->
                 <div class="accordionDiv">
                     <!-- Accordion item div -->
-                    <div class="accordionHeader" v-for="(itemId, index) in itemIds" :key="index" :id="'questions' + index">
+                    <div class="accordionHeader" v-for="(itemId, index) in itemIdss" :key="index" :id="'questions' + index">
                         <!-- A href link to id div -->
                         <a class="accordionLink" :href="'#questions' + index">
                             <div class="flex bgLightBlack">
@@ -273,6 +274,8 @@
             return false;
         }
     </script>
-    <script src="index.js"></script>
+    <script type="text/javascript" src="./json/recipes.json"></script>
+    <script type="text/javascript" src="./json/itemId.json"></script>
+    <script type="text/javascript" src="index.js"></script>
 </body>
 </html>
