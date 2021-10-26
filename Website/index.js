@@ -169,6 +169,9 @@ var app = new Vue({
                     this.num = 0;
                     break;
             }
+        },
+        getProfile(profile) {
+            console.log(profile.name)
         }
     },
     created() {
