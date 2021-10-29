@@ -20,6 +20,10 @@
 .flip-card:hover .flip-card-inner {
     transform: rotateY(180deg);
 }
+
+.flip-card:hover .names {
+    display: none;
+}
   
 .flip-card-front, .flip-card-back {
     position: absolute;
@@ -72,6 +76,7 @@
     text-align: center;
     font-size: 2rem;
     margin-top: 15px;
+    margin-bottom: 15px;
 }
 
 /* Searchbar input */
@@ -91,6 +96,10 @@
     width: 65px;
     height: 65px;
     margin-top: 15px;
+}
+
+.ourGameHeader {
+    margin-top: 100px;
 }
 
 /* Games */

@@ -1,28 +1,774 @@
-/* media query iphone */
+/* media query iphone 6 7 8 */
+@media only screen and (min-device-width: 375px) and (max-device-width: 667px) and (-webkit-min-device-pixel-ratio: 2) {
+  html, body {
+    overflow-x: hidden;
+  }
+
+  .topBar {
+    height: 78px;
+  }
+
+  .header {
+    width: 484px;
+    height: 100px;
+    margin: 0 auto;
+    margin-top: -80px;
+  }
+
+  .buttonsDiv {
+    margin-right: 20px;
+  }
+
+  .firstHeaderText, .secondHeaderText {
+    font-size: 1.125rem;
+  }
+
+  .btnCareer, .btnContact {
+    width: 101px;
+    height: 26px;
+    margin-right: 0;
+  }
+
+  .headerBtnTxt {
+    padding-top: 7px;
+    font-size: 0.813rem;
+  }
+
+  .newSubject {
+    width: 453px;
+    height: 51px;
+    margin: 0 auto;
+    border-left: 6px solid #FF9C0E;
+  }
+
+  .headerText {
+    font-size: 1.475rem;
+    margin-top: 13px;
+  }
+
+  .profileImg {
+    width: 355px;
+    height: 355px;
+    margin: 0 auto;
+    margin-bottom: 100px;
+    display: flex;
+    justify-content: center;
+  }
+
+  .profileName {
+    width: 115px;
+    height: 23px;
+  }
+
+  .names {
+    font-size: 1.275rem;
+    margin-top: 0px;
+    padding-top: 20px;
+    height: 50px;
+  }
+
+  .profImg {
+    flex-direction: column;
+    margin: 0 auto;
+  }
+
+  .video {
+    margin: 0;
+    width: 480px;
+    background-color: #B2B2B2;
+    margin-bottom: 100px;
+  }
+
+  .gamesDiv {
+    width: 473px;
+    height: 240px;
+    background-color: white;
+    margin: 0 auto;
+  }
+
+  .gameImg {
+    display: none;
+  }
+
+  .gameBtn, .buyGameBtn, .socialAndTrelloBtn {
+    width: 190px;
+    height: 50px;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .iconSize {
+    width: 30px;
+    height: 30px;
+  }
+
+  .gameName {
+    font-size: 1.5rem;
+  }
+
+  .infoText {
+    font-size: 15px;
+  }
+
+  .lineCard {
+    height: auto;
+  }
+
+  .social {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .socialDiv {
+    width: 225px;
+    height: 183px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+  }
+
+  .lineTxt {
+    display: none;
+
+  }
+
+  .formDiv {
+    width: 487px;
+    height: 400px;
+    margin: 0 auto;
+    margin-bottom: 15px;
+  }
+
+  .forms {
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  .formInput {
+    width: 95%;
+  }
+
+  .textareaColumn {
+    width: 332px;
+    height: 280px;
+  }
+
+  .submitBtn {
+    width: 120px;
+    height: 50px;
+    margin-top: auto;
+  }
+
+  .submitText {
+    font-size: 24px;
+    margin-top: 12px;
+  }
+
+  .serviceDiv {
+    margin: 0 auto;
+    width: 94%;
+  }
+
+  .footer {
+    height: 360px;
+    width: 465px;
+    margin-top: 0;
+    z-index: 66;
+    margin: 0 auto;
+    border-left: 6px solid #FF9C0E;
+  }
+
+  .footerHead {
+    font-size: 1.3rem;
+    margin-bottom: 10px;
+  }
+  
+  .li {
+    margin-right: 0;
+    font-size: 12px;
+  }
+
+  .service {
+    margin: 25px 7px;
+  }
+
+  .footer .row {
+    flex-wrap: wrap;
+  }
+
+  .signUpDiv {
+    margin-top: 20px;
+  }
+
+  .subsEmail {
+    width: 400px;
+  }
+
+  .copyrightIcon {
+    width: 50px;
+    height: 50px;
+  }
+
+  .gap:last-child {
+    display: none;
+  }
+}
+
+/* Iphone 6, 7, 8+ */
 @media only screen 
-  and (min-device-width: 375px) 
-  and (max-device-width: 812px) 
+  and (min-device-width: 370px) 
+  and (max-device-width: 916px) 
   and (-webkit-min-device-pixel-ratio: 3) { 
+    html, body {
+      overflow-x: hidden;
+    }
+
     .topBar {
-        height: 78px;
+      height: 78px;
     }
 
     .header {
-        width: 353px;
-        height: 72px;
-        margin: 0 auto;
-        margin-top: -80px;
+      width: 484px;
+      height: 100px;
+      margin: 0 auto;
+      margin-top: -80px;
+    }
+
+    .buttonsDiv {
+      margin-right: 20px;
+    }
+
+    .firstHeaderText, .secondHeaderText {
+      font-size: 1.125rem;
+    }
+
+    .btnCareer, .btnContact {
+      width: 101px;
+      height: 26px;
+      margin-right: 0;
+    }
+
+    .headerBtnTxt {
+      padding-top: 7px;
+      font-size: 0.813rem;
+    }
+
+    .newSubject {
+      width: 453px;
+      height: 51px;
+      margin: 0 auto;
+      border-left: 6px solid #FF9C0E;
+    }
+
+    .headerText {
+      font-size: 1.475rem;
+      margin-top: 13px;
+    }
+
+    .profileImg {
+      width: 355px;
+      height: 355px;
+      margin: 0 auto;
+      margin-bottom: 100px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .profileName {
+      width: 115px;
+      height: 23px;
+    }
+
+    .names {
+      font-size: 1.275rem;
+      margin-top: 0px;
+      padding-top: 20px;
+      height: 50px;
+    }
+
+    .profImg {
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    .video {
+      margin: 0;
+      width: 480px;
+      background-color: #B2B2B2;
+      margin-bottom: 100px;
+    }
+
+    .gamesDiv {
+      width: 473px;
+      height: 240px;
+      background-color: white;
+      margin: 0 auto;
+    }
+
+    .gameImg {
+      display: none;
+    }
+
+    .gameBtn, .buyGameBtn, .socialAndTrelloBtn {
+      width: 190px;
+      height: 50px;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .iconSize {
+      width: 30px;
+      height: 30px;
+    }
+
+    .gameName {
+      font-size: 1.5rem;
+    }
+
+    .infoText {
+      font-size: 15px;
+    }
+
+    .lineCard {
+      height: auto;
+    }
+
+    .social {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .socialDiv {
+      width: 225px;
+      height: 183px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+
+    .lineTxt {
+      display: none;
+
+    }
+
+    .formDiv {
+      width: 487px;
+      height: 400px;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+
+    .forms {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .formInput {
+      width: 95%;
+    }
+
+    .textareaColumn {
+      width: 332px;
+      height: 280px;
+    }
+
+    .submitBtn {
+      width: 120px;
+      height: 50px;
+      margin-top: auto;
+    }
+
+    .submitText {
+      font-size: 24px;
+      margin-top: 12px;
+    }
+
+    .serviceDiv {
+      margin: 0 auto;
+      width: 94%;
+    }
+
+    .footer {
+      height: 360px;
+      width: 465px;
+      margin-top: 0;
+      z-index: 66;
+      margin: 0 auto;
+      border-left: 6px solid #FF9C0E;
+    }
+
+    .footerHead {
+      font-size: 1.3rem;
+      margin-bottom: 10px;
+    }
+    
+    .li {
+      margin-right: 0;
+      font-size: 12px;
+    }
+
+    .service {
+      margin: 25px 7px;
+    }
+
+    .footer .row {
+      flex-wrap: wrap;
+    }
+
+    .signUpDiv {
+      margin-top: 20px;
+    }
+
+    .subsEmail {
+      width: 400px;
+    }
+
+    .copyrightIcon {
+      width: 50px;
+      height: 50px;
+    }
+
+    .gap:last-child {
+      display: none;
+    }
+}
+
+/* Iphone X */
+@media only screen 
+  and (min-device-width: 375px) 
+  and (max-device-width: 380px)
+  and (max-device-height: 812px) 
+  and (-webkit-min-device-pixel-ratio: 3) { 
+    .header {
+      width: 440px;
+      height: 100px;
+      margin: 0 auto;
+      margin-top: -80px;
+    }
+
+    .newSubject {
+      width: 410px;
+      height: 51px;
+      margin: 0 auto;
+      border-left: 6px solid #FF9C0E;
+    }
+
+    .video {
+      width: 440px;
+    }
+
+    .gamesDiv {
+      width: 428px;
+      height: 240px;
+      background-color: white;
+      margin: 0 auto;
+    }
+
+    .socialDiv {
+      width: 204px;
+      height: 183px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+    
+    .formDiv {
+      width: 439px;
+      height: 400px;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+
+    .formInput {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .textareaColumn {
+      width: 410px;
+      height: 210px;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+    
+    .formRow {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .formRow  .column {
+      display: flex;
+      flex-direction: row;
+      margin-top: 10px;
+    }
+
+    .formRow .column .gap {
+      display: none;
+    }
+
+    .submitBtn {
+      width: 117px;
+      height: 50px;
+      margin-top: auto;
+    }
+
+    .serviceDiv {
+      margin: 0 auto;
+      width: 94%;
+    }
+
+    .service {
+      margin: 25px 17px;
+    }
+
+    .footer {
+      width: 420px;
+      height: 495px;
+      margin-top: 0;
+      z-index: 66;
+      margin: 0 auto;
+      border-left: 6px solid #FF9C0E;
     }
 }
 
 /* media query ipad */
-/* @media only screen 
+@media only screen 
   and (min-device-width: 768px) 
   and (max-device-width: 1024px) 
   and (orientation: portrait) 
   and (-webkit-min-device-pixel-ratio: 1) {
-    html {
-        flex: 0 0 100%;
-        display: flex;
+    html, body {
+      overflow-x: hidden;
     }
-} */
+
+    .topBar {
+      height: 150px;
+    }
+
+    .container {
+      max-width: 830px;
+      padding-top: 60px;
+    }
+
+    .logo {
+      height: 90%;
+      margin: auto 0;
+    }
+    
+    .header {
+      width: 830px;
+      height: 170px;
+      margin: 0 auto;
+    }
+
+    .firstHeaderText, .secondHeaderText {
+      font-size: 2.2rem;
+    }
+
+    .buttonsDiv {
+      margin-right: 15px;
+    }
+
+    .btnCareer, .btnContact {
+      width: 180px;
+      height: 57px;
+    }
+
+    .headerBtnTxt {
+      font-size: 1.625rem;
+    }
+
+    .newSubject {
+      width: 790px;
+      height: 60px;
+      margin: 0 auto;
+    }
+
+    .headerText {
+      margin-top: 12px;
+    }
+
+    .profileImg {
+      width: 400px;
+      height: 400px;
+      margin: 0 auto;
+      margin-bottom: 100px;
+      display: flex;
+      justify-content: center;
+    }
+
+    .profileName {
+      width: 115px;
+      height: 23px;
+    }
+
+    .names {
+      font-size: 1.275rem;
+      margin-top: 0px;
+      padding-top: 20px;
+      height: 50px;
+    }
+
+    .profImg {
+      flex-direction: column;
+      margin: 0 auto;
+    }
+
+    .video {
+      margin: 0;
+      width: 620px;
+      background-color: #B2B2B2;
+      margin-bottom: 100px;
+    }
+
+    .gamesDiv {
+      width: 780px;
+      height: 240px;
+      background-color: white;
+      margin: 0 auto;
+    }
+
+    .gameImg {
+      display: none;
+    }
+
+    .gameBtn, .buyGameBtn, .socialAndTrelloBtn {
+      width: 190px;
+      height: 50px;
+      display: flex;
+      flex-direction: row;
+    }
+
+    .iconSize {
+      width: 30px;
+      height: 30px;
+    }
+
+    .gameName {
+      font-size: 1.5rem;
+    }
+
+    .infoText {
+      font-size: 23px;
+    }
+
+    .social {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .socialDiv {
+      width: 270px;
+      height: 183px;
+      margin: 0 auto;
+      margin-bottom: 10px;
+    }
+
+    .lineTxt {
+      display: none;
+    }
+
+    .formDiv {
+      width: 439px;
+      height: 400px;
+      margin: 0 auto;
+      margin-bottom: 15px;
+    }
+
+    .forms {
+      background-color: white;
+    }
+
+    .formInput {
+      width: 400px;
+      margin: 0 auto;
+    }
+
+    .textareaColumn {
+      width: 410px;
+      height: 280px;
+      margin: 0 auto;
+      margin-top: 10px;
+    }
+    
+    .formRow {
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .formRow  .column {
+      display: flex;
+      flex-direction: row;
+      margin-top: 10px;
+    }
+
+    .formRow .column .gap {
+      display: none;
+    }
+
+    .submitText {
+      margin-top: 13px;
+      font-size: 25px;
+    }
+
+    .submitBtn {
+      width: 117px;
+      height: 50px;
+      margin-top: auto;
+    }
+
+    .serviceDiv {
+      margin: 0 auto;
+      width: 94%;
+    }
+
+    .service {
+      margin: 25px 17px;
+    }
+
+    .footer {
+      width: 815px;
+      height: 100%;
+      margin-top: 0;
+      padding-bottom: 10px;
+      z-index: 66;
+      margin: 0 auto;
+      border-left: 6px solid #FF9C0E;
+    }
+
+    .footerHead {
+      font-size: 2rem;
+      margin-bottom: 10px;
+    }
+    
+    .li {
+      margin-right: 0;
+      font-size: 23px;
+    }
+
+    .service {
+      margin: 25px 15px;
+    }
+
+    .footer .row {
+      flex-wrap: wrap;
+    }
+
+    .signUpDiv {
+      margin-top: 20px;
+    }
+
+    .signUpDiv {
+      margin-right: 10px;
+    }
+
+    .subsEmail {
+      width: 400px;
+    }
+
+    .copyrightIcon {
+      width: 60px;
+      height: 60px;
+    }
+
+    .gap:last-child {
+      display: none;
+    }
+}

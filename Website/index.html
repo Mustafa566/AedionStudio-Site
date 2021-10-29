@@ -77,11 +77,12 @@
     <div class="gap"></div>
         
         <!-- Team -->
-        <div class="row">
+        <div class="profImg row">
             <div class="flip-card profileImg boxShadow pointer" v-for="profile in teamProfiles" @click="getProfile(profile)">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img :src="profile.image" class="w100 h100">
+                        <p class="names bgWhite">{{ profile.name }}</p>
                     </div>
                     <div class="flip-card-back">
                         <h1 class="txtBackground">{{ profile.name }}</h1> 
@@ -101,27 +102,28 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
                 allowfullscreen>
                 </iframe>
-            </div>
-        </div>
-
-        <!-- Team names -->
-        <div class="row">
-
-            <!-- Team names -->
-            <div class="profileName boxShadow" v-for="profile in teamProfiles">
-                <p class="names bgWhite">{{ profile.name }}</p>
-            </div>
-
-            <!-- Aedion Studio video-->
-            <div class="videoName boxShadow">
                 <p class="names bgWhite">AEDION STUDIO INTRO</p>
             </div>
         </div>
 
-    <div class="gap"></div>
+        <!-- Team names -->
+        <!-- <div class="row">
+
+           
+            <div class="profileName boxShadow" v-for="profile in teamProfiles">
+                <p class="names bgWhite">{{ profile.name }}</p>
+            </div>
+
+            
+            <div class="videoName boxShadow">
+                <p class="names bgWhite">AEDION STUDIO INTRO</p>
+            </div>
+        </div> -->
+
+    
 
         <!-- Our games -->
-        <div class="newSubject row">
+        <div class="ourGameHeader newSubject">
             <p class="headerText bgWhite">{{ text.ourGamesTxt }}</p>
             <!-- <input type="text" placeholder="Search.." class="searchBar">
             <img src="./image/searchIcon.png" class="searchIcon"> -->
@@ -183,7 +185,7 @@
     <div class="gap"></div>
 
         <!-- Social media buttons -->
-        <div class="row">
+        <div class="social row">
             <div class="socialDiv pointer" v-for="socialMedia in socialMediaBtn">
                 <a :href="socialMedia.link" target="_blank">
                     <img :src="socialMedia.image" class="socicalIcon bgWhite">
@@ -205,7 +207,7 @@
     <div class="gap"></div>
 
         <!-- Form -->
-        <div class="row w100">
+        <div class="forms row w100">
             <div class="formDiv bgWhite w100">
                 <form @submit.prevent="formSend()" class="form">
                     <div class="row bgWhite w100">
@@ -213,7 +215,7 @@
                             <input type="text" placeholder="TITLE" class="formInput outline" v-model="contact.formData.title" required>
                         </div>
                     </div>
-                    <div class="row bgWhite">
+                    <div class="formRow row bgWhite">
                         <div class="textareaColumn bgWhite">
                             <textarea rows="7" cols="32" placeholder="MESSAGE.." class="textarea outline" v-model="contact.formData.body" required></textarea>
                         </div>
