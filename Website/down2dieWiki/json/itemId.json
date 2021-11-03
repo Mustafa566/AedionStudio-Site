@@ -370,7 +370,7 @@
                 "name": "FarmBox",
                 "itemId": "5002",
                 "rows": "5000",
-                "descr": "Farming bitch slavery",
+                "descr": "Farming",
                 "craft": [
                     {
                         "id": "1",
