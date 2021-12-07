@@ -1,18 +1,23 @@
+.social {
+    display: flex;
+    flex: 1;
+}
+
 /* Social media div*/
 .socialDiv {
     width: 243px;
-    height: 183px;
+    height: 100px;
     background-color: white;
-    margin-right: 21px;
+    /*margin-right: 21px;*/
     text-align: center;
-    line-height: 170px;
+    line-height: 100px;
     position: relative;
 }
 
 /* Social icons */
 .socicalIcon {
-    width: 133px;
-    height: 133px;
+    width: 50px;
+    height: 50px;
     vertical-align: middle;
 }
 
@@ -24,20 +29,6 @@
     bottom: 0px;
 }
 
-/* Social media bar animation */
-.socialDiv:hover .line {
-    animation-name: socialMedia;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-/* Social media bar animation reverse */
-.socialDiv .line {
-    animation-name: socialMediaReverse;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
 /* Social media background opacity */
 .lineBg {
     width: 100%;
@@ -45,20 +36,6 @@
     position: absolute;
     bottom: 0px;
     background-color: rgba(176, 191, 252, 0.5);
-}
-
-/* Social media background opacity animation */
-.socialDiv:hover .lineBg {
-    animation-name: bgOpacityColor;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
-
-/* Social media background opacity animation reverse */
-.socialDiv .lineBg {
-    animation-name: bgOpacityColorReverse;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
 }
 
 .lineBlue {
@@ -83,22 +60,4 @@
 
 .lineRed {
     background-color: rgba(255, 130, 130, 0.5);
-}
-
-.lineTxt {
-    position: absolute;
-    bottom: 0px;
-    background: transparent;
-    font-size: 25px;
-    margin: 10px 65px;
-    font-weight: bold;
-    opacity: 0;
-    color: white;
-}
-
-.socialDiv:hover .lineTxt {
-    animation-name: opacityTxt;
-    animation-delay: 0.5s;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
 }

@@ -78,16 +78,11 @@
         
         <!-- Team -->
         <div class="profImg row">
-            <div class="flip-card profileImg boxShadow pointer" v-for="profile in teamProfiles" @click="getProfile(profile)">
+            <div class="profileImg boxShadow pointer" v-for="profile in teamProfiles" @click="getProfile(profile)">
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img :src="profile.image" class="w100 h100">
                         <p class="names bgWhite">{{ profile.name }}</p>
-                    </div>
-                    <div class="flip-card-back">
-                        <h1 class="txtBackground">{{ profile.name }}</h1> 
-                        <p class="txtBackground">{{ profile.function }}</p> 
-                        <p class="txtBackground">We love that guy</p>
                     </div>
                 </div>
             </div>
@@ -185,16 +180,15 @@
     <div class="gap"></div>
 
         <!-- Social media buttons -->
-        <div class="social row">
-            <div class="socialDiv pointer" v-for="socialMedia in socialMediaBtn">
-                <a :href="socialMedia.link" target="_blank">
+        <div class="social row pointer" v-for="socialMedia in socialMediaBtn">
+            <a :href="socialMedia.link" target="_blank">
+                <div class="socialDiv">
                     <img :src="socialMedia.image" class="socicalIcon bgWhite">
+                    <p>Facebook</p>
                     <div class="line" :class='socialMedia.classColor'></div>
-                    <div class="lineBg" :class='socialMedia.classColor'>
-                        <p class="lineTxt">JOIN US</p>
-                    </div>
-                </a>
-            </div>
+                    <div class="lineBg" :class='socialMedia.classColor'></div>
+                </div>
+            </a>
         </div>
         
     <div class="gap"></div>
@@ -220,10 +214,6 @@
                             <textarea rows="7" cols="32" placeholder="MESSAGE.." class="textarea outline" v-model="contact.formData.body" required></textarea>
                         </div>
                         <div class="column transparant">
-                            <div class="gap transparant"></div>
-                            <div class="transparant contactColor submitBtn boxShadow">
-                                <p class="submitText transparant pointer">CONTACT</p>
-                            </div>
                             <div class="transparant supportColor submitBtn boxShadow">
                                 <p class="submitText transparant pointer">SUPPORT</p>
                             </div>
