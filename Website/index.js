@@ -9,8 +9,8 @@ var app = new Vue({
             ourTeamTxt: 'OUR TEAM',
             ourGamesTxt: 'OUR GAMES',
             socialMediaTxt: 'SOCIAL MEDIA',
-            contactFormTxt: 'CONTACT FORM',
-            servicesTxt: 'SERVICES',
+            contactFormTxt: 'CONTACT & BLOG',
+            servicesTxt: 'BLOG & UPDATES',
             signUpTxt: 'SIGN-UP FOR OUR',
             newsletterTxt: 'NEWS LETTER',
             copyrightTxt: '@AEDIONSTUDIO 2021'
@@ -32,52 +32,41 @@ var app = new Vue({
                 function: 'DEVELOPER'
             }
         ],
-        down2dieCard: {
-            gameLogo: './image/btnIcons/down2dieIcon.png',
-            gameNameTxt: 'DOWN2DIE',
-            buyGameTxt: 'BUY GAME',
-            updateTxt: 'UPDATES',
-            trelloTxt: 'TRELLO',
-            gameInfo: `Down2Die is an advanced zombie survival game that offers many ways of replayability and customization. 
-                       The game features many ways to counteract your enemies with traps and upgrades. 
-                       Work together with a team up to 4 survivors and level through the waves to be at your best when the "unknown" occurs.`,
-            steamLink: 'https://store.steampowered.com/app/1272280/Down2Die/',
-            trelloLink: 'https://trello.com/b/4FKTYq5j/down2die-early-access'
-        },
-        icons: {
-            steamIcon: './image/btnIcons/steamIcon.png',
-            facebookIcon: './image/btnIcons/facebookIcon.png',
-            trelloIcon: './image/btnIcons/trelloIcon.png'
-        },
         socialMediaBtn: [
             { 
                 link: 'https://www.facebook.com/aedionstudioofficial/', 
                 image: './image/socialBtn/facebookIcon.png', 
+                name: 'Facebook',
                 classColor: 'lineBlue' 
             },
             { 
                 link: 'https://www.instagram.com/aedionstudio/', 
                 image: './image/socialBtn/instagramIcon.png', 
+                name: 'Instagram',
                 classColor: 'linePink' 
             },
             { 
                 link: 'https://twitter.com/aedionstudio', 
                 image: './image/socialBtn/twitterIcon.png', 
+                name: 'Twitter',
                 classColor: 'lineBabyBlue' 
             },
             { 
                 link: '', 
                 image: './image/socialBtn/snapchatIcon.png', 
+                name: 'Snapchat',
                 classColor: 'lineYellow' 
             },
             { 
                 link: '', 
                 image: './image/socialBtn/googleIcon.png', 
+                name: 'Google+',
                 classColor: 'lineBabyPurple' 
             },
             { 
                 link: 'https://www.youtube.com/channel/UCj4KCUUk5mH1GM9ff2G0fSA', 
                 image: './image/socialBtn/youtubeIcon.png', 
+                name: 'Youtube',
                 classColor: 'lineRed' 
             },
         ],
@@ -86,7 +75,9 @@ var app = new Vue({
             isEmpty: false,
             formData: {
                 title: '',
-                body: ''
+                body: '',
+                name: '',
+                gender: ''
             },
         },
         services: [
@@ -106,49 +97,81 @@ var app = new Vue({
                 serviceBgImg: ''
             },
         ],
+        blog: [
+            {
+                icon: '',
+                title: 'BUGS & GLITCHES',
+                backgroundImg: ''
+            },
+            {
+                icon: '',
+                title: 'MAPS AND MODES!',
+                backgroundImg: ''
+            },
+            {
+                icon: '',
+                title: 'DEBUG',
+                backgroundImg: ''
+            },
+        ],
         footerBar: [
             { 
                 headTxt: 'SERVICE', 
                 subjects: [
                     {text: 'CONTACT'},
-                    {text: 'CONTACT'},
-                    {text: 'CONTACT'},
-                    {text: 'CONTACT'},
-                    {text: 'CONTACT'},
-                    {text: 'CONTACT'},
-                    {text: 'CONTACT'}
+                    {text: 'ORDERS'},
+                    {text: 'WARRENTY'},
+                    {text: 'DELIVERY'}
                 ]
             },
             { 
                 headTxt: 'UNREAL', 
                 subjects: [
                     {text: 'CONTACT'},
-                    {text: 'CONTACT'},
-                    {text: 'CONTACT'},
-                    {text: 'CONTACT'},
-                    {text: 'CONTACT'},
-                    {text: 'CONTACT'},
-                    {text: 'CONTACT'}
+                    {text: 'MARKETPLACE'},
+                    {text: 'SERVICES'}
                 ]
             },
             { 
                 headTxt: 'INFO', 
                 subjects: [
-                    {text: 'CONTACT'},
-                    {text: 'CONTACT'},
-                    {text: 'CONTACT'}
+                    {text: 'KVK'},
+                    {text: 'REVIEWS'},
+                    {text: 'LEGAL'}
                 ]
             },
             { 
                 headTxt: 'HELP', 
                 subjects: [
                     {text: 'CONTACT'},
-                    {text: 'CONTACT'},
-                    {text: 'CONTACT'}
+                    {text: 'SUPPORT'},
+                    {text: 'EMERGENCY'}
                 ]
             },
         ],
-        num: 0
+        icons: {
+            steamIcon: './image/btnIcons/steamIcon.png',
+            facebookIcon: './image/btnIcons/facebookIcon.png',
+            trelloIcon: './image/btnIcons/trelloIcon.png'
+        },
+        down2dieCard: {
+            gameLogo: './image/btnIcons/down2dieIcon.png',
+            gameNameTxt: 'DOWN2DIE',
+            buyGameTxt: 'BUY GAME',
+            updateTxt: 'UPDATES',
+            trelloTxt: 'TRELLO',
+            gameInfo: `Down2Die is an advanced zombie survival game that offers many ways of replayability and customization. 
+                       The game features many ways to counteract your enemies with traps and upgrades. 
+                       Work together with a team up to 4 survivors and level through the waves to be at your best when the "unknown" occurs.`,
+            steamLink: 'https://store.steampowered.com/app/1272280/Down2Die/',
+            trelloLink: 'https://trello.com/b/4FKTYq5j/down2die-early-access'
+        },
+        images: [
+            {img: './image/d2dImg.png'},
+            {img: './image/guessAndTeller.png'},
+        ],
+        num: 0,
+        product: true
     },
     methods: {
         formSend() {

@@ -24,7 +24,11 @@ a, a:active, a:hover, a:focus {
 /* Space */
 .gap {
     width: 100%;
-    height: 30px;
+    height: 10px;
+}
+
+.flex {
+    display: flex;
 }
 
 /* Create a row */
@@ -48,10 +52,11 @@ a, a:active, a:hover, a:focus {
 .newSubject {
     width: 100%;
     height: 98px;
-    border-left: 13px solid #FF9C0E;
+    border-left: 13px solid #ffbe61;
     padding-left: 25px;
-    background-color: white;
-    box-shadow: -3px 3px 10px #888888;
+    background-image: url(../header.png);
+    background-repeat: no-repeat;
+    background-position: center;
     z-index: 0;
     font-size: 35px;
 }

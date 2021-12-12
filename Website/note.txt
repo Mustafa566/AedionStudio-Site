@@ -1,0 +1,43 @@
+<!-- Game card div -->
+        <div class="gamesDiv">
+            <img src="./image/down2dieImg.png" class="gameImg bgWhite">
+            <div class="row bgWhite">
+
+                <!-- Buttons -->
+                <div class="columnGame bgWhite">
+                    <div class="gameBtn boxShadow row bgWhite pointer">
+                        <img :src="down2dieCard.gameLogo" class="iconSize">
+                        <p class="gameName w100 vrAlign bgWhite">{{ down2dieCard.gameNameTxt }}</p>
+                    </div>
+
+                    <div class="buyGameBtn boxShadow row bgWhite pointer">
+                        <a :href="down2dieCard.steamLink" class="linkGame bgWhite" target="_blank">
+                            <img :src="icons.steamIcon" class="iconSize">
+                            <p class="gameName w100 vrAlign bgWhite">{{ down2dieCard.buyGameTxt }}</p>
+                        </a>
+                    </div>
+
+                    <div class="socialAndTrelloBtn boxShadow row bgWhite pointer">
+                        <a :href="down2dieCard.trelloLink" class="linkGame bgWhite" target="_blank">
+                            <img :src="icons.facebookIcon" class="iconSize">
+                            <p class="gameName w100 vrAlign bgWhite">{{ down2dieCard.updateTxt }}</p>
+                        </a>
+                    </div>
+
+                    <div class="socialAndTrelloBtn boxShadow row bgWhite pointer">
+                        <a :href="down2dieCard.trelloLink" class="linkGame bgWhite" target="_blank">
+                            <img :src="icons.trelloIcon" class="iconSize">
+                            <p class="gameName w100 vrAlign bgWhite">{{ down2dieCard.trelloTxt }}</p>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Game info -->
+                <div class="gameInfo bgWhite row">
+                    <div class="lineCard"></div>
+                    <p class="infoText bgWhite">
+                        {{ down2dieCard.gameInfo }}
+                    </p>
+                </div>
+            </div>
+        </div>

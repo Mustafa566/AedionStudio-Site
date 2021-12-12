@@ -1,6 +1,7 @@
 .social {
     display: flex;
     flex: 1;
+    justify-content: space-evenly;
 }
 
 /* Social media div*/
@@ -12,6 +13,12 @@
     text-align: center;
     line-height: 100px;
     position: relative;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.socialTxt {
+    font-size: 32px;
 }
 
 /* Social icons */

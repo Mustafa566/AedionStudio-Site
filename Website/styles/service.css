@@ -5,24 +5,24 @@
     margin-left: 15px;
 }
 
-.serviceDiv, .serviceDiv *, .ourServices {
+.serviceDiv *, .ourServices {
     background-color: white;
 }
 
 .serviceHeader {
-    margin: 15px;
-    height: 58px;
+    margin-bottom: 10px;
+    height: 85px;
     border-left: 7px solid #FFBE61;
     font-size: 2.188rem;
 }
 
 .serviceText {
-    padding-top: 10px;
+    padding-top: 20px;
     padding-left: 5px;
 }
 
 .ourServices {
-    max-height: 340px;
+    max-height: 395px;
     overflow-y: scroll;
 }
 
@@ -42,20 +42,84 @@
 
 .serviceProduct {
     margin: 15px;
-    padding: 5px;
+    /*padding: 5px;*/
     border-left: 7px solid #FFBE61;
-    height: 150px;
-}
-
-.serviceProduct:hover *, .serviceProduct:hover {
-    background-color: #e4e4e4;
+    height: 125px;
+    background-image: url(../blog.png);
+    background-repeat: no-repeat;
+    background-position: center bottom;
 }
 
 .productHeadText {
-    font-size: 1.875rem;
+    font-size: 30px;
+    padding: 10px 0px;
+    background-color: transparent;
+    /*background: linear-gradient(217deg, #ffffff 12%, #ffbe61 0%);*/
 }
 
 .productInfo {
     width: 295px;
     font-size: 1.25rem;
+}
+
+/**/
+
+.websiteService {
+    background-image: url("../image/services/website.png");
+    width: 680px;
+    height: 350px;
+}
+
+.modelingService {
+    margin-left: 10px;
+    background-image: url("../image/services/modeling.png");
+    width: 870px;
+    height: 350px;
+}
+
+.musicService {
+    margin-right: 10px;
+    background-image: url("../image/services/music.png");
+    width: 870px;
+    height: 350px;
+    margin-top: 10px;
+}
+
+.gamesService {
+    background-image: url("../image/services/games.png");
+    width: 680px;
+    height: 350px;
+    margin-top: 10px;
+}
+
+.websiteServiceTxt {
+    background: rgba(0, 0, 0, 0.48);
+    color: white;
+    width: 8ch;
+    padding: 10px;
+    font-size: 39px;
+}
+
+.modelingServiceTxt {
+    background: rgba(0, 0, 0, 0.48);
+    color: white;
+    width: 10ch;
+    padding: 10px;
+    font-size: 39px;
+}
+
+.musicServiceTxt {
+    background: rgba(0, 0, 0, 0.48);
+    color: white;
+    width: 12ch;
+    padding: 10px;
+    font-size: 39px;
+}
+
+.gamesServiceTxt {
+    background: rgba(0, 0, 0, 0.48);
+    color: white;
+    width: 6ch;
+    padding: 10px;
+    font-size: 39px;
 }

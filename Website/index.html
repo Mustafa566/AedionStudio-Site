@@ -8,6 +8,7 @@
     <!-- Add stylesheet --> 
     <link rel="stylesheet" href="./styles/style.css">
     <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/team.css">
     <link rel="stylesheet" href="./styles/products.css">
     <link rel="stylesheet" href="./styles/socialMedia.css">
     <link rel="stylesheet" href="./styles/form.css">
@@ -15,14 +16,14 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/responsive.css">
 
-
     <!-- Add Google font Oxanium --> 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap" rel="stylesheet">
-
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@800&display=swap" rel="stylesheet">
+
+    <!-- Vue js import-->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
     <!-- Title --> 
@@ -39,15 +40,15 @@
     <div class="container" id="app">
 
         <!-- Header -->
-        <header class="header bgWhite boxShadow">
+        <header class="header transparant">
 
             <!-- Logo of AedionStudio-->
             <img src="./image/AedionStudio.png" class="logo">
 
             <!-- We are AedionStudio div -->
-            <div class="weAreDiv bgWhite">
-                <p class="firstHeaderText bgWhite">{{ text.headerTxt }}</p>
-                <h1 class="secondHeaderText bgWhite">{{ text.headerAedionTxt }}</h1>
+            <div class="weAreDiv transparant">
+                <p class="firstHeaderText transparant">{{ text.headerTxt }}</p>
+                <h1 class="secondHeaderText transparant">{{ text.headerAedionTxt }}</h1>
             </div>
 
             <!-- Buttons -->
@@ -70,7 +71,7 @@
         
         <!-- Our team div -->
         <div class="newSubject">
-            <p class="headerText bgWhite">{{ text.ourTeamTxt }}</p>
+            <p class="headerText transparant">{{ text.ourTeamTxt }}</p>
         </div>
     
     <!-- Whitespace -->
@@ -101,71 +102,32 @@
             </div>
         </div>
 
-        <!-- Team names -->
-        <!-- <div class="row">
-
-           
-            <div class="profileName boxShadow" v-for="profile in teamProfiles">
-                <p class="names bgWhite">{{ profile.name }}</p>
-            </div>
-
-            
-            <div class="videoName boxShadow">
-                <p class="names bgWhite">AEDION STUDIO INTRO</p>
-            </div>
-        </div> -->
-
-    
-
-        <!-- Our games -->
+        <!-- Our services -->
         <div class="ourGameHeader newSubject">
-            <p class="headerText bgWhite">{{ text.ourGamesTxt }}</p>
+            <p class="headerText transparant">{{ text.servicesTxt }}</p>
             <!-- <input type="text" placeholder="Search.." class="searchBar">
             <img src="./image/searchIcon.png" class="searchIcon"> -->
         </div>
     
     <div class="gap"></div>
 
-        <!-- Game card div -->
-        <div class="gamesDiv">
-            <img src="./image/down2dieImg.png" class="gameImg bgWhite">
-            <div class="row bgWhite">
-
-                <!-- Buttons -->
-                <div class="columnGame bgWhite">
-                    <div class="gameBtn boxShadow row bgWhite pointer">
-                        <img :src="down2dieCard.gameLogo" class="iconSize">
-                        <p class="gameName w100 vrAlign bgWhite">{{ down2dieCard.gameNameTxt }}</p>
+        <div class="column">
+            <div class="row">
+                <a href="./products.html">
+                    <div class="websiteService">
+                        <p class="websiteServiceTxt">Websites</p>
                     </div>
-
-                    <div class="buyGameBtn boxShadow row bgWhite pointer">
-                        <a :href="down2dieCard.steamLink" class="linkGame bgWhite" target="_blank">
-                            <img :src="icons.steamIcon" class="iconSize">
-                            <p class="gameName w100 vrAlign bgWhite">{{ down2dieCard.buyGameTxt }}</p>
-                        </a>
-                    </div>
-
-                    <div class="socialAndTrelloBtn boxShadow row bgWhite pointer">
-                        <a :href="down2dieCard.trelloLink" class="linkGame bgWhite" target="_blank">
-                            <img :src="icons.facebookIcon" class="iconSize">
-                            <p class="gameName w100 vrAlign bgWhite">{{ down2dieCard.updateTxt }}</p>
-                        </a>
-                    </div>
-
-                    <div class="socialAndTrelloBtn boxShadow row bgWhite pointer">
-                        <a :href="down2dieCard.trelloLink" class="linkGame bgWhite" target="_blank">
-                            <img :src="icons.trelloIcon" class="iconSize">
-                            <p class="gameName w100 vrAlign bgWhite">{{ down2dieCard.trelloTxt }}</p>
-                        </a>
-                    </div>
+                </a>
+                <div class="modelingService">
+                    <p class="modelingServiceTxt">3D Modeling</p>
                 </div>
-
-                <!-- Game info -->
-                <div class="gameInfo bgWhite row">
-                    <div class="lineCard"></div>
-                    <p class="infoText bgWhite">
-                        {{ down2dieCard.gameInfo }}
-                    </p>
+            </div>
+            <div class="row">
+                <div class="musicService">
+                    <p class="musicServiceTxt">Music & Sound</p>
+                </div>
+                <div class="gamesService">
+                    <p class="gamesServiceTxt">Games</p>
                 </div>
             </div>
         </div>
@@ -174,7 +136,7 @@
 
         <!-- Social media -->
         <div class="newSubject">
-            <p class="headerText bgWhite">{{ text.socialMediaTxt }}</p>
+            <p class="headerText transparant">{{ text.socialMediaTxt }}</p>
         </div>
 
     <div class="gap"></div>
@@ -182,9 +144,9 @@
         <!-- Social media buttons -->
         <div class="social row pointer" v-for="socialMedia in socialMediaBtn">
             <a :href="socialMedia.link" target="_blank">
-                <div class="socialDiv">
+                <div class="socialDiv row">
                     <img :src="socialMedia.image" class="socicalIcon bgWhite">
-                    <p>Facebook</p>
+                    <p class="socialTxt transparant">{{ socialMedia.name }}</p>
                     <div class="line" :class='socialMedia.classColor'></div>
                     <div class="lineBg" :class='socialMedia.classColor'></div>
                 </div>
@@ -195,29 +157,33 @@
 
         <!-- Contact form -->
         <div class="newSubject">
-            <p class="headerText bgWhite">{{ text.contactFormTxt }}</p>
+            <p class="headerText transparant">{{ text.contactFormTxt }}</p>
         </div>
     
     <div class="gap"></div>
 
         <!-- Form -->
         <div class="forms row w100">
-            <div class="formDiv bgWhite w100">
+            <div class="formDiv transparant w100">
                 <form @submit.prevent="formSend()" class="form">
-                    <div class="row bgWhite w100">
+                    <div class="row transparant w100">
                         <div class="formColumn bgWhite w100">
-                            <input type="text" placeholder="TITLE" class="formInput outline" v-model="contact.formData.title" required>
+                            <input type="text" placeholder="Title" class="formInput outline" v-model="contact.formData.title" required>
                         </div>
                     </div>
                     <div class="formRow row bgWhite">
                         <div class="textareaColumn bgWhite">
-                            <textarea rows="7" cols="32" placeholder="MESSAGE.." class="textarea outline" v-model="contact.formData.body" required></textarea>
+                            <textarea rows="9" cols="30" placeholder="Message.." class="textarea outline" v-model="contact.formData.body" required></textarea>
                         </div>
                         <div class="column transparant">
+                            <div class="formColumn bgWhite w100">
+                                <input type="text" placeholder="Name" class="formInput2 outline" v-model="contact.formData.name" required>
+                                <input type="text" placeholder="Gender" class="formInput2 outline" v-model="contact.formData.gender">
+                            </div>
                             <div class="transparant supportColor submitBtn boxShadow">
                                 <p class="submitText transparant pointer">SUPPORT</p>
                             </div>
-                            <a :href="`mailto:${contact.aedionStudioEmail}?subject=${contact.formData.title}&body=${contact.formData.body}`" 
+                            <a :href="`mailto:${contact.aedionStudioEmail}?subject=${contact.formData.title}&body=Name: ${contact.formData.name} %0D%0AGender: ${contact.formData.gender} %0D%0A${contact.formData.body}`" 
                             class="aBtn submitBtn submitColor transparant boxShadow">
                                 <p class="submitText transparant pointer">SUBMIT</p>
                             </a>
@@ -232,15 +198,14 @@
                     <p class="serviceText transparant">{{ text.servicesTxt }}</p>
                 </div>
                 <div class="ourServices transparant w100">
-                    <div class="serviceProduct transparant boxShadow" v-for="service in services">
-                        <p class="productHeadText transparant">{{ service.serviceText }}</p>
-                        <p class="productInfo transparant">{{ service.serviceInfo }}</p>
-                    </div>
+                    <a href="./blog.html">
+                        <div class="serviceProduct transparant boxShadow" v-for="blogs in blog">
+                            <p class="productHeadText transparant">{{ blogs.title }}</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
-
-    <div class="gap"></div>
 
         <!-- Footer div -->
         <div class="footer">
@@ -251,7 +216,6 @@
                     <li class="li bgWhite" v-for="subject in footer.subjects">{{ subject.text }}</li>
                 </div>
                 
-
                 <div class="signUpDiv bgWhite">
                     <form class="bgWhite">
                             <p class="signUpTxt bgWhite">{{ text.signUpTxt }}</p>
@@ -265,7 +229,7 @@
     <div class="gap"></div>
 
         <!-- Copyright div -->
-        <div class="newSubject">
+        <div class="copyRightDiv">
             <div class="row bgWhite">
                 <p class="headerText bgWhite">{{ text.copyrightTxt }}</p>
                 <img src="./image/AedionStudio.png" class="copyrightIcon bgWhite">
