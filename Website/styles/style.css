@@ -10,6 +10,21 @@ html {
     zoom: 80%;
 }
 
+.body {
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: fadeInBegin;
+    animation-duration: 4s;
+}
+
+@keyframes fadeInBegin {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
 /* --------- Usefull classes --------- */
 
 /* Background color white */

@@ -6,16 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Add stylesheet --> 
-    <link rel="stylesheet" href="../styles/style.css">
-    <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/team.css">
-    <link rel="stylesheet" href="../styles/products.css">
-    <link rel="stylesheet" href="../styles/blog.css">
-    <link rel="stylesheet" href="../styles/socialMedia.css">
-    <link rel="stylesheet" href="../styles/form.css">
-    <link rel="stylesheet" href="../styles/service.css">
-    <link rel="stylesheet" href="../styles/footer.css">
-    <link rel="stylesheet" href="../styles/responsive.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/team.css">
+    <link rel="stylesheet" href="./styles/products.css">
+    <link rel="stylesheet" href="./styles/blog.css">
+    <link rel="stylesheet" href="./styles/socialMedia.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/service.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
 
     <!-- Add Google font Oxanium --> 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
@@ -30,9 +30,9 @@
     <!-- Title --> 
     <title>Aedion Studio</title>
 
-    <link rel="icon" href=../image/AedionStudio.png">
+    <link rel="icon" href="./image/AedionStudio.png">
 </head>
-<body>
+<body class="body">
 
     <!-- Topbar orangje background --> 
     <div class="topBar boxShadow"></div>
@@ -44,7 +44,7 @@
         <header class="header transparant">
 
             <!-- Logo of AedionStudio-->
-            <img src="../image/AedionStudio.png" class="logo">
+            <img src="./image/AedionStudio.png" class="logo">
 
             <!-- We are AedionStudio div -->
             <div class="weAreDiv transparant">
@@ -55,12 +55,12 @@
             <!-- Buttons -->
             <div class="buttonsDiv">
                 <div class="btnCareer">
-                    <a href="./quotation.html">
+                    <a href="./pages/quotation.html">
                         <p class="headerBtnTxt pointer transparant">{{ text.headerCareerTxt }}</p>
                     </a>
                 </div>
                 <div class="btnContact">
-                    <a href="./contact.html">
+                    <a href="./pages/contact.html">
                         <p class="headerBtnTxt pointer transparant">{{ text.headerContactTxt }}</p>
                     </a>
                 </div>
@@ -112,7 +112,7 @@
 
         <div class="column">
             <div class="row">
-                <a href="./products.html">
+                <a href="./pages/products.html">
                     <div class="websiteService">
                         <p class="websiteServiceTxt">Websites</p>
                     </div>
@@ -197,7 +197,7 @@
                     <p class="blogTitle transparant">{{ text.servicesTxt }}</p>
                 </div>
                 <div class="blogItems transparant w100">
-                    <a href="./blog.html">
+                    <a href="./pages/blog.html">
                         <div class="blogItem transparant boxShadow" v-for="blogs in blog">
                             <p class="blogItemHeaderText transparant">{{ blogs.title }}</p>
                         </div>
@@ -231,13 +231,13 @@
         <div class="copyRightDiv">
             <div class="row bgWhite">
                 <p class="headerText bgWhite">{{ text.copyrightTxt }}</p>
-                <img src="../image/AedionStudio.png" class="copyrightIcon bgWhite">
+                <img src="./image/AedionStudio.png" class="copyrightIcon bgWhite">
             </div>
         </div>
 
     <div class="gap"></div>
 
     </div>
-    <script src="../index.js"></script>
+    <script src="./index.js"></script>
 </body>
 </html>
