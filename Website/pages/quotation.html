@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Add stylesheet --> 
-    <link rel="stylesheet" href="./styles/style.css">
-    <link rel="stylesheet" href="./styles/header.css">
-    <link rel="stylesheet" href="./styles/contactPage.css">
-    <link rel="stylesheet" href="./styles/form.css">
-    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="../styles/style.css">
+    <link rel="stylesheet" href="../styles/header.css">
+    <link rel="stylesheet" href="../styles/contactPage.css">
+    <link rel="stylesheet" href="../styles/quotation.css">
+    <link rel="stylesheet" href="../styles/responsive.css">
 
     <!-- Add Google font Oxanium --> 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
@@ -23,9 +23,9 @@
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
 
     <!-- Title --> 
-    <title>Aedion Studio</title>
+    <title>Quostation</title>
 
-    <link rel="icon" href="./image/AedionStudio.png">
+    <link rel="icon" href="../image/AedionStudio.png">
 </head>
 <body>
     <!-- Topbar orangje background --> 
@@ -38,12 +38,12 @@
         <header class="header transparant">
 
             <!-- Logo of AedionStudio-->
-            <img src="./image/AedionStudio.png" class="logo">
+            <img src="../image/AedionStudio.png" class="logo">
 
             <!-- We are AedionStudio div -->
             <div class="weAreDiv transparant">
                 <p class="firstHeaderText transparant">{{ text.headerTxt }}</p>
-                <h1 class="contactText transparant">CONTACT</h1>
+                <h1 class="contactText transparant">QUOTATION</h1>
             </div>
 
             <!-- Buttons -->
@@ -65,7 +65,7 @@
 
         <!-- Personal info div -->
         <div class="newSubject">
-            <p class="headerText transparant">{{ contactPage.headerInfoText }}</p>
+            <p class="headerText transparant">{{ quotation.headerPersonal }}</p>
         </div>
     
     <div class="gap"></div>
@@ -77,73 +77,107 @@
         </div>
 
     <div class="gap"></div>
-    
 
-        <!-- Subject div -->
+        <!-- Service of choice div -->
         <div class="newSubject">
-            <p class="headerText transparant">{{ contactPage.headerSubjectText }}</p>
+            <p class="headerText transparant">{{ quotation.headerChoice }}</p>
         </div>
 
     <div class="gap"></div>
 
         <div class="column wrap w100">
             <select class="selectSubject" v-model="contactPage.selectedSubject">
-                <option value="">SELECT SUBJECT...</option>
+                <option value="">SELECT SERVICE...</option>
                 <option v-for="option in contactPage.subjectOptions" :value="option.value">{{ option.text }}</option>
             </select>
 
     <div class="gap"></div>
 
             <select class="selectSubject" v-model="contactPage.selectedSubject">
-                <option value="">SELECT DATE OF MATTER...</option>
-                <option v-for="option in contactPage.subjectOptions" :value="option.value">{{ option.text }}</option>
-            </select>
-        
-    <div class="gap"></div>
-
-            <div class="w100 bgWhite">
-                <textarea rows="10" placeholder="SUBJECT DESCRIPTION..." class="subjectDescr"></textarea>
-            </div>
-    
-            <div class="row wrap w100">
-                <input type="text" placeholder="PDF Explaination..." class="pdfInput bgWhite outline" v-model="contact.formData.title" required>
-    
-                <input type="file" id="selectedFile" style="display: none;">
-                <input type="button" value="UPLOAD PDF" onclick="document.getElementById('selectedFile').click();" class="fileButton pointer">
-            </div>
-        </div>
-
-    <div class="gap"></div>
-
-        <!-- Interest div -->
-        <div class="newSubject">
-            <p class="headerText transparant">{{ contactPage.headerInterestText }}</p>
-        </div>
-
-    <div class="gap"></div>
-
-        <div class="column wrap w100">
-            <select class="selectSubject" v-model="contactPage.selectedSubject">
-                <option value="">SELECT EMPOYEE...</option>
+                <option value="">SELECT PACKAGE...</option>
                 <option v-for="option in contactPage.subjectOptions" :value="option.value">{{ option.text }}</option>
             </select>
         </div>
-
+    
     <div class="gap"></div>
 
         <div class="w100 bgWhite">
-            <textarea rows="10" placeholder="ADDITIONAL COMMENTS..." class="subjectDescr"></textarea>
+            <textarea rows="10" placeholder="PRODUCT DESCRIPTION..." class="subjectDescr"></textarea>
+        </div>
+
+        <div class="row wrap w100">
+            <input type="text" placeholder="PDF Explaination..." class="pdfInput bgWhite outline" v-model="contact.formData.title" required>
+
+            <input type="file" id="selectedFile" style="display: none;">
+            <input type="button" value="UPLOAD PDF" onclick="document.getElementById('selectedFile').click();" class="fileButton pointer">
         </div>
 
     <div class="gap"></div>
-    <div class="gap"></div>
 
-        <!-- Complete form div -->
+        <!-- Support package div -->
         <div class="newSubject">
-            <p class="headerText transparant">{{ contactPage.headerCompleteText }}</p>
+            <p class="headerText transparant">{{ quotation.headerSupport }}</p>
         </div>
 
     <div class="gap"></div>
+
+        <div class="column wrap w100">
+            <select class="selectSubject" v-model="contactPage.selectedSubject">
+                <option value="">SELECT PACKGE...</option>
+                <option v-for="option in contactPage.subjectOptions" :value="option.value">{{ option.text }}</option>
+            </select>
+
+    <div class="gap"></div>
+
+            <select class="selectSubject" v-model="contactPage.selectedSubject">
+                <option value="">SELECT DURATION...</option>
+                <option v-for="option in contactPage.subjectOptions" :value="option.value">{{ option.text }}</option>
+            </select>
+
+    <div class="gap"></div>
+
+            <div class="w100 bgWhite">
+                <textarea rows="7" placeholder="ADDITIONAL COMMENTS..." class="subjectDescr"></textarea>
+            </div>
+        </div>
+
+    <div class="gap"></div>
+
+        <!-- Pricing div -->
+        <div class="newSubject">
+            <p class="headerText transparant">{{ quotation.headerPrice }}</p>
+        </div>
+
+        <div class="row wrap w100" v-for="pricing in quotation.pricing">
+            <div class="textDiv grow wrap">
+                <p class="pricingTitle centerVertical bgWhite">{{ pricing.name }}</p>
+            </div>
+            <div class="textDiv wrap">
+                <p class="priceInfo centerVerAndHorizon">{{ pricing.price }}</p>
+            </div>
+        </div>
+
+    <div class="gap"></div>
+    
+        <div class="hrLine w100 bgWhite"></div>
+
+    <div class="gap"></div>
+
+        <div class="row wrap w100">
+            <div class="textDiv grow wrap">
+                <p class="pricingTitle centerVertical bgWhite">ESTIMATE TOTAL</p>
+            </div>
+            <div class="textDiv wrap">
+                <p class="priceInfo centerVerAndHorizon">€ 340</p>
+            </div>
+        </div>
+
+    <div class="gap"></div>
+
+        <!-- Complete div -->
+        <div class="newSubject">
+            <p class="headerText transparant">{{ quotation.headerCompleteText }}</p>
+        </div>
 
         <div class="row wrap w100">
             <h1 class="eulaText bgWhite">DOWNLOAD EULA AEDIONSTUDIO 2021.</h1>
@@ -159,6 +193,6 @@
     <div class="gap"></div>
 
     </div>
-    <script src="index.js"></script>
+    <script src="../index.js"></script>
 </body>
 </html>

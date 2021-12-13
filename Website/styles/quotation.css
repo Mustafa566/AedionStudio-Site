@@ -1,0 +1,30 @@
+.pricingTitle {
+    font-size: 35px;
+    height: 77px;
+    margin: 5px;
+    margin-left: 5px;
+    padding-left: 5px;
+    border-left: 5px solid #FFBE61;
+    background-color: #e4e4e4;
+    flex: 1 0 50%;
+}
+
+.priceInfo {
+    border: none;
+    border-left: 7px solid #FFBE61;
+    margin: 5px;
+    font-size: 35px;
+    width: 310px;
+    height: 77px;
+    color: #707070;
+}
+
+.textDiv {
+    background-color: white;
+    margin: 5px;
+    margin-left: 0;
+}
+
+.hrLine {
+    height: 6px;
+}

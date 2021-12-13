@@ -17,8 +17,12 @@ html {
     background-color: white;
 }
 
-a, a:active, a:hover, a:focus {
+a, a:active, a:hover, a:focus, a:visited {
     text-decoration: none;
+}
+
+a:visited {
+    color: #707070;
 }
 
 /* Space */
@@ -106,6 +110,19 @@ a, a:active, a:hover, a:focus {
 /* Disable resizer */
 textarea {
     resize: none;
+}
+
+/* Vertical center */
+.centerVerAndHorizon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Vertical center */
+.centerVertical {
+    display: flex;
+    align-items: center;
 }
 
 
