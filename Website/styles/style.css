@@ -54,7 +54,7 @@ a, a:active, a:hover, a:focus {
     height: 98px;
     border-left: 13px solid #ffbe61;
     padding-left: 25px;
-    background-image: url(../header.png);
+    background-image: url(../image/header.png);
     background-repeat: no-repeat;
     background-position: center;
     z-index: 0;

@@ -4,7 +4,7 @@ var app = new Vue({
         text: {
             headerTxt: 'We are',
             headerAedionTxt: 'AEDION STUDIO',
-            headerCareerTxt: 'CAREERS',
+            headerCareerTxt: 'OFFERTE',
             headerContactTxt: 'CONTACT',
             ourTeamTxt: 'OUR TEAM',
             ourGamesTxt: 'OUR GAMES',
@@ -82,17 +82,17 @@ var app = new Vue({
         },
         services: [
             {
-                serviceText: 'WEBSITES',
+                blogTitle: 'WEBSITES',
                 serviceInfo: 'Here at AedionStudio we create the most beautiful websites at low cost',
                 serviceBgImg: ''
             },
             {
-                serviceText: 'GAMES',
+                blogTitle: 'GAMES',
                 serviceInfo: 'AedionStudio aims to create complexand fun game mechanics in eachgame we create.',
                 serviceBgImg: ''
             },
             {
-                serviceText: 'MUSIC',
+                blogTitle: 'MUSIC',
                 serviceInfo: 'Here at AedionStudio we create the most beautiful music at low cost',
                 serviceBgImg: ''
             },
@@ -170,6 +170,35 @@ var app = new Vue({
             {img: './image/d2dImg.png'},
             {img: './image/guessAndTeller.png'},
         ],
+        contactPage: {
+            headerInfoText: 'PERSONAL INFO',
+            headerSubjectText: 'SUBJECT OF MATTER',
+            headerInterestText:'PERSON OF INTEREST',
+            headerCompleteText: 'COMPLETE FORM',
+            inputFieldNames: [
+                { name: 'SURNAME' },
+                { name: 'EMAIL' },
+                { name: 'INSERTION' },
+                { name: 'PHONE NUMBER' },
+                { name: 'LASTNAME' },
+                { name: 'GENDER' },
+                { name: 'COMPANY NAME' },
+                { name: 'ZIPCODE' },
+                { name: 'DATE OF BIRTH' },
+                { name: 'ADDRESS' },
+            ],
+            subjectOptions: [
+                { text: 'One', value: '1' },
+                { text: 'Two', value: '2' },
+                { text: 'Three', value: '3' }
+            ],
+            selectedSubject: ''
+        },
+        quotation: {
+            headerChoice: 'SERVICE OF CHOICE',
+            headerSupport: 'SUPPORT PACKAGE',
+            headerPrice: 'ESTIMATE PRICING'
+        },
         num: 0,
         product: true
     },

@@ -23,7 +23,7 @@
     z-index: 2;
     display: flex;
     flex-direction: row;
-    background-image: url(../titleBg.png);
+    background-image: url(../image/titleBg.png);
     background-repeat: no-repeat;
     background-position: center;
     margin-bottom: 10px;

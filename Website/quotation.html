@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Add stylesheet --> 
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/contactPage.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
+
+    <!-- Add Google font Oxanium --> 
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@800&display=swap" rel="stylesheet">
+
+    <!-- Vue js import-->
+    <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
+    <!-- Title --> 
+    <title>Quostation</title>
+
+    <link rel="icon" href="./image/AedionStudio.png">
+</head>
+<body>
+    <!-- Topbar orangje background --> 
+    <div class="topBar boxShadow"></div>
+
+    <!-- Main container div -->
+    <div class="container" id="app">
+
+        <!-- Header -->
+        <header class="header transparant">
+
+            <!-- Logo of AedionStudio-->
+            <img src="./image/AedionStudio.png" class="logo">
+
+            <!-- We are AedionStudio div -->
+            <div class="weAreDiv transparant">
+                <p class="firstHeaderText transparant">{{ text.headerTxt }}</p>
+                <h1 class="contactText transparant">QUOTATION</h1>
+            </div>
+
+            <!-- Buttons -->
+            <div class="buttonsDiv">
+                <div class="btnCareer">
+                    <a href="./index.html">
+                        <p class="headerBtnTxt pointer transparant">RETURN</p>
+                    </a>
+                </div>
+                <div class="btnContact">
+                    <a href="./contact.html">
+                        <p class="headerBtnTxt pointer transparant">{{ text.headerContactTxt }}</p>
+                    </a>
+                </div>
+            </div>
+        </header>
+
+    <div class="gap"></div>
+
+        <!-- Personal info div -->
+        <div class="newSubject">
+            <p class="headerText transparant">{{ contactPage.headerInfoText }}</p>
+        </div>
+    
+    <div class="gap"></div>
+
+        <div class="row wrap w100">
+            <div class="inputDiv grow" v-for="page in contactPage.inputFieldNames">
+                <input type="text" :placeholder="page.name" class="contactFormInput bgWhite outline" v-model="contact.formData.title" required>
+            </div>
+        </div>
+
+    <div class="gap"></div>
+
+    <!-- Service of choice div -->
+    <div class="newSubject">
+        <p class="headerText transparant">{{ quotation.headerChoice }}</p>
+    </div>
+
+    <div class="gap"></div>
+
+        <div class="column wrap w100">
+            <select class="selectSubject" v-model="contactPage.selectedSubject">
+                <option value="">SELECT SERVICE...</option>
+                <option v-for="option in contactPage.subjectOptions" :value="option.value">{{ option.text }}</option>
+            </select>
+
+    <div class="gap"></div>
+
+            <select class="selectSubject" v-model="contactPage.selectedSubject">
+                <option value="">SELECT PACKAGE...</option>
+                <option v-for="option in contactPage.subjectOptions" :value="option.value">{{ option.text }}</option>
+            </select>
+        </div>
+    
+    <div class="gap"></div>
+
+        <div class="w100 bgWhite">
+            <textarea rows="10" placeholder="PRODUCT DESCRIPTION..." class="subjectDescr"></textarea>
+        </div>
+
+
+        <div class="row wrap w100">
+            <input type="text" placeholder="PDF Explaination..." class="pdfInput bgWhite outline" v-model="contact.formData.title" required>
+
+            <input type="file" id="selectedFile" style="display: none;">
+            <input type="button" value="UPLOAD PDF" onclick="document.getElementById('selectedFile').click();" class="fileButton pointer">
+        </div>
+
+    <div class="gap"></div>
+
+        <!-- Support package div -->
+        <div class="newSubject">
+            <p class="headerText transparant">{{ quotation.headerSupport }}</p>
+        </div>
+
+    <div class="gap"></div>
+
+        <div class="column wrap w100">
+            <select class="selectSubject" v-model="contactPage.selectedSubject">
+                <option value="">SELECT PACKGE...</option>
+                <option v-for="option in contactPage.subjectOptions" :value="option.value">{{ option.text }}</option>
+            </select>
+
+    <div class="gap"></div>
+
+            <select class="selectSubject" v-model="contactPage.selectedSubject">
+                <option value="">SELECT DURATION...</option>
+                <option v-for="option in contactPage.subjectOptions" :value="option.value">{{ option.text }}</option>
+            </select>
+
+    <div class="gap"></div>
+
+            <div class="w100 bgWhite">
+                <textarea rows="7" placeholder="ADDITIONAL COMMENTS..." class="subjectDescr"></textarea>
+            </div>
+        </div>
+
+    <div class="gap"></div>
+
+        <!-- Support package div -->
+        <div class="newSubject">
+            <p class="headerText transparant">{{ quotation.headerPrice }}</p>
+        </div>
+
+    <div class="gap"></div>
+
+    
+
+    </div>
+    <script src="index.js"></script>
+</body>
+</html>

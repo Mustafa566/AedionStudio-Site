@@ -1,0 +1,91 @@
+.contactText {
+    font-size: 48px;
+    font-weight: normal;
+    color: #707070;
+}
+
+.inputDiv {
+    background-color: white;
+    margin: 5px;
+
+}
+
+.contactFormColumn {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+.grow {
+    flex: 1 0 40%;
+}
+
+/* Input form */
+.contactFormInput {
+    font-size: 35px;
+    height: 77px;
+    margin: 5px;
+    padding-left: 5px;
+    border: none;
+    border-left: 5px solid #FFBE61;
+    width: -webkit-fill-available;
+    background-color: #e4e4e4;
+}
+
+.selectSubject {
+    height: 77px;
+    border: 5px solid white;
+    border-left: 5px solid #FFBE61;
+    font-size: 35px;
+}
+
+.selectSubject:active, .selectSubject:visited, .selectSubject:focus {
+    border: 5px solid white;
+    border-left: 5px solid #FFBE61;
+}
+
+.subjectDescr {
+    font-size: 35px;
+    padding: 10px;
+    margin: 5px;
+    margin-bottom: 0px;
+    width: -webkit-fill-available;
+    border: none;
+    border-left: 5px solid #FFBE61;
+}
+
+.pdfInput, .eulaText {
+    font-size: 35px;
+    height: 77px;
+    margin: 10px;
+    margin-left: 0px;
+    padding-left: 5px;
+    border: 5px solid white;
+    border-left: 5px solid #FFBE61;
+    background-color: #e4e4e4;
+    flex: 1 0 50%;
+}
+
+.eulaText {
+    font-weight: normal;
+    line-height: 80px;
+}
+
+.fileButton {
+    border: none;
+    border-left: 7px solid #FFBE61;
+    background-color: white;
+    margin: 10px 0px;
+    font-size: 35px;
+    padding: 0px 50px;
+}
+
+.submitBtnForm {
+    border: none;
+    color: white;
+    background-color: #FFBE61;
+    border-left: 7px solid rgba(241, 178, 87, 0.68);
+    margin: 10px 0px;
+    font-size: 35px;
+    padding: 0px 50px;
+}

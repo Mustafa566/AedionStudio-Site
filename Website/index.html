@@ -10,6 +10,7 @@
     <link rel="stylesheet" href="./styles/header.css">
     <link rel="stylesheet" href="./styles/team.css">
     <link rel="stylesheet" href="./styles/products.css">
+    <link rel="stylesheet" href="./styles/blog.css">
     <link rel="stylesheet" href="./styles/socialMedia.css">
     <link rel="stylesheet" href="./styles/form.css">
     <link rel="stylesheet" href="./styles/service.css">
@@ -54,16 +55,16 @@
             <!-- Buttons -->
             <div class="buttonsDiv">
                 <div class="btnCareer">
-                    <p class="headerBtnTxt pointer transparant">{{ text.headerCareerTxt }}</p>
+                    <a href="./quotation.html">
+                        <p class="headerBtnTxt pointer transparant">{{ text.headerCareerTxt }}</p>
+                    </a>
                 </div>
                 <div class="btnContact">
-                    <a href="./down2dieSite/index.html">
+                    <a href="./contact.html">
                         <p class="headerBtnTxt pointer transparant">{{ text.headerContactTxt }}</p>
                     </a>
                 </div>
             </div>
-
-            <!--  -->
         </header>
 
     <!-- Whitespace -->
@@ -105,8 +106,6 @@
         <!-- Our services -->
         <div class="ourGameHeader newSubject">
             <p class="headerText transparant">{{ text.servicesTxt }}</p>
-            <!-- <input type="text" placeholder="Search.." class="searchBar">
-            <img src="./image/searchIcon.png" class="searchIcon"> -->
         </div>
     
     <div class="gap"></div>
@@ -193,14 +192,14 @@
             </div>
 
             <!-- Service Div -->
-            <div class="serviceDiv transparant">
-                <div class="serviceHeader boxShadow transparant">
-                    <p class="serviceText transparant">{{ text.servicesTxt }}</p>
+            <div class="blogDiv transparant">
+                <div class="blogHeader boxShadow transparant">
+                    <p class="blogTitle transparant">{{ text.servicesTxt }}</p>
                 </div>
-                <div class="ourServices transparant w100">
+                <div class="blogItems transparant w100">
                     <a href="./blog.html">
-                        <div class="serviceProduct transparant boxShadow" v-for="blogs in blog">
-                            <p class="productHeadText transparant">{{ blogs.title }}</p>
+                        <div class="blogItem transparant boxShadow" v-for="blogs in blog">
+                            <p class="blogItemHeaderText transparant">{{ blogs.title }}</p>
                         </div>
                     </a>
                 </div>
