@@ -176,23 +176,37 @@ var app = new Vue({
             headerInterestText:'PERSON OF INTEREST',
             headerCompleteText: 'COMPLETE FORM',
             inputFieldNames: [
-                { name: 'SURNAME' },
-                { name: 'EMAIL' },
-                { name: 'INSERTION' },
-                { name: 'PHONE NUMBER' },
-                { name: 'LASTNAME' },
-                { name: 'GENDER' },
-                { name: 'COMPANY NAME' },
-                { name: 'ZIPCODE' },
-                { name: 'DATE OF BIRTH' },
-                { name: 'ADDRESS' },
+                { name: 'SURNAME', data: '' },
+                { name: 'EMAIL', data: '' },
+                { name: 'INSERTION', data: '' },
+                { name: 'PHONE NUMBER', data: '' },
+                { name: 'LASTNAME', data: '' },
+                { name: 'GENDER', data: '' },
+                { name: 'COMPANY NAME', data: '' },
+                { name: 'ZIPCODE', data: '' },
+                { name: 'DATE OF BIRTH', data: '' },
+                { name: 'ADDRESS', data: '' },
             ],
             subjectOptions: [
-                { text: 'One', value: '1' },
-                { text: 'Two', value: '2' },
-                { text: 'Three', value: '3' }
+                { text: 'Subject 1', value: '1' },
+                { text: 'Subject 2', value: '2' },
+                { text: 'Subject 3', value: '3' }
             ],
-            selectedSubject: ''
+            selectedSubject: '',
+            dateOptions: [
+                { text: 'Date 1', value: '1' },
+                { text: 'Date 2', value: '2' },
+                { text: 'Date 3', value: '3' }
+            ],
+            selectedDate: '',
+            subjectDescr: '',
+            pdfExplain: '',
+            employeeOptions: [
+                { text: 'Joey Malta', value: '1' },
+                { text: 'Mustafa Bolat', value: '2' }
+            ],
+            selectedEmployee: '',
+            employeeComment: '',
         },
         quotation: {
             headerPersonal: 'PERSONAL INFO',

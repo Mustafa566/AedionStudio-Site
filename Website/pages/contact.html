@@ -72,13 +72,12 @@
 
         <div class="row wrap w100">
             <div class="inputDiv grow" v-for="page in contactPage.inputFieldNames">
-                <input type="text" :placeholder="page.name" class="contactFormInput bgWhite outline" v-model="contact.formData.title" required>
+                <input type="text" :placeholder="page.name" class="contactFormInput bgWhite outline" v-model="page.data" required>
             </div>
         </div>
 
     <div class="gap"></div>
     
-
         <!-- Subject div -->
         <div class="newSubject">
             <p class="headerText transparant">{{ contactPage.headerSubjectText }}</p>
@@ -87,26 +86,32 @@
     <div class="gap"></div>
 
         <div class="column wrap w100">
-            <select class="selectSubject" v-model="contactPage.selectedSubject">
-                <option value="">SELECT SUBJECT...</option>
-                <option v-for="option in contactPage.subjectOptions" :value="option.value">{{ option.text }}</option>
-            </select>
+            <div class="w100 bgWhite">
+                <select class="selectSubject" v-model="contactPage.selectedSubject">
+                    <option value="">SELECT SUBJECT...</option>
+                    <option v-for="option in contactPage.subjectOptions" :value="option.value">{{ option.text }}</option>
+                </select>
+            </div>
 
     <div class="gap"></div>
 
-            <select class="selectSubject" v-model="contactPage.selectedSubject">
-                <option value="">SELECT DATE OF MATTER...</option>
-                <option v-for="option in contactPage.subjectOptions" :value="option.value">{{ option.text }}</option>
-            </select>
+            <div class="w100 bgWhite">
+                <select class="selectSubject" v-model="contactPage.selectedDate">
+                    <option value="">SELECT DATE OF MATTER...</option>
+                    <option v-for="option in contactPage.dateOptions" :value="option.value">{{ option.text }}</option>
+                </select>
+            </div>
         
     <div class="gap"></div>
 
             <div class="w100 bgWhite">
-                <textarea rows="10" placeholder="SUBJECT DESCRIPTION..." class="subjectDescr"></textarea>
+                <textarea rows="10" placeholder="SUBJECT DESCRIPTION..." class="subjectDescr" v-model="contactPage.subjectDescr"></textarea>
             </div>
     
             <div class="row wrap w100">
-                <input type="text" placeholder="PDF Explaination..." class="pdfInput bgWhite outline" v-model="contact.formData.title" required>
+                <div class="pdfDiv bgWhite">
+                    <input type="text" placeholder="PDF Explaination..." class="pdfInput bgWhite outline" v-model="contactPage.pdfExplain" required>
+                </div>
     
                 <input type="file" id="selectedFile" style="display: none;">
                 <input type="button" value="UPLOAD PDF" onclick="document.getElementById('selectedFile').click();" class="fileButton pointer">
@@ -123,16 +128,18 @@
     <div class="gap"></div>
 
         <div class="column wrap w100">
-            <select class="selectSubject" v-model="contactPage.selectedSubject">
-                <option value="">SELECT EMPOYEE...</option>
-                <option v-for="option in contactPage.subjectOptions" :value="option.value">{{ option.text }}</option>
-            </select>
+            <div class="w100 bgWhite">
+                <select class="selectSubject" v-model="contactPage.selectedEmployee">
+                    <option value="">SELECT EMPOYEE...</option>
+                    <option v-for="option in contactPage.employeeOptions" :value="option.value">{{ option.text }}</option>
+                </select>
+            </div>
         </div>
 
     <div class="gap"></div>
 
         <div class="w100 bgWhite">
-            <textarea rows="10" placeholder="ADDITIONAL COMMENTS..." class="subjectDescr"></textarea>
+            <textarea rows="10" placeholder="ADDITIONAL COMMENTS..." class="subjectDescr" v-model="contactPage.employeeComment"></textarea>
         </div>
 
     <div class="gap"></div>
@@ -148,7 +155,7 @@
         <div class="row wrap w100">
             <h1 class="eulaText bgWhite">DOWNLOAD EULA AEDIONSTUDIO 2021.</h1>
             <input type="file" id="selectedFile" style="display: none;">
-            <input type="button" value="DOWNLOAD" onclick="document.getElementById('selectedFile').click();" class="fileButton pointer">
+            <input type="button" value="DOWNLOAD" onclick="document.getElementById('selectedFile').click();" class="fileButton addMargB pointer">
 
             <h1 class="eulaText bgWhite">I ACCEPT THE TERMS OF CONDITION.</h1>
             <input type="submit" value="DOWNLOAD" class="submitBtnForm pointer">

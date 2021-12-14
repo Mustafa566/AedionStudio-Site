@@ -94,8 +94,14 @@
     border-left: 7px solid #FFBE61;
     background-color: white;
     margin: 10px 0px;
+    margin-bottom: 0;
+    margin-left: 5px;
     font-size: 35px;
     padding: 0px 50px;
+}
+
+.addMargB {
+    margin-bottom: 10px;
 }
 
 .submitBtnForm {
