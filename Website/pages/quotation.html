@@ -71,8 +71,8 @@
     <div class="gap"></div>
 
         <div class="row wrap w100">
-            <div class="inputDiv grow" v-for="page in contactPage.inputFieldNames">
-                <input type="text" :placeholder="page.name" class="contactFormInput bgWhite outline" v-model="contact.formData.title" required>
+            <div class="inputDiv grow" v-for="inputs in quotation.personalInputs">
+                <input type="text" :placeholder="inputs.placeholder" class="contactFormInput bgWhite outline" v-model="inputs.data" required>
             </div>
         </div>
 
@@ -86,30 +86,36 @@
     <div class="gap"></div>
 
         <div class="column wrap w100">
-            <select class="selectSubject" v-model="contactPage.selectedSubject">
-                <option value="">SELECT SERVICE...</option>
-                <option v-for="option in contactPage.subjectOptions" :value="option.value">{{ option.text }}</option>
-            </select>
+            <div class="w100 bgWhite">
+                <select class="selectSubject w100" v-model="quotation.selectedService">
+                    <option value="">SELECT SERVICE...</option>
+                    <option v-for="option in quotation.serviceOptions" :value="option.text">{{ option.text }}</option>
+                </select>
+            </div>
 
     <div class="gap"></div>
 
-            <select class="selectSubject" v-model="contactPage.selectedSubject">
-                <option value="">SELECT PACKAGE...</option>
-                <option v-for="option in contactPage.subjectOptions" :value="option.value">{{ option.text }}</option>
-            </select>
+            <div class="w100 bgWhite">
+                <select class="selectSubject" v-model="quotation.selectedPackage">
+                    <option value="">SELECT PACKAGE...</option>
+                    <option v-for="option in quotation.packageOptions" :value="option.text">{{ option.text }}</option>
+                </select>
+            </div>
         </div>
     
     <div class="gap"></div>
 
         <div class="w100 bgWhite">
-            <textarea rows="10" placeholder="PRODUCT DESCRIPTION..." class="subjectDescr"></textarea>
+            <textarea rows="10" placeholder="PRODUCT DESCRIPTION..." v-model="quotation.productDescr" class="subjectDescr"></textarea>
         </div>
 
         <div class="row wrap w100">
-            <input type="text" placeholder="PDF Explaination..." class="pdfInput bgWhite outline" v-model="contact.formData.title" required>
+            <div class="pdfDiv bgWhite">
+                <input type="text" placeholder="PDF Explaination..." class="pdfInput outline" v-model="quotation.pdfExplaination" required>
+            </div>
 
             <input type="file" id="selectedFile" style="display: none;">
-            <input type="button" value="UPLOAD PDF" onclick="document.getElementById('selectedFile').click();" class="fileButton pointer">
+            <input type="button" value="UPLOAD PDF" onclick="document.getElementById('selectedFile').click();" class="uploadButton pointer">
         </div>
 
     <div class="gap"></div>
@@ -122,22 +128,26 @@
     <div class="gap"></div>
 
         <div class="column wrap w100">
-            <select class="selectSubject" v-model="contactPage.selectedSubject">
-                <option value="">SELECT PACKGE...</option>
-                <option v-for="option in contactPage.subjectOptions" :value="option.value">{{ option.text }}</option>
-            </select>
-
+            <div class="w100 bgWhite">
+                <select class="selectSubject" v-model="quotation.selectedSupport">
+                    <option value="">SELECT PACKGE...</option>
+                    <option v-for="option in quotation.supportOptions" :value="option.text">{{ option.text }}</option>
+                </select>
+            </div>
+            
     <div class="gap"></div>
 
-            <select class="selectSubject" v-model="contactPage.selectedSubject">
-                <option value="">SELECT DURATION...</option>
-                <option v-for="option in contactPage.subjectOptions" :value="option.value">{{ option.text }}</option>
-            </select>
+            <div class="w100 bgWhite">
+                <select class="selectSubject" v-model="quotation.selectedSupportDuration">
+                    <option value="">SELECT DURATION...</option>
+                    <option v-for="option in quotation.supportDurationOptions" :value="option.text">{{ option.text }}</option>
+                </select>
+            </div>
 
     <div class="gap"></div>
 
             <div class="w100 bgWhite">
-                <textarea rows="7" placeholder="ADDITIONAL COMMENTS..." class="subjectDescr"></textarea>
+                <textarea rows="7" placeholder="ADDITIONAL COMMENTS..." v-model="quotation.supportComment" class="subjectDescr"></textarea>
             </div>
         </div>
 
@@ -185,7 +195,7 @@
             <input type="button" value="DOWNLOAD" onclick="document.getElementById('selectedFile').click();" class="fileButton pointer">
 
             <h1 class="eulaText bgWhite">I ACCEPT THE TERMS OF CONDITION.</h1>
-            <input type="submit" value="DOWNLOAD" class="submitBtnForm pointer">
+            <input type="submit" value="DOWNLOAD" class="submitBtnForm pointer" @click="test()">
         </div>
 
     <div class="gap"></div>

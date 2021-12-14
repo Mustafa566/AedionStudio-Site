@@ -1,3 +1,13 @@
+.uploadButton {
+    border: none;
+    border-left: 7px solid #FFBE61;
+    background-color: white;
+    margin: 10px 5px;
+    margin-bottom: 0;
+    font-size: 35px;
+    padding: 0px 50px;
+}
+
 .pricingTitle {
     font-size: 35px;
     height: 77px;

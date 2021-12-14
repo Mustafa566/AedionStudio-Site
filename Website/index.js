@@ -200,6 +200,45 @@ var app = new Vue({
             headerSupport: 'SUPPORT PACKAGE',
             headerPrice: 'ESTIMATE PRICING',
             headerCompleteText: 'COMPLETE QUOTATION',
+            personalInputs: [
+                { placeholder: 'SURNAME', data: '' },
+                { placeholder: 'EMAIL', data: '' },
+                { placeholder: 'INSERTION', data: '' },
+                { placeholder: 'PHONE NUMBER', data: '' },
+                { placeholder: 'LASTNAME', data: '' },
+                { placeholder: 'GENDER', data: '' },
+                { placeholder: 'COMPANY NAME', data: '' },
+                { placeholder: 'ZIPCODE', data: '' },
+                { placeholder: 'DATE OF BIRTH', data: '' },
+                { placeholder: 'ADDRESS', data: '' },
+            ],
+            serviceOptions: [
+                { text: 'Service 1', value: '1' },
+                { text: 'Service 2', value: '2' },
+                { text: 'Service 3', value: '3' }
+            ],
+            selectedService: '',
+            packageOptions: [
+                { text: 'Package 1', value: '1' },
+                { text: 'Package 2', value: '2' },
+                { text: 'Package 3', value: '3' }
+            ],
+            selectedPackage: '',
+            productDescr: '',
+            pdfExplaination: '',
+            supportOptions: [
+                { text: 'Package support 1', value: '1' },
+                { text: 'Package support 2', value: '2' },
+                { text: 'Package support 3', value: '3' }
+            ],
+            selectedSupport: '',
+            supportDurationOptions: [
+                { text: 'Support duration 1', value: '1' },
+                { text: 'Support duration 2', value: '2' },
+                { text: 'Support duration 3', value: '3' }
+            ],
+            selectedSupportDuration: '',
+            supportComment: '',
             pricing: [
                 { name: 'SERVICE...', price: '€ 350' },
                 { name: 'SERVICE PACKAGE...', price: '€ 110' },
@@ -232,6 +271,12 @@ var app = new Vue({
         },
         getProfile(profile) {
             console.log(profile.name)
+        },
+        test() {
+            // this.quotation.personalInputs.forEach(element => {
+            //     console.log(element.data);
+            // });
+            console.log(this.quotation);
         }
     },
     created() {
