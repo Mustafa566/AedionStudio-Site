@@ -19,20 +19,17 @@ var app = new Vue({
             { 
                 image: '../image/profile/joey.png', 
                 name: 'JOEY MALTA',
-                function: 'CEO',
-                link: '/portfolio/mustafa'
+                function: 'CEO'
             },
             { 
                 image: '../image/profile/mustafa.png', 
                 name: 'MUSTAFA BOLAT',
-                function: 'DEVELOPER',
-                link: '/portfolio/mustafa'
+                function: 'DEVELOPER'
             },
             { 
                 image: '../image/profile/allesio.png', 
                 name: 'ALESSIO BARBOSA',
-                function: 'DEVELOPER',
-                link: '/portfolio/mustafa'
+                function: 'DEVELOPER'
             }
         ],
         socialMediaBtn: [
@@ -287,7 +284,7 @@ var app = new Vue({
             }
         },
         getProfile(profile) {
-            location.href = profile.link;
+            console.log(profile.name)
         },
         test() {
             // this.quotation.personalInputs.forEach(element => {

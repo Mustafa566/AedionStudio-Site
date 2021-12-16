@@ -6,11 +6,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Add stylesheet --> 
-    <link rel="stylesheet" href=".../styles/style.css">
-    <link rel="stylesheet" href="../styles/header.css">
-    <link rel="stylesheet" href="../styles/accordion.css">
-    <link rel="stylesheet" href="../styles/footer.css">
-    <link rel="stylesheet" href="../styles/responsive.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/accordion.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
 
     <!-- Add Google font Oxanium --> 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
@@ -255,6 +255,55 @@
         </div>
 
     <div class="gap"></div>
+    <div class="gap"></div>
+    <div class="gap"></div>
+
+    <?php
+        $servername = "localhost";
+        $username = "root";
+        $password = "";
+        $dbname = "down2diewiki";
+        
+        // Create connection
+        $conn = new mysqli($servername, $username, $password, $dbname);
+        // Check connection
+        if ($conn->connect_error) {
+          die("Connection failed: " . $conn->connect_error);
+        }
+        
+        $sql = "SELECT * FROM iteminfo";
+        $result = $conn->query($sql);
+        
+        if ($result->num_rows > 0) {
+            echo "<table>";
+            // output data of each row
+            while($row = $result->fetch_assoc()) {
+                echo '<img src="data:image/jpeg;base64,'.base64_encode($row['texture']).'"/>';
+                echo "<tr>".
+                "<td>".$row["id"].
+                "</td>".$row["name"]." ".
+                $row["description"]." ".
+                $row["category"]." ".
+                $row["stackSize"]." ".
+                $row["canStack"]." ".
+                $row["itemData"]." ".
+                $row["pickupSound"]." ".
+                $row["dropSound"]." ".
+                error_reporting(0);
+                $row['<img src="data:image/jpeg;base64", '.base64_encode($row['texture']).'/>'].
+                "</td></tr>";
+        }
+            echo "</table>";
+        } else {
+            echo "0 results";
+        }
+        $conn->close();
+    ?>
+
+
+    <div class="gap"></div>
+    <div class="gap"></div>
+    <div class="gap"></div>
 
         <!-- Copyright div -->
         <div class="newSubject">
@@ -276,6 +325,6 @@
     </script>
     <script type="text/javascript" src="./json/recipes.json"></script>
     <script type="text/javascript" src="./json/itemId.json"></script>
-    <script type="text/javascript" src="../index.js"></script>
+    <script type="text/javascript" src="./index.js"></script>
 </body>
 </html>
