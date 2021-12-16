@@ -1,0 +1,85 @@
+/* Form Div */
+.formDiv {
+    width: 925px;
+    height: 490px;
+    background-color: white;
+}
+
+/* Title, name, email input div */
+.formColumn {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 10px;
+}
+
+/* Input form */
+.formInput {
+    font-size: 30px;
+    height: 77px;
+    margin: 5px;
+    padding-left: 5px;
+    border: none;
+    border-left: 5px solid #8AB4D1;
+}
+
+.formInput2 {
+    font-size: 30px;
+    height: 77px;
+    margin-left: 10px;
+    margin-top: 10px;
+    padding-left: 5px;
+    border: none;
+    border-left: 5px solid #8AB4D1;
+}
+
+/* Textarea input div*/
+.textareaColumn {
+    display: flex;
+    flex-direction: column;
+    margin-left: 5px;
+    margin-top: 5px;
+}
+
+/* Textarea */
+.textarea {
+    border: none;
+    font-size: 34px;
+    border-left: 5px solid #8AB4D1;
+}
+
+/* a href btn */
+.aBtn {
+    height: fit-content;
+    margin-left: 5px;
+}
+
+/* Submit button */
+.submitBtn {
+    width: 297px;
+    height: 85px;
+    color: white;
+    font-size: 2.88rem;
+    text-align: center;
+    float: right;
+    margin: 10px 15px;
+}
+
+/**/
+.contactColor {
+    background-color: #A8CCEB;
+}
+
+/**/
+.supportColor {
+    background-color: #A0BACB ;
+}
+
+/**/
+.submitColor {
+    background-color: #C1D7E6;
+}
+
+/* Submit text */
+.submitText {
+    margin-top: 20px;
+}

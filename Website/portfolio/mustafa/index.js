@@ -2,70 +2,65 @@ var app = new Vue({
     el: '#app',
     data: {
         text: {
-            headerTxt: 'We are',
-            headerAedionTxt: 'AEDION STUDIO',
-            headerCareerTxt: 'OFFERTE',
-            headerContactTxt: 'CONTACT',
-            ourTeamTxt: 'OUR TEAM',
-            ourGamesTxt: 'OUR GAMES',
+            personTxt: 'MUSTAFA BOLAT',
+            headerAedionTxt: 'AEDIONSTUDIO',
+            headerReturnTxt: 'RETURN',
+            headerCvTxt: 'CURRICULIUM VITAE',
+            aboutMeTxt: 'ABOUT ME',
+            workTxt: 'PREVIOUS WORK',
             socialMediaTxt: 'SOCIAL MEDIA',
-            contactFormTxt: 'CONTACT & BLOG',
-            servicesTxt: 'BLOG & UPDATES',
+            contactFormTxt: 'CONTACT MUSTAFA',
+            servicesTxt: 'PERSONAL STORIES',
             signUpTxt: 'SIGN-UP FOR OUR',
             newsletterTxt: 'NEWS LETTER',
             copyrightTxt: '@AEDIONSTUDIO 2021'
         },
-        teamProfiles: [
-            { 
-                image: '../image/profile/joey.png', 
-                name: 'JOEY MALTA',
-                function: 'CEO'
-            },
-            { 
-                image: '../image/profile/mustafa.png', 
+        teamProfiles: { 
+                image: './image/profile/mustafa.png', 
                 name: 'MUSTAFA BOLAT',
-                function: 'DEVELOPER'
-            },
-            { 
-                image: '../image/profile/allesio.png', 
-                name: 'ALESSIO BARBOSA',
-                function: 'DEVELOPER'
-            }
-        ],
+                description: `
+                    The will provide you with a wide range of power-ups on a stationary location.
+                    Once you have the required amount the switches will allow you to turn on
+                    these Power Towers whether you need to stand your ground or even heal.
+                    The will provide you with a wide range of power-ups on a stationary location.
+                    Once you have the required amount the switches will allow you to turn on
+                    these Power Towers whether you need to stand your ground or even heal.
+                `
+        },
         socialMediaBtn: [
             { 
                 link: 'https://www.facebook.com/aedionstudioofficial/', 
-                image: '../image/socialBtn/facebookIcon.png', 
+                image: './image/socialBtn/facebookIcon.png', 
                 name: 'Facebook',
                 classColor: 'lineBlue' 
             },
             { 
                 link: 'https://www.instagram.com/aedionstudio/', 
-                image: '../image/socialBtn/instagramIcon.png', 
+                image: './image/socialBtn/instagramIcon.png', 
                 name: 'Instagram',
                 classColor: 'linePink' 
             },
             { 
                 link: 'https://twitter.com/aedionstudio', 
-                image: '../image/socialBtn/twitterIcon.png', 
+                image: './image/socialBtn/twitterIcon.png', 
                 name: 'Twitter',
                 classColor: 'lineBabyBlue' 
             },
             { 
                 link: '', 
-                image: '../image/socialBtn/snapchatIcon.png', 
+                image: './image/socialBtn/snapchatIcon.png', 
                 name: 'Snapchat',
                 classColor: 'lineYellow' 
             },
             { 
                 link: '', 
-                image: '../image/socialBtn/googleIcon.png', 
+                image: './image/socialBtn/googleIcon.png', 
                 name: 'Google+',
                 classColor: 'lineBabyPurple' 
             },
             { 
                 link: 'https://www.youtube.com/channel/UCj4KCUUk5mH1GM9ff2G0fSA', 
-                image: '../image/socialBtn/youtubeIcon.png', 
+                image: './image/socialBtn/youtubeIcon.png', 
                 name: 'Youtube',
                 classColor: 'lineRed' 
             },
@@ -267,22 +262,6 @@ var app = new Vue({
         formSend() {
             console.log(this.contact.formData);
         },
-        changeTxt() {
-            switch (this.num) {
-                case 0:
-                    this.text.headerAedionTxt = 'WEB DEVELOPERS'
-                    this.num = 1;
-                    break;
-                case 1:
-                    this.text.headerAedionTxt = 'GAME DEVELOPERS'
-                    this.num = 2;
-                    break;
-                default:
-                    this.text.headerAedionTxt = 'AEDION STUDIO'
-                    this.num = 0;
-                    break;
-            }
-        },
         getProfile(profile) {
             console.log(profile.name)
         },
@@ -292,10 +271,5 @@ var app = new Vue({
             // });
             console.log(this.quotation);
         }
-    },
-    created() {
-        setInterval(() => {
-            this.changeTxt();
-        }, 4000)
     }
   })

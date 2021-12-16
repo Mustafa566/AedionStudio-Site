@@ -1,0 +1,59 @@
+.websiteService {
+    background-image: url("../image/services/website.png");
+    width: 680px;
+    height: 350px;
+}
+
+.modelingService {
+    margin-left: 10px;
+    background-image: url("../image/services/modeling.png");
+    width: 870px;
+    height: 350px;
+}
+
+.musicService {
+    margin-right: 10px;
+    background-image: url("../image/services/music.png");
+    width: 870px;
+    height: 350px;
+    margin-top: 10px;
+}
+
+.gamesService {
+    background-image: url("../image/services/games.png");
+    width: 680px;
+    height: 350px;
+    margin-top: 10px;
+}
+
+.websiteServiceTxt {
+    background: rgba(0, 0, 0, 0.48);
+    color: white;
+    width: 8ch;
+    padding: 10px;
+    font-size: 39px;
+}
+
+.modelingServiceTxt {
+    background: rgba(0, 0, 0, 0.48);
+    color: white;
+    width: 10ch;
+    padding: 10px;
+    font-size: 39px;
+}
+
+.musicServiceTxt {
+    background: rgba(0, 0, 0, 0.48);
+    color: white;
+    width: 12ch;
+    padding: 10px;
+    font-size: 39px;
+}
+
+.gamesServiceTxt {
+    background: rgba(0, 0, 0, 0.48);
+    color: white;
+    width: 6ch;
+    padding: 10px;
+    font-size: 39px;
+}

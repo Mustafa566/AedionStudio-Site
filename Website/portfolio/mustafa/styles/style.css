@@ -1,0 +1,198 @@
+/* Everythinh on deftault */
+* {
+    margin: 0;
+    padding: 0;
+    background-color: #E4E4E4;
+    font-family: 'Oxanium', cursive;
+}
+
+html {
+    zoom: 80%;
+}
+
+.body {
+    /* animation: name duration timing-function delay iteration-count direction fill-mode; */
+    animation-name: fadeInBegin;
+    animation-duration: 4s;
+}
+
+@keyframes fadeInBegin {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* --------- Usefull classes --------- */
+
+/* Background color white */
+.bgWhite {
+    background-color: white;
+}
+
+a, a:active, a:hover, a:focus, a:visited {
+    text-decoration: none;
+}
+
+a:visited {
+    color: #707070;
+}
+
+/* Space */
+.gap {
+    width: 100%;
+    height: 10px;
+}
+
+.flex {
+    display: flex;
+}
+
+/* Create a row */
+.row {
+    display: flex;
+    flex-direction: row;
+}
+
+/* Column */
+.column {
+    display: flex;
+    flex-direction: column;
+}
+
+/* Transparant background color */
+.transparant {
+    background-color: transparent;
+}
+
+/* Create subject div */
+.newSubject {
+    width: 100%;
+    height: 98px;
+    border-left: 13px solid #8AB4D1;
+    padding-left: 25px;
+    background-image: url(../image/header.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    z-index: 0;
+    font-size: 35px;
+}
+
+/* Box shadow */
+.boxShadow {
+    box-shadow: -3px 3px 10px #888888;
+}
+
+/* Width 100%*/
+.w100 {
+    width: 100%;
+}
+
+.h100 {
+    height: 100%;
+}
+
+/* Vertical ag*/
+.vrAlign {
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+/* Text of newSubject */
+.headerText {
+    margin-top: 30px;
+}
+
+/* Flex wrap */
+.wrap {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+/* Cursor click mode */
+.pointer {
+    cursor: pointer;
+}
+
+/* Border input none */
+.outline {
+    outline: none;
+}
+
+/* Disable resizer */
+textarea {
+    resize: none;
+}
+
+/* Vertical center */
+.centerVerAndHorizon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Vertical center */
+.centerVertical {
+    display: flex;
+    align-items: center;
+}
+
+
+/* --------- Animations keyframes --------- */
+
+@keyframes socialMedia {
+    from {
+        height: 8px;
+    }
+    to {
+        height: 15px;
+    }
+}
+
+@keyframes socialMediaReverse {
+    from {
+        height: 15px;
+    }
+    to {
+        height: 8px;
+    }
+}
+
+@keyframes bgOpacityColor {
+    0% {
+        height: 0%;
+    }
+    100% {
+        height: 100%;
+    }
+}
+
+@keyframes bgOpacityColorReverse {
+    0% {
+        height: 100%;
+    }
+    100% {
+        height: 0%;
+    }
+}
+
+@keyframes opacityTxt {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes opacityTxtReverse {
+    0% {
+        opacity: 1;
+    }
+    100% {
+        opacity: 0;
+    }
+}

@@ -1,0 +1,92 @@
+/* Footer */
+.footer {
+    width: 100%;
+    height: 247px;
+    padding-left: 10px;
+    margin-top: 10px;
+    background-color: white;
+    border-left: 13px solid #8AB4D1;
+}
+
+/* Footer text */
+.service {
+    margin: 25px 10px;
+    padding-left: 15px;
+    border-left: 3px solid #A0A0A0;
+}
+
+.vrLine {
+    margin: 25px 10px;
+    width: 3px;
+    height: 175px;
+    background-color: #A0A0A0;
+}
+
+.footerHead {
+    font-size: 2.188rem;
+    color: #707070;
+}
+
+.li {
+    margin-left: 0px;
+    margin-right: 50px;
+    list-style: none;
+    font-size: large;
+}
+
+.li::before {
+    content: "• ";
+    color: red; /* or whatever color you prefer */
+}
+
+/* Newsletter div */
+.signUpDiv {
+    margin-left: auto;
+    margin-top: auto;
+    margin-right: 100px;
+}
+
+.signUpTxt {
+    font-size: 2.188rem;
+    color: #707070;
+    line-height: 0.5;
+}
+
+.newsLetterTxt {
+    font-size: 2.063rem;
+    color: #A1A1A1;
+    margin-left: auto;
+}
+
+/* Input form */
+.subsEmail {
+    font-size: 2.188rem;
+    width: 458px;
+    height: 68px;
+    padding-left: 5px;
+    border: none;
+    border-left: 5px solid #8AB4D1;
+}
+
+/* Copyright div*/
+.copyRightDiv {
+    background-color: white;
+    width: 100%;
+    height: 98px;
+    border-left: 13px solid #8AB4D1;
+    padding-left: 25px;
+    box-shadow: -3px 3px 10px #888888;
+    z-index: 0;
+    font-size: 35px;
+}
+
+.copyrightText {
+    font-size: 1.75rem;
+}
+
+.copyrightIcon {
+    width: 95px;
+    height: 95px;
+    margin-left: auto;
+    margin-right: 10px;
+}

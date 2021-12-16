@@ -6,7 +6,16 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
     <!-- Add stylesheet --> 
-    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./styles/style.css">
+    <link rel="stylesheet" href="./styles/header.css">
+    <link rel="stylesheet" href="./styles/profile.css">
+    <link rel="stylesheet" href="./styles/products.css">
+    <link rel="stylesheet" href="./styles/blog.css">
+    <link rel="stylesheet" href="./styles/socialMedia.css">
+    <link rel="stylesheet" href="./styles/form.css">
+    <link rel="stylesheet" href="./styles/service.css">
+    <link rel="stylesheet" href="./styles/footer.css">
+    <link rel="stylesheet" href="./styles/responsive.css">
 
     <!-- Add Google font Oxanium --> 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
@@ -37,22 +46,22 @@
             <!-- Logo of AedionStudio-->
             <img src="./image/AedionStudio.png" class="logo">
 
-            <!-- We are AedionStudio div -->
+            <!-- I am Mustafa Bolat div -->
             <div class="weAreDiv transparant">
-                <p class="firstHeaderText transparant">{{ text.headerTxt }}</p>
-                <h1 class="secondHeaderText transparant">{{ text.headerAedionTxt }}</h1>
+                <p class="firstHeaderText transparant">{{ text.headerAedionTxt }}</p>
+                <h1 class="secondHeaderText transparant">{{ text.personTxt }}</h1>
             </div>
 
             <!-- Buttons -->
             <div class="buttonsDiv">
                 <div class="btnCareer">
                     <a href="./pages/quotation.html">
-                        <p class="headerBtnTxt pointer transparant">{{ text.headerCareerTxt }}</p>
+                        <p class="headerBtnTxt pointer transparant">{{ text.headerReturnTxt }}</p>
                     </a>
                 </div>
                 <div class="btnContact">
                     <a href="./pages/contact.html">
-                        <p class="headerBtnTxt pointer transparant">{{ text.headerContactTxt }}</p>
+                        <p class="cvBtnTxt pointer transparant">{{ text.headerCvTxt }}</p>
                     </a>
                 </div>
             </div>
@@ -61,42 +70,20 @@
     <!-- Whitespace -->
     <div class="gap"></div>
         
-        <!-- Our team div -->
+        <!-- About me div -->
         <div class="newSubject">
-            <p class="headerText transparant">{{ text.ourTeamTxt }}</p>
+            <p class="headerText transparant">{{ text.aboutMeTxt }}</p>
         </div>
     
     <!-- Whitespace -->
     <div class="gap"></div>
         
-        <!-- Team -->
-        <div class="profImg wrap row">
-            <div class="profileImg boxShadow pointer" v-for="profile in teamProfiles" @click="getProfile(profile)">
-                <div class="flip-card-inner">
-                    <div class="flip-card-front">
-                        <img :src="profile.image" class="w100 h100">
-                        <p class="names bgWhite">{{ profile.name }}</p>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Aedion Studio video-->
-            <div class="video boxShadow">
-                <iframe 
-                width="100%" 
-                height="100%" 
-                src="https://www.youtube.com/embed/7o_BjY_FDms" 
-                frameborder="0" 
-                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
-                allowfullscreen>
-                </iframe>
-                <p class="names bgWhite">AEDION STUDIO INTRO</p>
-            </div>
-        </div>
+        <!-- Profile -->
+        
 
         <!-- Our services -->
         <div class="ourGameHeader newSubject">
-            <p class="headerText transparant">{{ text.servicesTxt }}</p>
+            <p class="headerText transparant">{{ text.workTxt }}</p>
         </div>
     
     <div class="gap"></div>
