@@ -61,9 +61,9 @@ section {
 
 /* Item show or hide*/
 .accordionItem {
-    max-height: 0;
+    /* max-height: 0;
     overflow: hidden;
-    position: relative;
+    position: relative; */
     transition: max-height 650ms;
 }
 

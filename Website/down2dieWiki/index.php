@@ -259,7 +259,7 @@
     <div class="gap"></div>
     <div class="gap"></div>
     
-    <?php require('./php/itemIdData.php'); ?>
+    <?php //require('./php/itemIdData.php'); ?>
 
     <?php
         // $sql = "SELECT * FROM iteminfo";
