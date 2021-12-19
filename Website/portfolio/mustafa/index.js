@@ -11,11 +11,11 @@ var app = new Vue({
             socialMediaTxt: 'SOCIAL MEDIA',
             contactFormTxt: 'CONTACT MUSTAFA',
             servicesTxt: 'PERSONAL STORIES',
-            signUpTxt: 'SIGN-UP FOR OUR',
-            newsletterTxt: 'NEWS LETTER',
+            signUpTxt: 'SIGN-UP FOR UPDATES',
+            newsletterTxt: 'AEDIONSTUDIO',
             copyrightTxt: '@AEDIONSTUDIO 2021'
         },
-        teamProfiles: { 
+        profile: { 
                 image: './image/profile/mustafa.png', 
                 name: 'MUSTAFA BOLAT',
                 description: `
@@ -25,23 +25,24 @@ var app = new Vue({
                     The will provide you with a wide range of power-ups on a stationary location.
                     Once you have the required amount the switches will allow you to turn on
                     these Power Towers whether you need to stand your ground or even heal.
+                    these Power Towers whether you need to stand your ground or even heal.
                 `
         },
         socialMediaBtn: [
             { 
-                link: 'https://www.facebook.com/aedionstudioofficial/', 
+                link: 'https://www.facebook.com/mustafa.bolat.359', 
                 image: './image/socialBtn/facebookIcon.png', 
                 name: 'Facebook',
                 classColor: 'lineBlue' 
             },
             { 
-                link: 'https://www.instagram.com/aedionstudio/', 
+                link: 'https://www.instagram.com/m.bolat566/', 
                 image: './image/socialBtn/instagramIcon.png', 
                 name: 'Instagram',
                 classColor: 'linePink' 
             },
             { 
-                link: 'https://twitter.com/aedionstudio', 
+                link: 'https://twitter.com/mbolatcode', 
                 image: './image/socialBtn/twitterIcon.png', 
                 name: 'Twitter',
                 classColor: 'lineBabyBlue' 
@@ -59,14 +60,14 @@ var app = new Vue({
                 classColor: 'lineBabyPurple' 
             },
             { 
-                link: 'https://www.youtube.com/channel/UCj4KCUUk5mH1GM9ff2G0fSA', 
+                link: 'https://www.youtube.com/channel/UCx85A9hurbacbte0MSY_dGQ', 
                 image: './image/socialBtn/youtubeIcon.png', 
                 name: 'Youtube',
                 classColor: 'lineRed' 
             },
         ],
         contact: {
-            aedionStudioEmail: 'aedionmailservice@gmail.com',
+            aedionStudioEmail: 'bolat31_@hotmail.com',
             isEmpty: false,
             formData: {
                 title: '',
@@ -75,37 +76,20 @@ var app = new Vue({
                 gender: ''
             },
         },
-        services: [
-            {
-                blogTitle: 'WEBSITES',
-                serviceInfo: 'Here at AedionStudio we create the most beautiful websites at low cost',
-                serviceBgImg: ''
-            },
-            {
-                blogTitle: 'GAMES',
-                serviceInfo: 'AedionStudio aims to create complexand fun game mechanics in eachgame we create.',
-                serviceBgImg: ''
-            },
-            {
-                blogTitle: 'MUSIC',
-                serviceInfo: 'Here at AedionStudio we create the most beautiful music at low cost',
-                serviceBgImg: ''
-            },
-        ],
         blog: [
             {
                 icon: '',
-                title: 'BUGS & GLITCHES',
+                title: 'BUNNY PRISON',
                 backgroundImg: ''
             },
             {
                 icon: '',
-                title: 'MAPS AND MODES!',
+                title: 'HKU BACHELOR',
                 backgroundImg: ''
             },
             {
                 icon: '',
-                title: 'DEBUG',
+                title: 'STAGE FINDER',
                 backgroundImg: ''
             },
         ],
@@ -149,127 +133,13 @@ var app = new Vue({
             facebookIcon: '../image/btnIcons/facebookIcon.png',
             trelloIcon: '../image/btnIcons/trelloIcon.png'
         },
-        down2dieCard: {
-            gameLogo: '../image/btnIcons/down2dieIcon.png',
-            gameNameTxt: 'DOWN2DIE',
-            buyGameTxt: 'BUY GAME',
-            updateTxt: 'UPDATES',
-            trelloTxt: 'TRELLO',
-            gameInfo: `Down2Die is an advanced zombie survival game that offers many ways of replayability and customization. 
-                       The game features many ways to counteract your enemies with traps and upgrades. 
-                       Work together with a team up to 4 survivors and level through the waves to be at your best when the "unknown" occurs.`,
-            steamLink: 'https://store.steampowered.com/app/1272280/Down2Die/',
-            trelloLink: 'https://trello.com/b/4FKTYq5j/down2die-early-access'
-        },
-        images: [
-            {img: '../image/d2dImg.png'},
-            {img: '../image/guessAndTeller.png'},
-        ],
-        contactPage: {
-            headerInfoText: 'PERSONAL INFO',
-            headerSubjectText: 'SUBJECT OF MATTER',
-            headerInterestText:'PERSON OF INTEREST',
-            headerCompleteText: 'COMPLETE FORM',
-            inputFieldNames: [
-                { name: 'SURNAME', data: '' },
-                { name: 'EMAIL', data: '' },
-                { name: 'INSERTION', data: '' },
-                { name: 'PHONE NUMBER', data: '' },
-                { name: 'LASTNAME', data: '' },
-                { name: 'GENDER', data: '' },
-                { name: 'COMPANY NAME', data: '' },
-                { name: 'ZIPCODE', data: '' },
-                { name: 'DATE OF BIRTH', data: '' },
-                { name: 'ADDRESS', data: '' },
-            ],
-            subjectOptions: [
-                { text: 'Subject 1', value: '1' },
-                { text: 'Subject 2', value: '2' },
-                { text: 'Subject 3', value: '3' }
-            ],
-            selectedSubject: '',
-            dateOptions: [
-                { text: 'Date 1', value: '1' },
-                { text: 'Date 2', value: '2' },
-                { text: 'Date 3', value: '3' }
-            ],
-            selectedDate: '',
-            subjectDescr: '',
-            pdfExplain: '',
-            employeeOptions: [
-                { text: 'Joey Malta', value: '1' },
-                { text: 'Mustafa Bolat', value: '2' }
-            ],
-            selectedEmployee: '',
-            employeeComment: '',
-        },
-        quotation: {
-            headerPersonal: 'PERSONAL INFO',
-            headerChoice: 'SERVICE OF CHOICE',
-            headerSupport: 'SUPPORT PACKAGE',
-            headerPrice: 'ESTIMATE PRICING',
-            headerCompleteText: 'COMPLETE QUOTATION',
-            personalInputs: [
-                { placeholder: 'SURNAME', data: '' },
-                { placeholder: 'EMAIL', data: '' },
-                { placeholder: 'INSERTION', data: '' },
-                { placeholder: 'PHONE NUMBER', data: '' },
-                { placeholder: 'LASTNAME', data: '' },
-                { placeholder: 'GENDER', data: '' },
-                { placeholder: 'COMPANY NAME', data: '' },
-                { placeholder: 'ZIPCODE', data: '' },
-                { placeholder: 'DATE OF BIRTH', data: '' },
-                { placeholder: 'ADDRESS', data: '' },
-            ],
-            serviceOptions: [
-                { text: 'Service 1', value: '1' },
-                { text: 'Service 2', value: '2' },
-                { text: 'Service 3', value: '3' }
-            ],
-            selectedService: '',
-            packageOptions: [
-                { text: 'Package 1', value: '1' },
-                { text: 'Package 2', value: '2' },
-                { text: 'Package 3', value: '3' }
-            ],
-            selectedPackage: '',
-            productDescr: '',
-            pdfExplaination: '',
-            supportOptions: [
-                { text: 'Package support 1', value: '1' },
-                { text: 'Package support 2', value: '2' },
-                { text: 'Package support 3', value: '3' }
-            ],
-            selectedSupport: '',
-            supportDurationOptions: [
-                { text: 'Support duration 1', value: '1' },
-                { text: 'Support duration 2', value: '2' },
-                { text: 'Support duration 3', value: '3' }
-            ],
-            selectedSupportDuration: '',
-            supportComment: '',
-            pricing: [
-                { name: 'SERVICE...', price: '€ 350' },
-                { name: 'SERVICE PACKAGE...', price: '€ 110' },
-                { name: 'SUPPORT SERVICE...', price: '€ 0' },
-                { name: 'SUPPORT PACKAGE...', price: '€ 0' },
-            ]
-        },
-        num: 0,
-        product: true
     },
     methods: {
         formSend() {
             console.log(this.contact.formData);
         },
-        getProfile(profile) {
-            console.log(profile.name)
-        },
-        test() {
-            // this.quotation.personalInputs.forEach(element => {
-            //     console.log(element.data);
-            // });
-            console.log(this.quotation);
+        download() {
+            window.open('./image/MustafaBolatCv.pdf');
         }
     }
   })

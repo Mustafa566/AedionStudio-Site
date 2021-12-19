@@ -17,19 +17,19 @@ var app = new Vue({
         },
         teamProfiles: [
             { 
-                image: '../image/profile/joey.png', 
+                image: './image/profile/joey.png', 
                 name: 'JOEY MALTA',
                 function: 'CEO',
                 link: '/portfolio/mustafa'
             },
             { 
-                image: '../image/profile/mustafa.png', 
+                image: './image/profile/mustafa.png', 
                 name: 'MUSTAFA BOLAT',
                 function: 'DEVELOPER',
                 link: '/portfolio/mustafa'
             },
             { 
-                image: '../image/profile/allesio.png', 
+                image: './image/profile/allesio.png', 
                 name: 'ALESSIO BARBOSA',
                 function: 'DEVELOPER',
                 link: '/portfolio/mustafa'
@@ -38,37 +38,37 @@ var app = new Vue({
         socialMediaBtn: [
             { 
                 link: 'https://www.facebook.com/aedionstudioofficial/', 
-                image: '../image/socialBtn/facebookIcon.png', 
+                image: './image/socialBtn/facebookIcon.png', 
                 name: 'Facebook',
                 classColor: 'lineBlue' 
             },
             { 
                 link: 'https://www.instagram.com/aedionstudio/', 
-                image: '../image/socialBtn/instagramIcon.png', 
+                image: './image/socialBtn/instagramIcon.png', 
                 name: 'Instagram',
                 classColor: 'linePink' 
             },
             { 
                 link: 'https://twitter.com/aedionstudio', 
-                image: '../image/socialBtn/twitterIcon.png', 
+                image: './image/socialBtn/twitterIcon.png', 
                 name: 'Twitter',
                 classColor: 'lineBabyBlue' 
             },
             { 
                 link: '', 
-                image: '../image/socialBtn/snapchatIcon.png', 
+                image: './image/socialBtn/snapchatIcon.png', 
                 name: 'Snapchat',
                 classColor: 'lineYellow' 
             },
             { 
                 link: '', 
-                image: '../image/socialBtn/googleIcon.png', 
+                image: './image/socialBtn/googleIcon.png', 
                 name: 'Google+',
                 classColor: 'lineBabyPurple' 
             },
             { 
                 link: 'https://www.youtube.com/channel/UCj4KCUUk5mH1GM9ff2G0fSA', 
-                image: '../image/socialBtn/youtubeIcon.png', 
+                image: './image/socialBtn/youtubeIcon.png', 
                 name: 'Youtube',
                 classColor: 'lineRed' 
             },
@@ -170,8 +170,8 @@ var app = new Vue({
             trelloLink: 'https://trello.com/b/4FKTYq5j/down2die-early-access'
         },
         images: [
-            {img: '../image/d2dImg.png'},
-            {img: '../image/guessAndTeller.png'},
+            {img: './image/d2dImg.png'},
+            {img: './image/guessAndTeller.png'},
         ],
         contactPage: {
             headerInfoText: 'PERSONAL INFO',

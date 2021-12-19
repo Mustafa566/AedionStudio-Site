@@ -64,6 +64,10 @@
     margin: 10px 15px;
 }
 
+.submitBtn:hover {
+    color: white;
+}
+
 /**/
 .contactColor {
     background-color: #A8CCEB;

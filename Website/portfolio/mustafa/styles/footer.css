@@ -36,7 +36,7 @@
 
 .li::before {
     content: "• ";
-    color: red; /* or whatever color you prefer */
+    color: #A0BACB; /* or whatever color you prefer */
 }
 
 /* Newsletter div */
@@ -54,7 +54,7 @@
 
 .newsLetterTxt {
     font-size: 2.063rem;
-    color: #A1A1A1;
+    color: #FFB853;
     margin-left: auto;
 }
 

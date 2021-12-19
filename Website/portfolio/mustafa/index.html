@@ -55,14 +55,12 @@
             <!-- Buttons -->
             <div class="buttonsDiv">
                 <div class="btnCareer">
-                    <a href="./pages/quotation.html">
+                    <a href="../../index.html">
                         <p class="headerBtnTxt pointer transparant">{{ text.headerReturnTxt }}</p>
                     </a>
                 </div>
-                <div class="btnContact">
-                    <a href="./pages/contact.html">
-                        <p class="cvBtnTxt pointer transparant">{{ text.headerCvTxt }}</p>
-                    </a>
+                <div class="btnContact" @click="download">
+                    <p class="cvBtnTxt pointer transparant">{{ text.headerCvTxt }}</p>
                 </div>
             </div>
         </header>
@@ -79,7 +77,18 @@
     <div class="gap"></div>
         
         <!-- Profile -->
-        
+        <div class="w100 wrap row">
+            <div class="profileInfo column">
+                <p class="personName transparant">{{ profile.name }}</p>
+                <p class="personDescr transparant">{{ profile.description }}</p>
+            </div>
+            <div class="profileImageDiv column">
+                <img :src="profile.image" class="profileImg">
+                <div class="profileNameDiv bgWhite">
+                    <p class="name centerVerAndHorizon transparant">{{ profile.name }}</p>
+                </div>
+            </div>
+        </div>
 
         <!-- Our services -->
         <div class="ourGameHeader newSubject">

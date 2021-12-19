@@ -27,6 +27,7 @@
     <title>Aedion Studio</title>
 
     <link rel="icon" href="./image/down2dieIcon.png">
+    <?php include('./php/connect.php'); ?>
 </head>
 <body>
 
@@ -259,46 +260,34 @@
     <div class="gap"></div>
 
     <?php
-        $servername = "localhost";
-        $username = "root";
-        $password = "";
-        $dbname = "down2diewiki";
+        // $sql = "SELECT * FROM iteminfo";
+        // $result = $conn->query($sql);
         
-        // Create connection
-        $conn = new mysqli($servername, $username, $password, $dbname);
-        // Check connection
-        if ($conn->connect_error) {
-          die("Connection failed: " . $conn->connect_error);
-        }
-        
-        $sql = "SELECT * FROM iteminfo";
-        $result = $conn->query($sql);
-        
-        if ($result->num_rows > 0) {
-            echo "<table>";
-            // output data of each row
-            while($row = $result->fetch_assoc()) {
-                echo '<img src="data:image/jpeg;base64,'.base64_encode($row['texture']).'"/>';
-                echo "<tr>".
-                "<td>".$row["id"].
-                "</td>".$row["name"]." ".
-                $row["description"]." ".
-                $row["category"]." ".
-                $row["stackSize"]." ".
-                $row["canStack"]." ".
-                $row["itemData"]." ".
-                $row["pickupSound"]." ".
-                $row["dropSound"]." ".
-                error_reporting(0);
-                $row['<img src="data:image/jpeg;base64", '.base64_encode($row['texture']).'/>'].
-                "</td></tr>";
-        }
-            echo "</table>";
-        } else {
-            echo "0 results";
-        }
-        $conn->close();
+        // if ($result->num_rows > 0) {
+        //     echo "<table>";
+        //     while($row = $result->fetch_assoc()) {
+        //         echo '<img src="data:image/jpeg;base64,'.base64_encode($row['texture']).'" class="pumpkin"/>';
+        //         echo "<tr>".
+        //         "<td>".$row["id"].
+        //         "</td>".$row["name"]." ".
+        //         $row["description"]." ".
+        //         $row["category"]." ".
+        //         $row["stackSize"]." ".
+        //         $row["canStack"]." ".
+        //         $row["itemData"]." ".
+        //         $row["pickupSound"]." ".
+        //         $row["dropSound"]." ".
+        //         error_reporting(0);
+        //         $row['<img src="data:image/jpeg;base64", '.base64_encode($row['texture']).'/>'].
+        //         "</td></tr>";
+        // }
+        //     echo "</table>";
+        // } 
+        // $conn->close();
     ?>
+
+<br><br><br>
+    <?php require('./php/itemId.php'); ?>
 
 
     <div class="gap"></div>

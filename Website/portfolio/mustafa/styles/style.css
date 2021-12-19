@@ -34,6 +34,7 @@ html {
 
 a, a:active, a:hover, a:focus, a:visited {
     text-decoration: none;
+    color: #707070;
 }
 
 a:visited {

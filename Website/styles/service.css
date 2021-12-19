@@ -1,5 +1,6 @@
 .websiteService {
     background-image: url("../image/services/website.png");
+    background-repeat: no-repeat;
     width: 680px;
     height: 350px;
 }
@@ -7,6 +8,7 @@
 .modelingService {
     margin-left: 10px;
     background-image: url("../image/services/modeling.png");
+    background-repeat: no-repeat;
     width: 870px;
     height: 350px;
 }
@@ -14,6 +16,7 @@
 .musicService {
     margin-right: 10px;
     background-image: url("../image/services/music.png");
+    background-repeat: no-repeat;
     width: 870px;
     height: 350px;
     margin-top: 10px;
@@ -21,6 +24,7 @@
 
 .gamesService {
     background-image: url("../image/services/games.png");
+    background-repeat: no-repeat;
     width: 680px;
     height: 350px;
     margin-top: 10px;
@@ -57,3 +61,7 @@
     padding: 10px;
     font-size: 39px;
 }
+
+/* .websiteService:hover, .gamesService:hover, .modelingService:hover, .musicService:hover {
+    box-shadow: 6px 9px 45px 10px #FFB040;
+} */
