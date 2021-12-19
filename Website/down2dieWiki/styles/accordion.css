@@ -205,3 +205,7 @@ p {
 .accordionHeader:target .accordionLink {
     display: block;
 }
+
+.minMargin {
+    margin-top: -70px !important;
+}

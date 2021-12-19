@@ -21,6 +21,8 @@ var app = new Vue({
         itemIdss: [],
         showSection: false,
         toggleIcon: '+',
+        getRecipesJson: 'http://127.0.0.1:5501/down2dieWiki/json/recipes.json',
+        getItemIdJson: 'http://127.0.0.1:5501/down2dieWiki/json/itemId.json',
         footerBar: [
             { 
                 headTxt: 'SERVICE', 
@@ -74,19 +76,23 @@ var app = new Vue({
             }
         },
         getRecipesData() {
-            axios.get('http://127.0.0.1:5501/down2dieWiki/json/recipes.json').then(response => {
+            axios.get(this.getRecipesJson).then(response => {
                 this.recipesItems = response.data;
             }).catch((e) => {
                 console.error(e);
+                this.getRecipesJson = 'http://localhost/GitHub/AedionStudio-Site/Website/down2dieWiki/json/recipes.json';
+                this.getRecipesData();
             })
         },
         getItemIdData() {
-            axios.get('http://127.0.0.1:5501/down2dieWiki/json/itemId.json').then(response => {
+            axios.get(this.getItemIdJson).then(response => {
                 this.itemIdss = response.data;
                 console.log(this.itemIdss)
             })
             .catch((e) => {
                 console.error(e);
+                this.getItemIdJson = 'http://localhost/GitHub/AedionStudio-Site/Website/down2dieWiki/json/itemId.json';
+                this.getItemIdData();
             })
         }
     },

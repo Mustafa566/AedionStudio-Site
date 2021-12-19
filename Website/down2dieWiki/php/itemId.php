@@ -1,6 +1,8 @@
 <?php
+    require('connect.php');
     $sql = "SELECT * FROM category";
     $result = $conn->query($sql);
+
 
     echo "<section>";
     echo "<div class='w100'>";
@@ -15,6 +17,11 @@
                         "<h3 class='bgLightBlack'>". $row["categoryName"]. "</h3>".
                     "</div>".
                 "</a>".
+                "<div class='scroll'>".
+                    "<div class='accordionItem transparant'>".
+                    
+                    "</div>".
+                "</div>".
             "</div>";
     }
     echo "</div>";
