@@ -99,22 +99,22 @@
 
         <div class="column">
             <div class="wrap row">
-                <a href="./pages/products.html">
+                <a href="./products.html">
                     <div class="websiteService">
-                        <p class="websiteServiceTxt">Websites</p>
+                        <p class="websiteServiceTxt">{{ text.service.websiteTxt }}</p>
                     </div>
                 </a>
                 <div class="modelingService">
-                    <p class="modelingServiceTxt">3D Modeling</p>
+                    <p class="modelingServiceTxt">{{ text.service.modellingTxt }}</p>
                 </div>
             </div>
             <div class="row">
                 <div class="musicService">
-                    <p class="musicServiceTxt">Music & Sound</p>
+                    <p class="musicServiceTxt">{{ text.service.musicTxt }}</p>
                 </div>
                 <div class="gamesService">
                     <a href="./down2dieWiki/index.php">
-                        <p class="gamesServiceTxt">Games</p>
+                        <p class="gamesServiceTxt">{{ text.service.gamesTxt }}</p>
                     </a>
                 </div>
             </div>
@@ -169,11 +169,11 @@
                                 <input type="text" placeholder="Gender" class="formInput2 outline" v-model="contact.formData.gender">
                             </div>
                             <div class="transparant supportColor submitBtn boxShadow">
-                                <p class="submitText transparant pointer">SUPPORT</p>
+                                <p class="submitText transparant pointer">{{ text.supportBtn }}</p>
                             </div>
                             <a :href="`mailto:${contact.aedionStudioEmail}?subject=${contact.formData.title}&body=Name: ${contact.formData.name} %0D%0AGender: ${contact.formData.gender} %0D%0A${contact.formData.body}`" 
                             class="aBtn submitBtn submitColor transparant boxShadow">
-                                <p class="submitText transparant pointer">SUBMIT</p>
+                                <p class="submitText transparant pointer">{{ text.submitBtn }}</p>
                             </a>
                         </div>
                     </div>
@@ -186,7 +186,7 @@
                     <p class="blogTitle transparant">{{ text.servicesTxt }}</p>
                 </div>
                 <div class="blogItems transparant w100">
-                    <a href="./pages/blog.html">
+                    <a href="./blog.html">
                         <div class="blogItem transparant boxShadow" v-for="blogs in blog">
                             <p class="blogItemHeaderText transparant">{{ blogs.title }}</p>
                         </div>

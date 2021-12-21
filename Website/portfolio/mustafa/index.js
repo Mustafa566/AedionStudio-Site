@@ -6,14 +6,27 @@ var app = new Vue({
             headerAedionTxt: 'AEDIONSTUDIO',
             headerReturnTxt: 'RETURN',
             headerCvTxt: 'CURRICULIUM VITAE',
+            personalBlogTxt: 'PERSONAL BLOG',
+            blogSummary: 'SUMMARY',
             aboutMeTxt: 'ABOUT ME',
             workTxt: 'PREVIOUS WORK',
             socialMediaTxt: 'SOCIAL MEDIA',
             contactFormTxt: 'CONTACT MUSTAFA',
+            supportBtn: 'SUPPORT',
+            submitBtn: 'SUBMIT',
             servicesTxt: 'PERSONAL STORIES',
             signUpTxt: 'SIGN-UP FOR UPDATES',
             newsletterTxt: 'AEDIONSTUDIO',
-            copyrightTxt: '@AEDIONSTUDIO 2021'
+            copyrightTxt: '@AEDIONSTUDIO 2021',
+            service: {
+                websiteTxt: 'Websites',
+                modellingTxt: '3D Modeling',
+                musicTxt: 'Music & Sound',
+                gamesTxt: 'Games'
+            },
+            galleryTxt: 'GALLERY SUMMARY',
+            myGallery: 'MY GALLERY',
+            galleryImgTxt: 'GALLERY IMAGES'
         },
         profile: { 
                 image: './image/profile/mustafa.png', 

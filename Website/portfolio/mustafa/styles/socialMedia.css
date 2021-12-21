@@ -4,6 +4,10 @@
     justify-content: space-evenly;
 }
 
+.social:hover .line {
+    height: 18px;
+}
+
 /* Social media div*/
 .socialDiv {
     width: 243px;
