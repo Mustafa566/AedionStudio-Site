@@ -10,7 +10,8 @@ var app = new Vue({
             ourGamesTxt: 'OUR GAMES',
             socialMediaTxt: 'SOCIAL MEDIA',
             contactFormTxt: 'CONTACT & BLOG',
-            servicesTxt: 'BLOG & UPDATES',
+            blogTxt: 'BLOG & UPDATES',
+            servicesTxt: 'OUR SERVICES',
             signUpTxt: 'SIGN-UP FOR OUR',
             newsletterTxt: 'NEWS LETTER',
             copyrightTxt: '@AEDIONSTUDIO 2021'

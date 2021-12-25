@@ -25,6 +25,7 @@
 
 .footerHead {
     font-size: 2.188rem;
+    margin-bottom: 10px;
     color: #707070;
 }
 
@@ -33,6 +34,7 @@
     margin-right: 50px;
     list-style: none;
     font-size: large;
+    color: #707070;
 }
 
 .li::before {
@@ -79,6 +81,7 @@
     box-shadow: -3px 3px 10px #888888;
     z-index: 0;
     font-size: 35px;
+    color: #707070;
 }
 
 .copyrightText {

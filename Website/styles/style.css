@@ -1,4 +1,6 @@
 /* Everythinh on deftault */
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap');
+
 * {
     margin: 0;
     padding: 0;
@@ -20,8 +22,6 @@ html {
     top: 0;
     left: 0;
 }
-
-/* --------- Usefull classes --------- */
 
 /* Background color white */
 .bgWhite {
@@ -74,7 +74,13 @@ a:visited {
     background-repeat: no-repeat;
     background-position: center;
     z-index: 0;
-    font-size: 35px;
+    font-size: 40px;
+    font-weight: 500;
+    color: #707070;
+}
+
+input::placeholder, input, textarea, option, select {
+    color: #707070;
 }
 
 /* Box shadow */
@@ -100,7 +106,7 @@ a:visited {
 
 /* Text of newSubject */
 .headerText {
-    margin-top: 30px;
+    margin-top: 27px;
 }
 
 /* Flex wrap */
@@ -137,6 +143,34 @@ textarea {
     align-items: center;
 }
 
+/* Font weight */
+.fW200 {
+    font-weight: 200;
+}
+
+.fW300 {
+    font-weight: 300;
+}
+
+.fW400 {
+    font-weight: 400;
+}
+
+.fW500 {
+    font-weight: 500;
+}
+
+.fW600 {
+    font-weight: 600;
+}
+
+.fW700 {
+    font-weight: 700;
+}
+
+.fW800 {
+    font-weight: 800;
+}
 
 /* --------- Animations keyframes --------- */
 

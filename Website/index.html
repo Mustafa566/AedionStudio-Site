@@ -17,15 +17,9 @@
     <link rel="stylesheet" href="./styles/footer.css">
     <link rel="stylesheet" href="./styles/responsive.css">
 
-    <!-- Add Google font Oxanium --> 
-    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@200&display=swap" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@800&display=swap" rel="stylesheet">
-
     <!-- Vue js import-->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
 
     <!-- Title --> 
     <title>Aedion Studio</title>
@@ -49,12 +43,12 @@
 
             <!-- We are AedionStudio div -->
             <div class="weAreDiv transparant">
-                <p class="firstHeaderText transparant">{{ text.headerTxt }}</p>
+                <p class="firstHeaderText fW400 transparant">{{ text.headerTxt }}</p>
                 <h1 class="secondHeaderText transparant">{{ text.headerAedionTxt }}</h1>
             </div>
 
             <!-- Buttons -->
-            <div class="buttonsDiv">
+            <div class="buttonsDiv fW500">
                 <div class="btnCareer">
                     <a href="./pages/quotation.html">
                         <p class="headerBtnTxt pointer transparant">{{ text.headerCareerTxt }}</p>
@@ -173,7 +167,7 @@
                             <input type="text" placeholder="Title" class="formInput outline" v-model="contact.formData.title" required>
                         </div>
                     </div>
-                    <div class="formRow row bgWhite">
+                    <div class="formRow row">
                         <div class="textareaColumn bgWhite">
                             <textarea rows="9" cols="30" placeholder="Message.." class="textarea outline" v-model="contact.formData.body" required></textarea>
                         </div>
@@ -197,7 +191,7 @@
             <!-- Service Div -->
             <div class="blogDiv transparant">
                 <div class="blogHeader boxShadow transparant">
-                    <p class="blogTitle transparant">{{ text.servicesTxt }}</p>
+                    <p class="blogTitle transparant">{{ text.blogTxt }}</p>
                 </div>
                 <div class="blogItems transparant w100">
                     <a href="./pages/blog.html">
