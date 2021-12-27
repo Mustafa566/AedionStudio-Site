@@ -49,12 +49,12 @@
             <!-- Buttons -->
             <div class="buttonsDiv">
                 <div class="btnCareer">
-                    <a href="../index.html">
+                    <a href="../index.php">
                         <p class="headerBtnTxt pointer transparant">RETURN</p>
                     </a>
                 </div>
                 <div class="btnContact">
-                    <a href="./contact.html">
+                    <a href="./contact.php">
                         <p class="headerBtnTxt pointer transparant">{{ text.headerContactTxt }}</p>
                     </a>
                 </div>
@@ -87,7 +87,7 @@
 
         <div class="column wrap w100">
             <div class="w100 bgWhite">
-                <select class="selectSubject w100" v-model="quotation.selectedService">
+                <select class="selectSubject outline w100" v-model="quotation.selectedService">
                     <option value="">SELECT SERVICE...</option>
                     <option v-for="option in quotation.serviceOptions" :value="option.text">{{ option.text }}</option>
                 </select>
@@ -96,7 +96,7 @@
     <div class="gap"></div>
 
             <div class="w100 bgWhite">
-                <select class="selectSubject" v-model="quotation.selectedPackage">
+                <select class="selectSubject outline" v-model="quotation.selectedPackage">
                     <option value="">SELECT PACKAGE...</option>
                     <option v-for="option in quotation.packageOptions" :value="option.text">{{ option.text }}</option>
                 </select>
@@ -106,7 +106,7 @@
     <div class="gap"></div>
 
         <div class="w100 bgWhite">
-            <textarea rows="10" placeholder="PRODUCT DESCRIPTION..." v-model="quotation.productDescr" class="subjectDescr"></textarea>
+            <textarea rows="10" placeholder="PRODUCT DESCRIPTION..." v-model="quotation.productDescr" class="subjectDescr outline"></textarea>
         </div>
 
         <div class="row wrap w100">
@@ -129,7 +129,7 @@
 
         <div class="column wrap w100">
             <div class="w100 bgWhite">
-                <select class="selectSubject" v-model="quotation.selectedSupport">
+                <select class="selectSubject outline" v-model="quotation.selectedSupport">
                     <option value="">SELECT PACKGE...</option>
                     <option v-for="option in quotation.supportOptions" :value="option.text">{{ option.text }}</option>
                 </select>
@@ -138,7 +138,7 @@
     <div class="gap"></div>
 
             <div class="w100 bgWhite">
-                <select class="selectSubject" v-model="quotation.selectedSupportDuration">
+                <select class="selectSubject outline" v-model="quotation.selectedSupportDuration">
                     <option value="">SELECT DURATION...</option>
                     <option v-for="option in quotation.supportDurationOptions" :value="option.text">{{ option.text }}</option>
                 </select>
@@ -147,7 +147,7 @@
     <div class="gap"></div>
 
             <div class="w100 bgWhite">
-                <textarea rows="7" placeholder="ADDITIONAL COMMENTS..." v-model="quotation.supportComment" class="subjectDescr"></textarea>
+                <textarea rows="7" placeholder="ADDITIONAL COMMENTS..." v-model="quotation.supportComment" class="subjectDescr outline"></textarea>
             </div>
         </div>
 

@@ -49,12 +49,12 @@
             <!-- Buttons -->
             <div class="buttonsDiv">
                 <div class="btnCareer">
-                    <a href="./quotation.html">
+                    <a href="./quotation.php">
                         <p class="headerBtnTxt pointer transparant">QUOTATION</p>
                     </a>
                 </div>
                 <div class="btnContact">
-                    <a href="../index.html">
+                    <a href="../index.php">
                         <p class="headerBtnTxt pointer transparant">RETURN</p>
                     </a>
                 </div>
@@ -87,7 +87,7 @@
 
         <div class="column wrap w100">
             <div class="w100 bgWhite">
-                <select class="selectSubject" v-model="contactPage.selectedSubject">
+                <select class="selectSubject outline" v-model="contactPage.selectedSubject">
                     <option value="">SELECT SUBJECT...</option>
                     <option v-for="option in contactPage.subjectOptions" :value="option.value">{{ option.text }}</option>
                 </select>
@@ -96,7 +96,7 @@
     <div class="gap"></div>
 
             <div class="w100 bgWhite">
-                <select class="selectSubject" v-model="contactPage.selectedDate">
+                <select class="selectSubject outline" v-model="contactPage.selectedDate">
                     <option value="">SELECT DATE OF MATTER...</option>
                     <option v-for="option in contactPage.dateOptions" :value="option.value">{{ option.text }}</option>
                 </select>
@@ -105,7 +105,7 @@
     <div class="gap"></div>
 
             <div class="w100 bgWhite">
-                <textarea rows="10" placeholder="SUBJECT DESCRIPTION..." class="subjectDescr" v-model="contactPage.subjectDescr"></textarea>
+                <textarea rows="10" placeholder="SUBJECT DESCRIPTION..." class="subjectDescr outline" v-model="contactPage.subjectDescr"></textarea>
             </div>
     
             <div class="row wrap w100">
@@ -129,7 +129,7 @@
 
         <div class="column wrap w100">
             <div class="w100 bgWhite">
-                <select class="selectSubject" v-model="contactPage.selectedEmployee">
+                <select class="selectSubject outline" v-model="contactPage.selectedEmployee">
                     <option value="">SELECT EMPOYEE...</option>
                     <option v-for="option in contactPage.employeeOptions" :value="option.value">{{ option.text }}</option>
                 </select>
@@ -139,7 +139,7 @@
     <div class="gap"></div>
 
         <div class="w100 bgWhite">
-            <textarea rows="10" placeholder="ADDITIONAL COMMENTS..." class="subjectDescr" v-model="contactPage.employeeComment"></textarea>
+            <textarea rows="10" placeholder="ADDITIONAL COMMENTS..." class="subjectDescr outline" v-model="contactPage.employeeComment"></textarea>
         </div>
 
     <div class="gap"></div>

@@ -117,6 +117,21 @@ var app = new Vue({
                 title: 'DEBUG',
                 backgroundImg: ''
             },
+            {
+                icon: '',
+                title: 'BUGS & GLITCHES',
+                backgroundImg: ''
+            },
+            {
+                icon: '',
+                title: 'MAPS AND MODES!',
+                backgroundImg: ''
+            },
+            {
+                icon: '',
+                title: 'DEBUG',
+                backgroundImg: ''
+            },
         ],
         footerBar: [
             { 
@@ -180,11 +195,11 @@ var app = new Vue({
             headerInterestText:'PERSON OF INTEREST',
             headerCompleteText: 'COMPLETE FORM',
             inputFieldNames: [
-                { name: 'SURNAME', data: '' },
-                { name: 'EMAIL', data: '' },
+                { name: 'FIRSTNAME', data: '' },
+                { name: 'LASTNAME', data: '' },
                 { name: 'INSERTION', data: '' },
                 { name: 'PHONE NUMBER', data: '' },
-                { name: 'LASTNAME', data: '' },
+                { name: 'EMAIL', data: '' },
                 { name: 'GENDER', data: '' },
                 { name: 'COMPANY NAME', data: '' },
                 { name: 'ZIPCODE', data: '' },

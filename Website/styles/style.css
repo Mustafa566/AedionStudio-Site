@@ -64,6 +64,13 @@ a:visited {
     background-color: transparent;
 }
 
+.subscrBtn {
+    background: #FFBE61;
+    border: none;
+    padding: 5px;
+    font-size: 20px;
+}
+
 /* Create subject div */
 .newSubject {
     width: 100%;
@@ -79,8 +86,12 @@ a:visited {
     color: #707070;
 }
 
-input::placeholder, input, textarea, option, select {
+input::placeholder, input, textarea, option, select, .pricingTitle, .eulaText, .blogText, .summaryText {
     color: #707070;
+}
+
+input::placeholder, input, textarea, option, select {
+    font-weight: 200;
 }
 
 /* Box shadow */

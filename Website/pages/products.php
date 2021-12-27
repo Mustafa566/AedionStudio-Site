@@ -49,7 +49,7 @@
             <!-- Buttons -->
             <div class="buttonsDiv">
                 <div class="btnCareer">
-                    <a href="../index.html">
+                    <a href="../index.php">
                         <p class="headerBtnTxt pointer transparant">RETURN</p>
                     </a>
                 </div>
@@ -162,10 +162,13 @@
                 </div>
                 
                 <div class="signUpDiv bgWhite">
-                    <form class="bgWhite">
-                            <p class="signUpTxt bgWhite">{{ text.signUpTxt }}</p>
-                            <p class="newsLetterTxt bgWhite">{{ text.newsletterTxt }}</p>
-                        <input type="email" placeholder="EMAIL.." class="subsEmail outline" required>
+                    <form class="bgWhite" action="../php/postNewsLetter.php" method="post">
+                        <p class="signUpTxt bgWhite">{{ text.signUpTxt }}</p>
+                        <p class="newsLetterTxt bgWhite">{{ text.newsletterTxt }}</p>
+                        <div class="row">
+                            <input type="email" name="email" placeholder="EMAIL.." class="subsEmail outline" required>
+                            <input type="submit" class="subscrBtn" value="SUBMIT">
+                        </div> type="submit" class="aBtn borderNone " value="SUBMIT">
                     </form>
                 </div>
             </div>

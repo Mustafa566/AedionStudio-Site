@@ -50,12 +50,12 @@
             <!-- Buttons -->
             <div class="buttonsDiv fW500">
                 <div class="btnCareer">
-                    <a href="./pages/quotation.html">
+                    <a href="./pages/quotation.php">
                         <p class="headerBtnTxt pointer transparant">{{ text.headerCareerTxt }}</p>
                     </a>
                 </div>
                 <div class="btnContact">
-                    <a href="./pages/contact.html">
+                    <a href="./pages/contact.php">
                         <p class="headerBtnTxt pointer transparant">{{ text.headerContactTxt }}</p>
                     </a>
                 </div>
@@ -107,7 +107,7 @@
 
         <div class="column">
             <div class="wrap row">
-                <a href="./pages/products.html">
+                <a href="./pages/products.php">
                     <div class="websiteService">
                         <p class="websiteServiceTxt">Websites</p>
                     </div>
@@ -161,28 +161,31 @@
         <!-- Form -->
         <div class="forms row w100">
             <div class="formDiv transparant w100">
-                <form @submit.prevent="formSend()" class="form">
+                <form action="./php/postContact.php" method="post" class="form">
                     <div class="row transparant w100">
                         <div class="formColumn bgWhite w100">
-                            <input type="text" placeholder="Title" class="formInput outline" v-model="contact.formData.title" required>
+                            <input type="text" name="title" placeholder="Title" class="formInput outline" v-model="contact.formData.title" required>
                         </div>
                     </div>
                     <div class="formRow row">
                         <div class="textareaColumn bgWhite">
-                            <textarea rows="9" cols="30" placeholder="Message.." class="textarea outline" v-model="contact.formData.body" required></textarea>
+                            <textarea rows="9" cols="30" name="messages" placeholder="Message.." class="textarea outline" v-model="contact.formData.body" required></textarea>
                         </div>
                         <div class="column transparant">
-                            <div class="formColumn bgWhite w100">
-                                <input type="text" placeholder="Name" class="formInput2 outline" v-model="contact.formData.name" required>
-                                <input type="text" placeholder="Gender" class="formInput2 outline" v-model="contact.formData.gender">
+                            <div class="formColumn">
+                                <input type="text" name="names" placeholder="Name" class="formInput2 outline" v-model="contact.formData.name" required>
+                            </div>
+                            <div class="formColumn">
+                                <input type="text" name="gender" placeholder="Gender" class="formInput2 outline" v-model="contact.formData.gender">
                             </div>
                             <div class="transparant supportColor submitBtn boxShadow">
                                 <p class="submitText transparant pointer">SUPPORT</p>
                             </div>
-                            <a :href="`mailto:${contact.aedionStudioEmail}?subject=${contact.formData.title}&body=Name: ${contact.formData.name} %0D%0AGender: ${contact.formData.gender} %0D%0A${contact.formData.body}`" 
+                            <!-- <a :href="`mailto:${contact.aedionStudioEmail}?subject=${contact.formData.title}&body=Name: ${contact.formData.name} %0D%0AGender: ${contact.formData.gender} %0D%0A${contact.formData.body}`" 
                             class="aBtn submitBtn submitColor transparant boxShadow">
                                 <p class="submitText transparant pointer">SUBMIT</p>
-                            </a>
+                            </a> -->
+                            <input type="submit" class="aBtn borderNone submitBtn submitColor transparant boxShadow" value="SUBMIT">
                         </div>
                     </div>
                 </form>
@@ -194,7 +197,7 @@
                     <p class="blogTitle transparant">{{ text.blogTxt }}</p>
                 </div>
                 <div class="blogItems transparant w100">
-                    <a href="./pages/blog.html">
+                    <a href="./pages/blog.php">
                         <div class="blogItem transparant boxShadow" v-for="blogs in blog">
                             <p class="blogItemHeaderText transparant">{{ blogs.title }}</p>
                         </div>
@@ -213,10 +216,13 @@
                 </div>
                 
                 <div class="signUpDiv bgWhite">
-                    <form class="bgWhite">
-                            <p class="signUpTxt bgWhite">{{ text.signUpTxt }}</p>
-                            <p class="newsLetterTxt bgWhite">{{ text.newsletterTxt }}</p>
-                        <input type="email" placeholder="EMAIL.." class="subsEmail outline" required>
+                    <form class="bgWhite" action="./php/postNewsLetter.php" method="post">
+                        <p class="signUpTxt bgWhite">{{ text.signUpTxt }}</p>
+                        <p class="newsLetterTxt bgWhite">{{ text.newsletterTxt }}</p>
+                        <div class="row">
+                            <input type="email" name="email" placeholder="EMAIL.." class="subsEmail outline" required>
+                            <input type="submit" class="subscrBtn" value="SUBMIT">
+                        </div>
                     </form>
                 </div>
             </div>
