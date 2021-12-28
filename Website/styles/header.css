@@ -52,7 +52,7 @@
 .secondHeaderText {
     font-size: 2.875rem;
     font-weight: 900;
-    opacity: 0;
+    opacity: 1;
     color: #FFA92E;
 }
 
@@ -65,9 +65,9 @@
     }
 }
 
-.secondHeaderText {
+/* .secondHeaderText {
     animation: animate 3.95s infinite;
-}
+} */
 
 /* Header buttons */
 .buttonsDiv {

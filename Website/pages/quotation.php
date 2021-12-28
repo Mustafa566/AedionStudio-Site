@@ -70,9 +70,37 @@
     
     <div class="gap"></div>
 
+    <form action="../php/" method="post" class="formContact">
         <div class="row wrap w100">
-            <div class="inputDiv grow" v-for="inputs in quotation.personalInputs">
-                <input type="text" :placeholder="inputs.placeholder" class="contactFormInput bgWhite outline" v-model="inputs.data" required>
+            <div class="inputDiv grow">
+                <input type="text" name="firstName" :placeholder="contactPage.inputFieldNames.firstName" class="contactFormInput bgWhite outline" required>
+            </div>
+            <div class="inputDiv grow">
+                <input type="text" name="email" :placeholder="contactPage.inputFieldNames.email" class="contactFormInput bgWhite outline" required>
+            </div>
+            <div class="inputDiv grow">
+                <input type="text" name="lastName" :placeholder="contactPage.inputFieldNames.lastName" class="contactFormInput bgWhite outline" required>
+            </div>
+            <div class="inputDiv grow">
+                <input type="text" name="phoneNumber" :placeholder="contactPage.inputFieldNames.phoneNumber" class="contactFormInput bgWhite outline">
+            </div>
+            <div class="inputDiv grow">
+                <input type="text" name="insertion" :placeholder="contactPage.inputFieldNames.insertion" class="contactFormInput bgWhite outline">
+            </div>
+            <div class="inputDiv grow">
+                <input type="text" name="gender" :placeholder="contactPage.inputFieldNames.gender" class="contactFormInput bgWhite outline" required>
+            </div>
+            <div class="inputDiv grow">
+                <input type="text" name="companyName" :placeholder="contactPage.inputFieldNames.companyName" class="contactFormInput bgWhite outline">
+            </div>
+            <div class="inputDiv grow">
+                <input type="text" name="zipcode" :placeholder="contactPage.inputFieldNames.zipcode" class="contactFormInput bgWhite outline">
+            </div>
+            <div class="inputDiv grow">
+                <input type="text" name="dateOfBirth" :placeholder="contactPage.inputFieldNames.dateOfBirth" class="contactFormInput bgWhite outline">
+            </div>
+            <div class="inputDiv grow">
+                <input type="text" name="adres" :placeholder="contactPage.inputFieldNames.adres" class="contactFormInput bgWhite outline">
             </div>
         </div>
 
@@ -197,6 +225,7 @@
             <h1 class="eulaText bgWhite">I ACCEPT THE TERMS OF CONDITION.</h1>
             <input type="submit" value="DOWNLOAD" class="submitBtnForm pointer" @click="test()">
         </div>
+    </form>
 
     <div class="gap"></div>
     <div class="gap"></div>

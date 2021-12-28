@@ -86,6 +86,19 @@ a:visited {
     color: #707070;
 }
 
+.submitFormBtn {
+    width: 297px;
+    height: 85px;
+    border: none;
+    color: white;
+    margin: 10px 15px;
+    text-align: center;
+    font-size: 2.88rem;
+    box-shadow: -3px 3px 10px #888888;
+    padding-top: 10px;
+    cursor: pointer;
+}
+
 input::placeholder, input, textarea, option, select, .pricingTitle, .eulaText, .blogText, .summaryText {
     color: #707070;
 }

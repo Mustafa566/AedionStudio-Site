@@ -194,22 +194,22 @@ var app = new Vue({
             headerSubjectText: 'SUBJECT OF MATTER',
             headerInterestText:'PERSON OF INTEREST',
             headerCompleteText: 'COMPLETE FORM',
-            inputFieldNames: [
-                { name: 'FIRSTNAME', data: '' },
-                { name: 'LASTNAME', data: '' },
-                { name: 'INSERTION', data: '' },
-                { name: 'PHONE NUMBER', data: '' },
-                { name: 'EMAIL', data: '' },
-                { name: 'GENDER', data: '' },
-                { name: 'COMPANY NAME', data: '' },
-                { name: 'ZIPCODE', data: '' },
-                { name: 'DATE OF BIRTH', data: '' },
-                { name: 'ADDRESS', data: '' },
-            ],
+            inputFieldNames: {
+                firstName: 'FIRSTNAME',
+                lastName: 'LASTNAME',
+                insertion: 'INSERTION',
+                phoneNumber: 'PHONE NUMBER',
+                email: 'EMAIL',
+                gender: 'GENDER',
+                companyName: 'COMPANYNAME',
+                zipcode: 'ZIPCODE',
+                dateOfBirth: 'DATE OF BIRTH',
+                adres: 'ADDRESS'
+            },
             subjectOptions: [
-                { text: 'Subject 1', value: '1' },
-                { text: 'Subject 2', value: '2' },
-                { text: 'Subject 3', value: '3' }
+                { text: 'Subject 1', value: 'Subject 1' },
+                { text: 'Subject 2', value: 'Subject 2' },
+                { text: 'Subject 3', value: 'Subject 3' }
             ],
             selectedSubject: '',
             dateOptions: [
@@ -233,18 +233,18 @@ var app = new Vue({
             headerSupport: 'SUPPORT PACKAGE',
             headerPrice: 'ESTIMATE PRICING',
             headerCompleteText: 'COMPLETE QUOTATION',
-            personalInputs: [
-                { placeholder: 'SURNAME', data: '' },
-                { placeholder: 'EMAIL', data: '' },
-                { placeholder: 'INSERTION', data: '' },
-                { placeholder: 'PHONE NUMBER', data: '' },
-                { placeholder: 'LASTNAME', data: '' },
-                { placeholder: 'GENDER', data: '' },
-                { placeholder: 'COMPANY NAME', data: '' },
-                { placeholder: 'ZIPCODE', data: '' },
-                { placeholder: 'DATE OF BIRTH', data: '' },
-                { placeholder: 'ADDRESS', data: '' },
-            ],
+            personalInputs: {
+                firstName: 'FIRSTNAME',
+                lastName: 'LASTNAME',
+                insertion: 'INSERTION',
+                phoneNumber: 'PHONE NUMBER',
+                email: 'EMAIL',
+                gender: 'GENDER',
+                companyName: 'COMPANYNAME',
+                zipcode: 'ZIPCODE',
+                dateOfBirth: 'DATE OF BIRTH',
+                adres: 'ADDRESS'
+            },
             serviceOptions: [
                 { text: 'Service 1', value: '1' },
                 { text: 'Service 2', value: '2' },

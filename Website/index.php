@@ -185,7 +185,7 @@
                             class="aBtn submitBtn submitColor transparant boxShadow">
                                 <p class="submitText transparant pointer">SUBMIT</p>
                             </a> -->
-                            <input type="submit" class="aBtn borderNone submitBtn submitColor transparant boxShadow" value="SUBMIT">
+                            <input type="submit" class="submitFormBtn submitColor" value="SUBMIT">
                         </div>
                     </div>
                 </form>
