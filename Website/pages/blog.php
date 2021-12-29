@@ -55,7 +55,7 @@
                     </a>
                 </div>
                 <div class="btnContact">
-                    <a href="../down2dieSite/index.html">
+                    <a href="../down2dieSite/index.php">
                         <p class="headerBtnTxt pointer transparant">{{ text.headerContactTxt }}</p>
                     </a>
                 </div>
@@ -64,50 +64,7 @@
 
     <div class="gap"></div>
 
-        <!-- Blog -->
-        <div class="newSubject">
-            <p class="headerText transparant">BLOG</p>
-        </div>
-
-        <div class="blogBodyDiv">
-            <div class="blogBody">
-                <p class="blogText transparant">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Perspiciatis deleniti mollitia optio numquam, dignissimos iure. 
-                    Rerum assumenda laudantium molestias inventore? Incidunt delectus unde 
-                    ipsum corporis neque nesciunt dignissimos iste dolorum.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Perspiciatis deleniti mollitia optio numquam, dignissimos iure. 
-                    Rerum assumenda laudantium molestias inventore? Incidunt delectus unde 
-                    ipsum corporis neque nesciunt dignissimos iste dolorum.
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Perspiciatis deleniti mollitia optio numquam, dignissimos iure. 
-                    Rerum assumenda laudantium molestias inventore? Incidunt delectus unde 
-                    ipsum corporis neque nesciunt dignissimos iste dolorum.
-                </p>
-            </div>
-        </div>
-
-    <div class="gap"></div>
-
-        <div class="carousel"></div>
-
-    <div class="gap"></div>
-
-        <div class="newSubject">
-            <p class="headerText transparant">SUMMARY</p>
-        </div>
-
-        <div class="summaryDiv">
-            <div class="summaryBody">
-                <p class="summaryText transparant">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. 
-                    Perspiciatis deleniti mollitia optio numquam, dignissimos iure. 
-                    Rerum assumenda laudantium molestias inventore? Incidunt delectus unde 
-                    ipsum corporis neque nesciunt dignissimos iste dolorum.
-                </p>
-            </div>
-        </div>
+        <?php include('../php/blogData.php'); ?>
 
     <div class="gap"></div>
 

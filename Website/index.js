@@ -240,7 +240,7 @@ var app = new Vue({
                 phoneNumber: 'PHONE NUMBER',
                 email: 'EMAIL',
                 gender: 'GENDER',
-                companyName: 'COMPANYNAME',
+                companyName: 'COMPANY NAME',
                 zipcode: 'ZIPCODE',
                 dateOfBirth: 'DATE OF BIRTH',
                 adres: 'ADDRESS'
@@ -313,8 +313,8 @@ var app = new Vue({
         }
     },
     created() {
-        setInterval(() => {
-            this.changeTxt();
-        }, 4000)
+        // setInterval(() => {
+        //     this.changeTxt();
+        // }, 4000)
     }
   })

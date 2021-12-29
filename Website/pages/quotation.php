@@ -70,37 +70,37 @@
     
     <div class="gap"></div>
 
-    <form action="../php/" method="post" class="formContact">
+    <form action="../php/postQuotationPage.php" method="post" class="formContact">
         <div class="row wrap w100">
             <div class="inputDiv grow">
-                <input type="text" name="firstName" :placeholder="contactPage.inputFieldNames.firstName" class="contactFormInput bgWhite outline" required>
+                <input type="text" name="firstName" :placeholder="quotation.personalInputs.firstName" class="contactFormInput bgWhite outline" required>
             </div>
             <div class="inputDiv grow">
-                <input type="text" name="email" :placeholder="contactPage.inputFieldNames.email" class="contactFormInput bgWhite outline" required>
+                <input type="text" name="email" :placeholder="quotation.personalInputs.email" class="contactFormInput bgWhite outline" required>
             </div>
             <div class="inputDiv grow">
-                <input type="text" name="lastName" :placeholder="contactPage.inputFieldNames.lastName" class="contactFormInput bgWhite outline" required>
+                <input type="text" name="lastName" :placeholder="quotation.personalInputs.lastName" class="contactFormInput bgWhite outline" required>
             </div>
             <div class="inputDiv grow">
-                <input type="text" name="phoneNumber" :placeholder="contactPage.inputFieldNames.phoneNumber" class="contactFormInput bgWhite outline">
+                <input type="text" name="phoneNumber" :placeholder="quotation.personalInputs.phoneNumber" class="contactFormInput bgWhite outline">
             </div>
             <div class="inputDiv grow">
-                <input type="text" name="insertion" :placeholder="contactPage.inputFieldNames.insertion" class="contactFormInput bgWhite outline">
+                <input type="text" name="insertion" :placeholder="quotation.personalInputs.insertion" class="contactFormInput bgWhite outline">
             </div>
             <div class="inputDiv grow">
-                <input type="text" name="gender" :placeholder="contactPage.inputFieldNames.gender" class="contactFormInput bgWhite outline" required>
+                <input type="text" name="gender" :placeholder="quotation.personalInputs.gender" class="contactFormInput bgWhite outline" required>
             </div>
             <div class="inputDiv grow">
-                <input type="text" name="companyName" :placeholder="contactPage.inputFieldNames.companyName" class="contactFormInput bgWhite outline">
+                <input type="text" name="companyName" :placeholder="quotation.personalInputs.companyName" class="contactFormInput bgWhite outline">
             </div>
             <div class="inputDiv grow">
-                <input type="text" name="zipcode" :placeholder="contactPage.inputFieldNames.zipcode" class="contactFormInput bgWhite outline">
+                <input type="text" name="zipcode" :placeholder="quotation.personalInputs.zipcode" class="contactFormInput bgWhite outline">
             </div>
             <div class="inputDiv grow">
-                <input type="text" name="dateOfBirth" :placeholder="contactPage.inputFieldNames.dateOfBirth" class="contactFormInput bgWhite outline">
+                <input type="text" name="dateOfBirth" :placeholder="quotation.personalInputs.dateOfBirth" class="contactFormInput bgWhite outline">
             </div>
             <div class="inputDiv grow">
-                <input type="text" name="adres" :placeholder="contactPage.inputFieldNames.adres" class="contactFormInput bgWhite outline">
+                <input type="text" name="adres" :placeholder="quotation.personalInputs.adres" class="contactFormInput bgWhite outline">
             </div>
         </div>
 
@@ -115,7 +115,7 @@
 
         <div class="column wrap w100">
             <div class="w100 bgWhite">
-                <select class="selectSubject outline w100" v-model="quotation.selectedService">
+                <select class="selectSubject outline w100" name="services" v-model="quotation.selectedService">
                     <option value="">SELECT SERVICE...</option>
                     <option v-for="option in quotation.serviceOptions" :value="option.text">{{ option.text }}</option>
                 </select>
@@ -124,7 +124,7 @@
     <div class="gap"></div>
 
             <div class="w100 bgWhite">
-                <select class="selectSubject outline" v-model="quotation.selectedPackage">
+                <select class="selectSubject outline" name="servicePackage" v-model="quotation.selectedPackage">
                     <option value="">SELECT PACKAGE...</option>
                     <option v-for="option in quotation.packageOptions" :value="option.text">{{ option.text }}</option>
                 </select>
@@ -134,12 +134,12 @@
     <div class="gap"></div>
 
         <div class="w100 bgWhite">
-            <textarea rows="10" placeholder="PRODUCT DESCRIPTION..." v-model="quotation.productDescr" class="subjectDescr outline"></textarea>
+            <textarea rows="10" placeholder="PRODUCT DESCRIPTION..." name="productDescription" v-model="quotation.productDescr" class="subjectDescr outline"></textarea>
         </div>
 
         <div class="row wrap w100">
             <div class="pdfDiv bgWhite">
-                <input type="text" placeholder="PDF Explaination..." class="pdfInput outline" v-model="quotation.pdfExplaination" required>
+                <input type="text" placeholder="PDF Explaination..." name="pdfExplaination" class="pdfInput outline" v-model="quotation.pdfExplaination" required>
             </div>
 
             <input type="file" id="selectedFile" style="display: none;">
@@ -157,7 +157,7 @@
 
         <div class="column wrap w100">
             <div class="w100 bgWhite">
-                <select class="selectSubject outline" v-model="quotation.selectedSupport">
+                <select class="selectSubject outline" name="supportPackage" v-model="quotation.selectedSupport">
                     <option value="">SELECT PACKGE...</option>
                     <option v-for="option in quotation.supportOptions" :value="option.text">{{ option.text }}</option>
                 </select>
@@ -166,7 +166,7 @@
     <div class="gap"></div>
 
             <div class="w100 bgWhite">
-                <select class="selectSubject outline" v-model="quotation.selectedSupportDuration">
+                <select class="selectSubject outline" name="supportDuration" v-model="quotation.selectedSupportDuration">
                     <option value="">SELECT DURATION...</option>
                     <option v-for="option in quotation.supportDurationOptions" :value="option.text">{{ option.text }}</option>
                 </select>
@@ -175,7 +175,7 @@
     <div class="gap"></div>
 
             <div class="w100 bgWhite">
-                <textarea rows="7" placeholder="ADDITIONAL COMMENTS..." v-model="quotation.supportComment" class="subjectDescr outline"></textarea>
+                <textarea rows="7" placeholder="ADDITIONAL COMMENTS..." name="comments" v-model="quotation.supportComment" class="subjectDescr outline"></textarea>
             </div>
         </div>
 
@@ -225,6 +225,7 @@
             <h1 class="eulaText bgWhite">I ACCEPT THE TERMS OF CONDITION.</h1>
             <input type="submit" value="DOWNLOAD" class="submitBtnForm pointer" @click="test()">
         </div>
+        <input type="submit" class="submitFormBtn submitColor" value="SUBMIT">
     </form>
 
     <div class="gap"></div>

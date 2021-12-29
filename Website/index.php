@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./styles/form.css">
     <link rel="stylesheet" href="./styles/service.css">
     <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/responsive/index.css">
 
     <!-- Vue js import-->
     <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
@@ -192,7 +192,7 @@
             </div>
 
             <!-- Service Div -->
-            <div class="blogDiv transparant">
+            <!-- <div class="blogDiv transparant">
                 <div class="blogHeader boxShadow transparant">
                     <p class="blogTitle transparant">{{ text.blogTxt }}</p>
                 </div>
@@ -203,7 +203,8 @@
                         </div>
                     </a>
                 </div>
-            </div>
+            </div> -->
+            <?php include('./php/getBlog.php'); ?>
         </div>
 
         <!-- Footer div -->
