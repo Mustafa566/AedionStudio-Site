@@ -8,6 +8,10 @@
     height: 18px;
 }
 
+.socialDiv:hover {
+    margin-top: -5px;
+}
+
 /* Social media div*/
 .socialDiv {
     width: 243px;

@@ -39,7 +39,7 @@
         <header class="header transparant">
 
             <!-- Logo of AedionStudio-->
-            <img src="./image/AedionStudio.png" class="logo">
+            <img src="./image/AedionStudio.png" class="logo pointer" @click="home">
 
             <!-- We are AedionStudio div -->
             <div class="weAreDiv transparant">
@@ -79,6 +79,9 @@
                 <div class="flip-card-inner">
                     <div class="flip-card-front">
                         <img :src="profile.image" class="w100 h100">
+                        <div class="overlay"></div>
+                        <div class="overlayHr"></div>
+                        <img src="./image/overlay.png" class="overlayPerson">
                         <p class="names bgWhite">{{ profile.name }}</p>
                     </div>
                 </div>
@@ -108,21 +111,29 @@
         <div class="column">
             <div class="wrap row">
                 <a href="./pages/products.php">
-                    <div class="websiteService">
-                        <p class="websiteServiceTxt">Websites</p>
+                    <div class="websiteService hoverService">
+                        <div class="serviceBorder transparant">
+                            <p class="websiteServiceTxt">Websites</p>
+                        </div>
                     </div>
                 </a>
-                <div class="modelingService">
-                    <p class="modelingServiceTxt">3D Modeling</p>
+                <div class="modelingService hoverService">
+                    <div class="serviceBorder transparant">
+                        <p class="modelingServiceTxt">3D Modeling</p>
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="musicService">
-                    <p class="musicServiceTxt">Music & Sound</p>
+                <div class="musicService hoverService">
+                    <div class="serviceBorder transparant">
+                        <p class="musicServiceTxt">Music & Sound</p>
+                    </div>
                 </div>
-                <div class="gamesService">
+                <div class="gamesService hoverService">
                     <a href="./down2dieWiki/index.php">
-                        <p class="gamesServiceTxt">Games</p>
+                        <div class="serviceBorder transparant">
+                            <p class="gamesServiceTxt">Games</p>
+                        </div>
                     </a>
                 </div>
             </div>
@@ -181,10 +192,6 @@
                             <div class="transparant supportColor submitBtn boxShadow">
                                 <p class="submitText transparant pointer">SUPPORT</p>
                             </div>
-                            <!-- <a :href="`mailto:${contact.aedionStudioEmail}?subject=${contact.formData.title}&body=Name: ${contact.formData.name} %0D%0AGender: ${contact.formData.gender} %0D%0A${contact.formData.body}`" 
-                            class="aBtn submitBtn submitColor transparant boxShadow">
-                                <p class="submitText transparant pointer">SUBMIT</p>
-                            </a> -->
                             <input type="submit" class="submitFormBtn submitColor" value="SUBMIT">
                         </div>
                     </div>
@@ -192,18 +199,6 @@
             </div>
 
             <!-- Service Div -->
-            <!-- <div class="blogDiv transparant">
-                <div class="blogHeader boxShadow transparant">
-                    <p class="blogTitle transparant">{{ text.blogTxt }}</p>
-                </div>
-                <div class="blogItems transparant w100">
-                    <a href="./pages/blog.php">
-                        <div class="blogItem transparant boxShadow" v-for="blogs in blog">
-                            <p class="blogItemHeaderText transparant">{{ blogs.title }}</p>
-                        </div>
-                    </a>
-                </div>
-            </div> -->
             <?php include('./php/getBlog.php'); ?>
         </div>
 
@@ -222,7 +217,8 @@
                         <p class="newsLetterTxt bgWhite">{{ text.newsletterTxt }}</p>
                         <div class="row">
                             <input type="email" name="email" placeholder="EMAIL.." class="subsEmail outline" required>
-                            <input type="submit" class="subscrBtn" value="SUBMIT">
+                            <input type="submit" class="subscrBtn" id="subscrBtn" value="SUBMIT" style="display: none;">
+                            <img src="./image/arrow.png" onclick="document.getElementById('subscrBtn').click();" class="emailArrow pointer">
                         </div>
                     </form>
                 </div>

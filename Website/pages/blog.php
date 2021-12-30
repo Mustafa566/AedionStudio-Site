@@ -39,7 +39,7 @@
         <header class="header transparant">
 
             <!-- Logo of AedionStudio-->
-            <img src="../image/AedionStudio.png" class="logo">
+            <img src="../image/AedionStudio.png" class="logo pointer" @click="linkHome">
 
             <!-- We are AedionStudio div -->
             <div class="weAreDiv transparant">
@@ -75,22 +75,32 @@
     <div class="gap"></div>
 
         <div class="column">
-            <div class="row">
+            <div class="wrap row">
                 <a href="./products.php">
-                    <div class="websiteService">
-                        <p class="websiteServiceTxt">Websites</p>
+                    <div class="websiteService hoverService">
+                        <div class="serviceBorder transparant">
+                            <p class="websiteServiceTxt">Websites</p>
+                        </div>
                     </div>
                 </a>
-                <div class="modelingService">
-                    <p class="modelingServiceTxt">3D Modeling</p>
+                <div class="modelingService hoverService">
+                    <div class="serviceBorder transparant">
+                        <p class="modelingServiceTxt">3D Modeling</p>
+                    </div>
                 </div>
             </div>
             <div class="row">
-                <div class="musicService">
-                    <p class="musicServiceTxt">Music & Sound</p>
+                <div class="musicService hoverService">
+                    <div class="serviceBorder transparant">
+                        <p class="musicServiceTxt">Music & Sound</p>
+                    </div>
                 </div>
-                <div class="gamesService">
-                    <p class="gamesServiceTxt">Games</p>
+                <div class="gamesService hoverService">
+                    <a href="../down2dieWiki/index.php">
+                        <div class="serviceBorder transparant">
+                            <p class="gamesServiceTxt">Games</p>
+                        </div>
+                    </a>
                 </div>
             </div>
         </div>
@@ -109,7 +119,8 @@
                         <p class="newsLetterTxt bgWhite">{{ text.newsletterTxt }}</p>
                         <div class="row">
                             <input type="email" name="email" placeholder="EMAIL.." class="subsEmail outline" required>
-                            <input type="submit" class="subscrBtn" value="SUBMIT">
+                            <input type="submit" class="subscrBtn" id="subscrBtn" value="SUBMIT" style="display: none;">
+                            <img src="../image/arrow.png" onclick="document.getElementById('subscrBtn').click();" class="emailArrow pointer">
                         </div>
                     </form>
                 </div>

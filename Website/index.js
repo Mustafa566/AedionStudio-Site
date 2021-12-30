@@ -21,7 +21,7 @@ var app = new Vue({
                 image: './image/profile/joey.png', 
                 name: 'JOEY MALTA',
                 function: 'CEO',
-                link: '/portfolio/mustafa'
+                link: '/portfolio/joey'
             },
             { 
                 image: './image/profile/mustafa.png', 
@@ -305,11 +305,11 @@ var app = new Vue({
         getProfile(profile) {
             location.href = profile.link;
         },
-        test() {
-            // this.quotation.personalInputs.forEach(element => {
-            //     console.log(element.data);
-            // });
-            console.log(this.quotation);
+        home() {
+            location.href = "index.php";
+        },
+        linkHome() {
+            location.href = "../index.php";
         }
     },
     created() {

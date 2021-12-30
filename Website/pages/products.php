@@ -38,7 +38,7 @@
         <header class="header transparant">
 
             <!-- Logo of AedionStudio-->
-            <img src="../image/AedionStudio.png" class="logo">
+            <img src="../image/AedionStudio.png" class="logo pointer" @click="linkHome">
 
             <!-- We are AedionStudio div -->
             <div class="weAreDiv transparant">
@@ -73,51 +73,7 @@
                 <div class="columnGame bgWhite">
                     <div class="gameBtn boxShadow row bgWhite pointer">
                         <img :src="down2dieCard.gameLogo" class="iconSize">
-                        <p class="gameName w100 vrAlign bgWhite">{{ down2dieCard.gameNameTxt }}</p>
-                    </div>
-
-                    <div class="buyGameBtn boxShadow row bgWhite pointer">
-                        <a :href="down2dieCard.steamLink" class="linkGame bgWhite" target="_blank">
-                            <img :src="icons.steamIcon" class="iconSize">
-                            <p class="gameName w100 vrAlign bgWhite">{{ down2dieCard.buyGameTxt }}</p>
-                        </a>
-                    </div>
-
-                    <div class="socialAndTrelloBtn boxShadow row bgWhite pointer">
-                        <a :href="down2dieCard.trelloLink" class="linkGame bgWhite" target="_blank">
-                            <img :src="icons.facebookIcon" class="iconSize">
-                            <p class="gameName w100 vrAlign bgWhite">{{ down2dieCard.updateTxt }}</p>
-                        </a>
-                    </div>
-
-                    <div class="socialAndTrelloBtn boxShadow row bgWhite pointer">
-                        <a :href="down2dieCard.trelloLink" class="linkGame bgWhite" target="_blank">
-                            <img :src="icons.trelloIcon" class="iconSize">
-                            <p class="gameName w100 vrAlign bgWhite">{{ down2dieCard.trelloTxt }}</p>
-                        </a>
-                    </div>
-                </div>
-
-                <!-- Game info -->
-                <div class="gameInfo bgWhite row">
-                    <div class="lineCard"></div>
-                    <p class="infoText bgWhite">
-                        {{ down2dieCard.gameInfo }}
-                    </p>
-                </div>
-            </div>
-        </div>
-
-        <!-- Game card div -->
-        <div class="gamesDiv" v-for="index in 5">
-            <img src="../image/guessAndTeller.png" class="gameImg bgWhite">
-            <div class="row bgWhite">
-
-                <!-- Buttons -->
-                <div class="columnGame bgWhite">
-                    <div class="gameBtn boxShadow row bgWhite pointer">
-                        <img :src="down2dieCard.gameLogo" class="iconSize">
-                        <p class="gameName w100 vrAlign bgWhite">{{ down2dieCard.gameNameTxt }}</p>
+                        <p class="gameName fW800 w100 vrAlign bgWhite">{{ down2dieCard.gameNameTxt }}</p>
                     </div>
 
                     <div class="buyGameBtn boxShadow row bgWhite pointer">
@@ -167,8 +123,9 @@
                         <p class="newsLetterTxt bgWhite">{{ text.newsletterTxt }}</p>
                         <div class="row">
                             <input type="email" name="email" placeholder="EMAIL.." class="subsEmail outline" required>
-                            <input type="submit" class="subscrBtn" value="SUBMIT">
-                        </div> type="submit" class="aBtn borderNone " value="SUBMIT">
+                            <input type="submit" class="subscrBtn" id="subscrBtn" value="SUBMIT" style="display: none;">
+                            <img src="../image/arrow.png" onclick="document.getElementById('subscrBtn').click();" class="emailArrow pointer">
+                        </div>
                     </form>
                 </div>
             </div>

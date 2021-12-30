@@ -38,7 +38,7 @@
         <header class="header transparant">
 
             <!-- Logo of AedionStudio-->
-            <img src="../image/AedionStudio.png" class="logo">
+            <img src="../image/AedionStudio.png" class="logo pointer" @click="linkHome">
 
             <!-- We are AedionStudio div -->
             <div class="weAreDiv transparant">

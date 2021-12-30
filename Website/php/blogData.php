@@ -1,9 +1,18 @@
 <?php 
     include('../php/connection.php');
 
-    $sql = $conn->prepare("SELECT * FROM blogs WHERE id= '" . $_GET['id'] . "'");
-    $sql->execute();
-    $result = $sql->fetch(PDO::FETCH_ASSOC);
+    $sql = "SELECT * FROM blogs WHERE id= '" . $_GET['id'] . "'";
+
+    $stmt = $conn->prepare($sql);
+    $stmt->execute();
+    $result = $stmt->fetch(PDO::FETCH_ASSOC);
+
+
+    $sqlGetImg = "SELECT * FROM blogimages WHERE EXISTS (SELECT 1 FROM blogs WHERE  blogs.id = '" . $_GET['id'] . "' = blogimages.blogId)";
+// blogimages.blogId = blogs.id = '" . $_GET['id'] . "'
+    $stmt2 = $conn->prepare($sqlGetImg);
+    $stmt2->execute();
+    $newResult = $stmt2->fetch(PDO::FETCH_ASSOC);
 
     echo '
     <!-- Blog -->
@@ -21,7 +30,10 @@
 
 <div class="gap"></div>
 
-    <div class="carousel"></div>
+    <div class="carousel">
+        <img src="data:image/;base64,'.base64_encode($newResult["image"]).'"/>
+        <h3>'. $newResult['blogId'] .'</h3>
+    </div>
 
 <div class="gap"></div>
 

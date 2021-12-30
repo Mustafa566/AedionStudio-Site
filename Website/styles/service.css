@@ -1,9 +1,20 @@
 .websiteService {
     background-image: url("../image/services/website.png");
     background-repeat: no-repeat;
-    width: 680px;
+    width: 670px;
     height: 350px;
 }
+
+.hoverService:hover .serviceBorder {
+    border: 5px solid orange;
+    height: -webkit-fill-available;
+    background: transparent;
+}
+
+/* .websiteService:hover, .musicService:hover, .gamesService:hover, .modelingService:hover {
+    border: 5px solid orange;
+    cursor: pointer;
+} */
 
 .modelingService {
     margin-left: 10px;
