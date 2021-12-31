@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <!-- Add stylesheet --> 
     <link rel="stylesheet" href="./styles/style.css">
@@ -108,7 +108,7 @@
     
     <div class="gap"></div>
 
-        <div class="column">
+        <div class="glry column">
             <div class="wrap row">
                 <a href="./pages/products.php">
                     <div class="websiteService hoverService">
