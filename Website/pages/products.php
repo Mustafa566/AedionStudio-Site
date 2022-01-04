@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="../styles/header.css">
         <link rel="stylesheet" href="../styles/products.css">
         <link rel="stylesheet" href="../styles/footer.css">
-        <link rel="stylesheet" href="../styles/responsive.css">
+        <link rel="stylesheet" href="../styles/responsive/products.css">
     
     
         <!-- Add Google font Oxanium --> 
@@ -67,7 +67,7 @@
         <!-- Game card div -->
         <div class="gamesDiv" v-for="index in 5">
             <img src="../image/d2dImg.png" class="gameImg bgWhite">
-            <div class="row bgWhite">
+            <div class="card row bgWhite">
 
                 <!-- Buttons -->
                 <div class="columnGame bgWhite">

@@ -10,7 +10,7 @@
     <link rel="stylesheet" href="../styles/header.css">
     <link rel="stylesheet" href="../styles/contactPage.css">
     <link rel="stylesheet" href="../styles/quotation.css">
-    <link rel="stylesheet" href="../styles/responsive.css">
+    <link rel="stylesheet" href="../styles/responsive/quotation.css">
 
     <!-- Add Google font Oxanium --> 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
@@ -42,7 +42,7 @@
 
             <!-- We are AedionStudio div -->
             <div class="weAreDiv transparant">
-                <p class="firstHeaderText transparant">{{ text.headerTxt }}</p>
+                <!-- <p class="firstHeaderText transparant">{{ text.headerTxt }}</p> -->
                 <h1 class="contactText transparant">QUOTATION</h1>
             </div>
 

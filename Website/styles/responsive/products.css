@@ -1,0 +1,465 @@
+@media only screen 
+and (min-device-width: 1100px) 
+and (max-device-width: 1250px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+
+html, body, .container {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1360px !important;
+}
+
+.topBar {
+  width: 100%;
+}
+
+.buttonsDiv {
+  margin-right: 10px;
+}
+
+.footer div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  height: 100%;
+}
+
+.signUpDiv {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.service {
+  margin: 20px auto;
+}
+
+.footerHead {
+  font-size: 40px;
+}
+
+.li {
+  font-size: 25px;
+  margin-right: 100px;
+}
+
+}
+
+@media only screen 
+and (min-device-width: 865px) 
+and (max-device-width: 1085px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+  
+html, body, .container {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1100px !important;
+}
+
+.topBar {
+  width: 100%;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  margin: auto 0;
+}
+
+.firstHeaderText, .secondHeaderText {
+  font-size: 35px;
+}
+
+.btnCareer, .btnContact {
+  width: 250px;
+}
+
+.buttonsDiv {
+  margin-right: 10px;
+}
+
+.gameBtn, .buyGameBtn, .socialAndTrelloBtn {
+    width: 235px;
+}
+
+.gameImg {
+    width: 400px;
+}
+
+.infoText {
+    font-size: 23px;
+}
+
+.gameName {
+    font-size: 25px;
+}
+
+.iconSize {
+    width: 33px;
+    height: 33px;
+    margin: 18px;
+}
+
+.footer div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  height: 100%;
+}
+
+.signUpDiv {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.service {
+  margin: 20px auto;
+}
+
+.footerHead {
+  font-size: 40px;
+}
+
+.li {
+  font-size: 25px;
+}
+
+}
+
+@media only screen 
+and (min-device-width: 750px) 
+and (max-device-width: 865px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+  
+html, body, .container {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 100% !important;
+}
+
+.topBar {
+  width: 100%;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  margin: auto 0;
+}
+
+.firstHeaderText, .secondHeaderText {
+  font-size: 25px;
+}
+
+.btnCareer, .btnContact {
+  width: 150px;
+}
+
+.buttonsDiv {
+  margin-right: 10px;
+}
+
+.headerBtnTxt {
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+.gameBtn, .buyGameBtn, .socialAndTrelloBtn {
+    width: 235px;
+}
+
+.gameImg {
+    width: 350px;
+}
+
+.infoText {
+    font-size: 23px;
+}
+
+.gameName {
+    font-size: 25px;
+}
+
+.iconSize {
+    width: 30%;
+    height: 33px;
+    margin: 18px;
+}
+
+.footer div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  height: 100%;
+}
+
+.signUpDiv {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.service {
+  margin: 20px auto;
+}
+
+.footerHead {
+  font-size: 40px;
+}
+
+.li {
+  font-size: 25px;
+}
+
+}
+
+@media only screen 
+and (min-device-width: 680px) 
+and (max-device-width: 798px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+  
+html, body, .container {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 100% !important;
+}
+
+.topBar {
+  width: 100%;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  margin: auto 0;
+}
+
+.firstHeaderText, .secondHeaderText {
+  font-size: 25px;
+}
+
+.btnCareer, .btnContact {
+  width: 150px;
+}
+
+.buttonsDiv {
+  margin-right: 10px;
+}
+
+.headerBtnTxt {
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+.gameBtn, .buyGameBtn, .socialAndTrelloBtn {
+    width: 235px;
+}
+
+.gameImg {
+    width: 300px;
+}
+
+.infoText {
+    font-size: 20px;
+}
+
+.gameBtn .gameName {
+    font-size: 25px;
+}
+
+.gameName {
+    font-size: 20px;
+}
+
+.iconSize {
+    width: 30%;
+    height: 33px;
+    margin: 18px;
+}
+
+.footer div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  height: 100%;
+}
+
+.signUpDiv {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.service {
+  margin: 20px auto;
+}
+
+.footerHead {
+  font-size: 40px;
+}
+
+.li {
+  font-size: 25px;
+}
+
+}
+
+@media only screen 
+and (min-device-width: 370px) 
+and (max-device-width: 680px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+  
+html, body, .container {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 600px !important;
+}
+
+.topBar {
+  width: 100%;
+}
+
+.header {
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 0;
+  background-image: none;
+  background-color: white;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  margin: 10px auto;
+}
+
+.weAreDiv {
+  text-align: center;
+}
+
+.firstHeaderText, .secondHeaderText {
+  font-size: 30px;
+}
+
+.btnCareer, .btnContact {
+  width: 150px;
+  background-color: #ffbe61;
+}
+
+.buttonsDiv {
+  margin: 0 auto;
+}
+
+.headerBtnTxt {
+  font-size: 30px;
+  padding-top: 20px;
+  color: white;
+}
+
+.headerText {
+  font-size: 25px;
+  margin-top: 35px;
+}
+
+.gamesDiv {
+    display: flex;
+    flex-direction: column;
+    height: auto;
+    padding-left: 0;
+}
+
+.lineCard {
+    display: none;
+}
+
+.card {
+    flex-direction: column;
+}
+
+.columnGame {
+    padding: 0;
+    margin: 0 auto;
+}
+
+.gameInfo {
+    width: 90%;
+}
+
+.footer div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  height: 100%;
+}
+
+.signUpDiv {
+  margin: 0px auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.subsEmail {
+  width: 350px;
+}
+
+.service {
+  margin: 20px auto;
+}
+
+.footerHead {
+  font-size: 25px;
+}
+
+.li {
+  font-size: 15px;
+}
+
+.signUpTxt, .newsLetterTxt {
+  font-size: 25px;
+}
+
+}
+
+
+
+@media only screen 
+and (min-device-width: 370px) 
+and (max-device-width: 385px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+.service:nth-child(3) {
+    margin-left: 28px;
+}
+
+.service:nth-child(4) {
+    margin-left: 24px;
+}
+}
+
+@media only screen 
+and (min-device-width: 390px) 
+and (max-device-width: 410px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+.service:nth-child(3), .service:nth-child(4) {
+    margin-left: 30px;
+}
+
+}
