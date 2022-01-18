@@ -9,7 +9,7 @@
 .formColumn {
     display: flex;
     flex-direction: column;
-    margin-bottom: 10px;
+    margin-bottom: 11px;
 }
 
 /* Input form */
@@ -24,26 +24,30 @@
 
 .formInput2 {
     font-size: 30px;
-    height: 77px;
+    height: 60px;
     margin-left: 10px;
-    margin-top: 10px;
+    margin-top: 0px;
     padding-left: 5px;
     border: none;
     border-left: 5px solid #8AB4D1;
+    width: 327px;
+    border-top: 5px solid white;
+    border-right: 5px solid white;
+    border-bottom: 5px solid white;
 }
 
 /* Textarea input div*/
 .textareaColumn {
     display: flex;
     flex-direction: column;
-    margin-left: 5px;
-    margin-top: 5px;
+    padding: 5px;
 }
 
 /* Textarea */
 .textarea {
     border: none;
     font-size: 34px;
+    padding-left: 5px;
     border-left: 5px solid #8AB4D1;
 }
 
@@ -64,8 +68,10 @@
     margin: 10px 15px;
 }
 
+
 .submitBtn:hover {
-    color: white;
+    color: white !important;
+    cursor: pointer;
 }
 
 /**/
@@ -75,15 +81,28 @@
 
 /**/
 .supportColor {
-    background-color: #A0BACB ;
+    background-color: #9AE5A6 ;
 }
 
 /**/
 .submitColor {
-    background-color: #C1D7E6;
+    background-color: #8AB4D1;
 }
 
 /* Submit text */
 .submitText {
     margin-top: 20px;
+}
+
+.submitFormBtn {
+    width: 297px;
+    height: 85px;
+    border: none;
+    color: white;
+    margin: 10px 15px;
+    text-align: center;
+    font-size: 2.88rem;
+    box-shadow: -3px 3px 10px #888888;
+    padding-top: 10px;
+    cursor: pointer;
 }

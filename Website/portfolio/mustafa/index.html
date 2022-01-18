@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./styles/form.css">
     <link rel="stylesheet" href="./styles/service.css">
     <link rel="stylesheet" href="./styles/footer.css">
-    <link rel="stylesheet" href="./styles/responsive.css">
+    <link rel="stylesheet" href="./styles/responsive/index.css">
 
     <!-- Add Google font Oxanium --> 
     <script src="https://cdn.jsdelivr.net/npm/vue@2.6.14"></script>
@@ -77,7 +77,7 @@
     <div class="gap"></div>
         
         <!-- Profile -->
-        <div class="w100 wrap row">
+        <div class="myProfileDiv w100 wrap row">
             <div class="profileInfo column">
                 <p class="personName transparant">{{ profile.name }}</p>
                 <p class="personDescr transparant">{{ profile.description }}</p>
@@ -97,7 +97,7 @@
     
     <div class="gap"></div>
 
-        <div class="column">
+        <div class="glry column">
             <div class="wrap row">
                 <a href="./products.php">
                     <div class="websiteService">
@@ -153,28 +153,31 @@
         <!-- Form -->
         <div class="forms row w100">
             <div class="formDiv transparant w100">
-                <form @submit.prevent="formSend()" class="form">
+                <form class="form">
                     <div class="row transparant w100">
                         <div class="formColumn bgWhite w100">
-                            <input type="text" placeholder="Title" class="formInput outline" v-model="contact.formData.title" required>
+                            <input type="text" name="title" placeholder="Title" class="formInput outline" v-model="contact.formData.title" required>
                         </div>
                     </div>
-                    <div class="formRow row bgWhite">
+                    <div class="formRow row">
                         <div class="textareaColumn bgWhite">
-                            <textarea rows="9" cols="30" placeholder="Message.." class="textarea outline" v-model="contact.formData.body" required></textarea>
+                            <textarea rows="9" cols="30" name="messages" placeholder="Message.." class="textarea outline" v-model="contact.formData.body" required></textarea>
                         </div>
                         <div class="column transparant">
-                            <div class="formColumn bgWhite w100">
-                                <input type="text" placeholder="Name" class="formInput2 outline" v-model="contact.formData.name" required>
-                                <input type="text" placeholder="Gender" class="formInput2 outline" v-model="contact.formData.gender">
+                            <div class="formColumn">
+                                <input type="text" name="names" placeholder="Name" class="formInput2 outline" v-model="contact.formData.name" required>
+                            </div>
+                            <div class="formColumn">
+                                <input type="text" name="gender" placeholder="Gender" class="formInput2 outline" v-model="contact.formData.gender">
                             </div>
                             <div class="transparant supportColor submitBtn boxShadow">
-                                <p class="submitText transparant pointer">{{ text.supportBtn }}</p>
+                                <p class="submitText transparant pointer">SUPPORT</p>
                             </div>
                             <a :href="`mailto:${contact.aedionStudioEmail}?subject=${contact.formData.title}&body=Name: ${contact.formData.name} %0D%0AGender: ${contact.formData.gender} %0D%0A${contact.formData.body}`" 
                             class="aBtn submitBtn submitColor transparant boxShadow">
                                 <p class="submitText transparant pointer">{{ text.submitBtn }}</p>
                             </a>
+                            <!-- <input type="submit" class="submitFormBtn submitColor" value="SUBMIT"> -->
                         </div>
                     </div>
                 </form>

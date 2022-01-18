@@ -6,6 +6,7 @@
     flex: 1 0 50%;
     background-image: url("../image/aboutMeImg.png");
     background-position: right;
+    background-repeat: no-repeat;
 }
 
 .personName {

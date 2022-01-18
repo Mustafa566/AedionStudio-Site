@@ -1,0 +1,842 @@
+@media only screen 
+and (min-device-width: 1085px) 
+and (max-device-width: 1250px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+
+html, body, .container {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1360px !important;
+}
+
+.topBar {
+  width: 100%;
+}
+
+.buttonsDiv {
+  margin-right: 10px;
+}
+
+.profImg {
+  display: flex;
+  justify-content: space-between;
+  width: -webkit-fill-available;
+}
+
+.video {
+  margin: 0;
+  margin-top: 6%;
+  width: 100%;
+  height: 700px;
+}
+
+.websiteService {
+    width: 665px;
+}
+
+.social {
+  margin-bottom: 20px;
+}
+
+.modelingService {
+  width: 680px;
+}
+
+.musicService {
+  width: 670px;
+}
+
+.formDiv {
+  width: 780px;
+}
+
+.textareaColumn {
+  width: 385px;
+}
+
+.blogItemHeaderText {
+  font-size: 25px;
+  padding: 15px 5px;
+}
+
+.footer div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  height: 100%;
+}
+
+.signUpDiv {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.service {
+  margin: 20px auto;
+}
+
+.footerHead {
+  font-size: 40px;
+}
+
+.li {
+  font-size: 25px;
+  margin-right: 100px;
+}
+
+}
+
+@media only screen 
+and (min-device-width: 865px) 
+and (max-device-width: 1085px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+  
+html, body, .container {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1100px !important;
+}
+
+.topBar {
+  width: 100%;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  margin: auto 0;
+}
+
+.firstHeaderText, .secondHeaderText {
+  font-size: 35px;
+}
+
+.btnCareer, .btnContact {
+  width: 250px;
+}
+
+.buttonsDiv {
+  margin-right: 10px;
+}
+
+.cvBtnTxt, .headerBtnTxt {
+    font-size: 25px;
+}
+
+.headerBtnTxt {
+    padding-top: 20px;
+}
+
+.profileInfo {
+    width: 40%;
+}
+
+.personDescr {
+    width: 700px;
+    font-size: 25px;
+}
+
+.profImg {
+  display: flex;
+  justify-content: space-between;
+  width: -webkit-fill-available;
+}
+
+.social {
+  margin-bottom: 20px;
+}
+
+.websiteService, .musicService {
+  width: 500px;
+}
+
+.modelingService {
+  width: 50%;
+}
+
+.musicService {
+  width: 500px;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+}
+
+.formDiv {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.textareaColumn {
+  width: 735px;
+}
+
+.blogDiv {
+  margin-left: 0;
+  height: 530px;
+  width: 100%;
+}
+
+.blogItems {
+  max-height: 100%;
+}
+
+.blogItem {
+  background-size: 100% 100%;
+}
+
+.blogItemHeaderText {
+  font-size: 25px;
+  padding: 15px 5px;
+}
+
+.footer div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  height: 100%;
+}
+
+.signUpDiv {
+  margin: 0 auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.service {
+  margin: 20px auto;
+}
+
+.footerHead {
+  font-size: 40px;
+}
+
+.li {
+  font-size: 25px;
+}
+
+}
+
+@media only screen 
+and (min-device-width: 600px) 
+and (max-device-width: 865px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+  
+html, body, .container {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 95% !important;
+}
+
+.topBar {
+  width: 100%;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  margin: auto 0;
+}
+
+.firstHeaderText, .secondHeaderText {
+  font-size: 25px;
+}
+
+.btnCareer, .btnContact {
+  width: 150px;
+}
+
+.buttonsDiv {
+  margin-right: 10px;
+}
+
+.headerBtnTxt {
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+.headerBtnTxt {
+    font-size: 25px;
+}
+
+.cvBtnTxt {
+    font-size: 20px;
+}
+
+.headerBtnTxt {
+    padding-top: 20px;
+}
+
+.myProfileDiv {
+    flex-flow: column-reverse;
+}
+
+.profileImageDiv {
+    margin: 0 auto;
+}
+
+.profileImg {
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.profileNameDiv {
+    display: none;
+}
+
+.profileInfo {
+    width: 100%;
+}
+
+.personDescr {
+    width: 700px;
+    font-size: 22px;
+}
+
+.profImg {
+  display: flex;
+  justify-content: space-evenly;
+  width: -webkit-fill-available;
+}
+
+.glry {
+  width: 100%;
+}
+
+.glry div {
+  flex-direction: column;
+}
+
+.social {
+  margin-bottom: 20px;
+}
+
+.websiteService, .musicService, .modelingService, .musicService {
+  width: 100%;
+  background-size: 100% 100%;
+  margin-left: 0;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+}
+
+.formDiv {
+  width: 100%;
+  margin-bottom: 10px;
+}
+
+.textareaColumn {
+  width: 605px;
+}
+
+.blogDiv {
+  margin-left: 0;
+  height: 530px;
+  width: 100%;
+}
+
+.blogItems {
+  max-height: 100%;
+}
+
+.blogItem {
+  background-size: 100% 100%;
+}
+
+.blogItemHeaderText {
+  font-size: 25px;
+  padding: 15px 5px;
+}
+
+.footer div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px auto;
+}
+
+.footer {
+  height: 100%;
+}
+
+.signUpDiv {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.service {
+  margin: 20px auto;
+}
+
+.footerHead {
+  font-size: 40px;
+}
+
+.li {
+  font-size: 25px;
+}
+
+}
+
+/* FORM */
+@media only screen 
+and (min-device-width: 600px) 
+and (max-device-width: 800px) 
+and (-webkit-min-device-pixel-ratio: 1) {
+.formRow {
+    display: flex;
+    flex-direction: column;
+}
+
+.forms {
+    display: flex;
+    flex-direction: column;
+}
+
+.formDiv {
+    width: 100%;
+    height: 100%;
+    margin-bottom: 10px;
+}
+
+.textareaColumn {
+    width: auto;
+}
+
+.formColumn:nth-child(1) {
+    margin-top: 10px;
+}
+
+.formInput2 {
+    margin-left: 0;
+    width: auto;
+}
+
+.formColumn {
+    margin-left: 0;
+}
+
+.submitBtn, .submitFormBtn {
+    margin: 10px 0px;
+    width: auto;
+}
+}
+
+@media only screen 
+and (min-device-width: 470px) 
+and (max-device-width: 650px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+  
+html, body, .container {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 95% !important;
+}
+
+.topBar {
+  width: 100%;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  margin: auto 0;
+}
+
+.firstHeaderText, .secondHeaderText {
+  font-size: 25px;
+}
+
+.btnCareer, .btnContact {
+  width: 150px;
+}
+
+.buttonsDiv {
+  margin-right: 10px;
+}
+
+.headerBtnTxt {
+  font-size: 30px;
+  padding-top: 20px;
+}
+
+.headerBtnTxt {
+    font-size: 25px;
+}
+
+.cvBtnTxt {
+    font-size: 20px;
+}
+
+.headerBtnTxt {
+    padding-top: 20px;
+}
+
+.myProfileDiv {
+    flex-flow: column-reverse;
+}
+
+.profileImageDiv {
+    margin: 0 auto;
+}
+
+.profileImg {
+    margin-bottom: 10px;
+    margin-top: 40px;
+}
+
+.profileNameDiv {
+    display: none;
+}
+
+.profileInfo {
+    width: 100%;
+}
+
+.personDescr {
+  width: 600px;
+  font-size: 21px;
+}
+
+.profImg {
+  display: flex;
+  justify-content: space-evenly;
+  width: -webkit-fill-available;
+}
+
+.glry {
+  width: 100%;
+}
+
+.glry div {
+  flex-direction: column;
+}
+
+.blogTitle {
+  font-size: 25px;
+  padding-top: 30px;
+  padding-left: 25px;
+}
+
+.headerText {
+  font-size: 25px;
+  margin-top: 35px;
+}
+
+.social {
+  margin-bottom: 20px;
+}
+
+.websiteService, .musicService, .modelingService, .musicService {
+  width: 100%;
+  background-size: 100% 100%;
+  margin-left: 0;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+}
+
+.formRow {
+  display: flex;
+  flex-direction: column;
+}
+
+.formDiv {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+}
+
+.textareaColumn {
+  width: auto;
+}
+
+.formColumn:nth-child(1) {
+  margin-top: 10px;
+}
+
+.formInput2 {
+  margin-left: 0;
+  width: auto;
+}
+
+.formColumn {
+  margin-left: 0;
+}
+
+.submitBtn, .submitFormBtn {
+  margin: 10px 0px;
+  width: auto;
+}
+
+.blogDiv {
+  margin-left: 0;
+  height: 530px;
+  width: 100%;
+}
+
+.blogItems {
+  max-height: 100%;
+}
+
+.blogItem {
+  background-size: 100% 100%;
+}
+
+.blogItemHeaderText {
+  font-size: 25px;
+  padding: 15px 5px;
+}
+
+.footer div {
+  display: flex;
+  flex-wrap: wrap;
+  margin: 15px auto;
+}
+
+.footer {
+  height: 100%;
+}
+
+.signUpDiv {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.service {
+  margin: 20px auto;
+}
+
+.footerHead {
+  font-size: 40px;
+}
+
+.li {
+  font-size: 25px;
+}
+
+}
+
+@media only screen 
+and (min-device-width: 370px) 
+and (max-device-width: 570px) 
+and (-webkit-min-device-pixel-ratio: 1) { 
+  
+html, body, .container {
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 600px !important;
+}
+
+.topBar {
+  width: 100%;
+}
+
+.header {
+  flex-direction: column;
+  height: 100%;
+  margin-bottom: 0;
+  background-image: none;
+  background-color: white;
+}
+
+.logo {
+  width: 150px;
+  height: 150px;
+  margin: 10px auto;
+}
+
+.weAreDiv {
+  text-align: center;
+}
+
+.firstHeaderText, .secondHeaderText {
+  font-size: 30px;
+}
+
+.btnCareer, .btnContact {
+  width: 150px;
+  background-color: #8AB4D1;
+}
+
+.buttonsDiv {
+  margin: 0 auto;
+}
+
+.cvBtnTxt {
+  color: white;
+}
+
+.headerBtnTxt {
+  font-size: 30px;
+  padding-top: 20px;
+  color: white;
+}
+
+.headerText {
+  font-size: 25px;
+  margin-top: 35px;
+}
+
+
+
+.overlayPerson {
+  margin-left: 70px;
+}
+
+.profImg {
+  display: flex;
+  justify-content: space-evenly;
+  width: -webkit-fill-available;
+}
+
+.profileImg {
+  margin-bottom: 0;
+}
+
+.video {
+  margin: 0;
+  width: 95%;
+  height: 312px;
+}
+
+.glry {
+  width: 100%;
+}
+
+.glry div {
+  flex-direction: column;
+}
+
+.social {
+  margin-bottom: 20px;
+}
+
+.websiteService, .musicService, .modelingService, .musicService {
+  width: 100%;
+  background-size: 100% 100%;
+  margin-left: 0;
+}
+
+.socialDiv {
+  width: 215px;
+}
+
+.formRow {
+  display: flex;
+  flex-direction: column;
+}
+
+.forms {
+  display: flex;
+  flex-direction: column;
+}
+
+.formDiv {
+  width: 100%;
+  height: 100%;
+  margin-bottom: 10px;
+  background: transparent;
+}
+
+.textareaColumn {
+  width: auto;
+}
+
+.formColumn:nth-child(1) {
+  margin-top: 10px;
+}
+
+.formInput2 {
+  margin-left: 0;
+  width: auto;
+}
+
+.formColumn {
+  margin-left: 0;
+}
+
+.submitBtn, .submitFormBtn {
+  margin: 10px auto;
+  width: 460px;
+}
+
+.blogDiv {
+  margin-top: -130px;
+  margin-left: 0;
+  height: 670px;
+  width: 100%;
+}
+
+.blogItems {
+  max-height: 100%;
+}
+
+.blogItem {
+  background-size: 100% 100%;
+}
+
+.blogItemHeaderText {
+  font-size: 20px;
+  padding: 18px 5px;
+}
+
+.footer div {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.footer {
+  height: 100%;
+}
+
+.signUpDiv {
+  margin: 0px auto;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.subsEmail {
+  width: 350px;
+}
+
+.service {
+  margin: 20px auto;
+}
+
+.service:nth-child(3), .service:nth-child(4) {
+  margin-left: 30px;
+}
+
+.footerHead {
+  font-size: 25px;
+}
+
+.li {
+  font-size: 15px;
+}
+
+.signUpTxt, .newsLetterTxt {
+  font-size: 25px;
+}
+
+}
