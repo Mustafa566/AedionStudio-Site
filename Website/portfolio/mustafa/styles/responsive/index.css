@@ -436,7 +436,7 @@ and (-webkit-min-device-pixel-ratio: 1) {
 }
 
 @media only screen 
-and (min-device-width: 470px) 
+and (min-device-width: 570px) 
 and (max-device-width: 650px) 
 and (-webkit-min-device-pixel-ratio: 1) { 
   
@@ -674,7 +674,7 @@ html, body, .container {
 }
 
 .btnCareer, .btnContact {
-  width: 150px;
+  width: 200px;
   background-color: #8AB4D1;
 }
 
@@ -684,6 +684,8 @@ html, body, .container {
 
 .cvBtnTxt {
   color: white;
+  padding-top: 16px;
+  font-size: 25px;
 }
 
 .headerBtnTxt {
@@ -697,7 +699,28 @@ html, body, .container {
   margin-top: 35px;
 }
 
+.myProfileDiv {
+  flex-flow: column-reverse;
+}
 
+.profileImageDiv {
+  margin: 0 auto;
+}
+
+.profileImg {
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.profileNameDiv {
+  display: none;
+}
+
+.personDescr {
+  width: 511px;
+  font-size: 21px;
+  margin-bottom: 20px;
+}
 
 .overlayPerson {
   margin-left: 70px;
@@ -707,6 +730,12 @@ html, body, .container {
   display: flex;
   justify-content: space-evenly;
   width: -webkit-fill-available;
+}
+
+.profileInfo {
+  margin-top: 20px;
+  background-image: none;
+  background-color: white;
 }
 
 .profileImg {
@@ -824,7 +853,7 @@ html, body, .container {
 }
 
 .service:nth-child(3), .service:nth-child(4) {
-  margin-left: 30px;
+  margin-left: 11px;
 }
 
 .footerHead {

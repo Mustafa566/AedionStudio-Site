@@ -218,7 +218,8 @@ input#img-3:checked ~ .carousel-dots label#img-dot-3,
 input#img-4:checked ~ .carousel-dots label#img-dot-4,
 input#img-5:checked ~ .carousel-dots label#img-dot-5,
 input#img-6:checked ~ .carousel-dots label#img-dot-6 {
-	opacity: 1;
+	opacity: 0.8;
+    background-color: #ffb040;
 }
 
 
