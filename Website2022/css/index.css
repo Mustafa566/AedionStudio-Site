@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Oxanium:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    font-family: 'Oxanium', cursive;
+}
+
+html, body {
+    overflow-x: hidden;
+}
+
+.noMandPadding {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    overflow-x: hidden;
+}
+
+.navbar {
+    height: 99px;
+    box-shadow: 0px 0px 7px 0px;
+    background-color: white;
+}
+
+.navbar-brand, .nav-link {
+    color: #C3C3C3 !important;
+    font-weight: lighter;
+}
+
+.navbar-brand {
+    font-size: 38px !important;
+}
+
+.nav-link {
+    font-size: 28px;
+    padding-right: 40px !important;
+}
+
+.bgNav {
+    margin-top: 150px;
+    margin-left: -200px;
+}
+
+.beginSite {
+    margin-top: 100px;
+    overflow-y: hidden;
+}
+
+.headerText {
+    color: #515151;
+}
+
+.aedionStudioColor {
+    color: #FFAD39;
+}
+
+.hr {
+    height: 3px !important;
+    margin-top: -5px;
+    color: #5E5E5E;
+}
+
+.businessDescr, .serviceDescr {
+    font-size: 20px;
+}
+
+.teamCard {
+    width: 100%;
+    height: 250px;
+    background-image: url('../images/team.png');
+    background-repeat: no-repeat;
+    background-position-x: right;
+}
+
+.profileImg {
+    width: 256px;
+    height: 256px;
+}
+
+.hrTeam {
+    color: #FBD6A1;
+    height: 3px !important;
+    width: 75%;
+    margin-top: 0;
+}
+
+li {
+    color: #515151;
+    opacity: 0.48;
+    font-size: 20px;
+}
+
+.icons {
+    margin-top: 60px;
+}
+
+.serviceText {
+    font-size: 25px;
+    color: #515151;
+}
+
+.serviceHr {
+    margin-top: -20px;
+    color: #F1B562;
+    height: 3px !important;
+}
+
+.serviceBorder {
+    border: 4px solid #F6D9B0;
+    border-radius: 15px;
+}
+
+.imgDiv {
+    position: relative;
+    width: 550px !important;
+    margin-bottom: 20px;
+    padding-right: 0px !important;
+}
+
+.serviceImg {
+    width: 100% !important;
+}
+
+.seeMoreText {
+    position: absolute;
+    bottom: -5px;
+    left: 23px;
+    background-color: white;
+    width: 93% !important;
+    padding: 10px 0px;
+}
+
+.imgTextDiv {
+    position: absolute;
+    bottom: 0px;
+    right: 0px;
+    left: 15px;
+    background: rgba(255, 255, 255, 0.81);
+    color: #A1A1A1;
+    font-size: 25px;
+    width: 97%;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    border-top: 4px solid #F5D79C;
+}
+
+.text {
+    margin-left: 15px;
+    margin-top: 5px;
+}
+
+.blogImg {
+    width: 100% !important;
+    height: 350px !important;
+}
+
+.moreBlogDiv {
+    border: 4px solid #E7C18A;
+    border-radius: 10px;
+    padding: 10px 0px;
+    margin-bottom: 50px;
+}
+
+.moreBlogText {
+    font-size: 25px;
+}
+
+.footer {
+    height: 80px;
+    border-top: 6px solid #E7C18A;
+}
