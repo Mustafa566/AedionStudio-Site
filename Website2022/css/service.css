@@ -1,0 +1,24 @@
+.servicePriceHeader {
+    font-size: 25px;
+}
+
+.cardLine {
+    border-bottom: 2px solid #E4BE87;
+}
+
+.cardColor {
+    color: #E4BE87;
+}
+
+.includesText {
+    font-size: 15px !important;
+}
+
+.cardPrice {
+    color: #515151;
+}
+
+.offerBtn {
+    background-color: white;
+    border: 2px solid #DCC6A6 !important;
+}
