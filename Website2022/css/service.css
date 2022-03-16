@@ -2,6 +2,10 @@
     font-size: 25px;
 }
 
+.w90 {
+    width: 90%;
+}
+
 .cardLine {
     border-bottom: 2px solid #E4BE87;
 }
@@ -21,4 +25,8 @@
 .offerBtn {
     background-color: white;
     border: 2px solid #DCC6A6 !important;
+}
+
+.iconDiv {
+    margin-left: 25px;
 }

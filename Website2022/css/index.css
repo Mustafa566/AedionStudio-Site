@@ -5,6 +5,10 @@
     font-family: 'Oxanium', cursive;
 }
 
+html {
+    /*zoom: 130%;*/
+}
+
 html, body {
     overflow-x: hidden;
 }
