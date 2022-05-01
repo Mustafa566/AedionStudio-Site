@@ -5,9 +5,9 @@
     font-family: 'Oxanium', cursive;
 }
 
-html {
-    /*zoom: 130%;*/
-}
+/* html {
+    zoom: 130%;
+} */
 
 html, body {
     overflow-x: hidden;
@@ -15,6 +15,10 @@ html, body {
 
 body {
     overflow-y: hidden;
+}
+
+.noUnderline {
+    text-decoration: none;
 }
 
 .defaultColor {
