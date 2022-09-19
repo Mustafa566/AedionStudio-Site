@@ -1,0 +1,70 @@
+* {
+    font-family: 'Oxanium', cursive;
+    font-weight: 200;
+}
+
+.boldText {
+    font-weight: 500;
+}
+
+.bgMain {
+    background-color: #f6f6f6;
+}
+
+.aedionstudioText {
+    font-size: 28px;
+    color: #DFDFDF;
+}
+
+.portfolioText {
+    font-size: 20px;
+    color: #9DD6DD;
+}
+
+.buttonNav {
+    font-size: 20px;
+    color: #C3C3C3;
+}
+
+.headerImg {
+    position: absolute;
+    z-index: 0;
+}
+
+.test {
+    z-index: -1;
+}
+
+.meetText {
+    color: #515151;
+}
+
+.nameColor {
+    color: #A2E2E9;
+}
+
+.personNameDiv {
+    width: 200px;
+    border-radius: 15px;
+    border: 1px solid grey;
+}
+
+.socialMediaDiv {
+    border-radius: 15px;
+    border: 1px solid grey;
+}
+
+.filterDiv {
+    border-radius: 15px;
+    border: 4px solid #AADBE5;
+}
+
+.hr {
+    background-color: #ABDCE5;
+    height: 2px;
+    width: 100%;
+}
+
+.footer {
+    border-top: 5px solid #ABD7DD;
+}
