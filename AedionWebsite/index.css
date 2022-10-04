@@ -1,0 +1,149 @@
+* {
+    font-family: 'Oxanium', cursive;
+}
+
+.noMargin {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+@media (min-width: 1400px) {
+    .container, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+        max-width: 1484px !important;
+    }
+}
+
+.btn-check:checked+.btn, .btn.active, .btn.show, .btn:first-child:active, :not(.btn-check)+.btn:active {
+    border: none !important;
+}
+
+.textColor {
+    color: #747474;
+}
+
+.sideColor {
+    color: #FFAD39;
+}
+
+.bgWhite {
+    background-color: white;
+}
+
+.fontLight {
+    font-weight: 300;
+}
+
+body {
+    background: linear-gradient(#FFAD39, white);
+    background-attachment:fixed;
+    height: 100%;
+}
+
+.textDiv {
+    margin-top: 30px;
+}
+
+.hr {
+    border-top: 2px solid #F1B562;
+}
+
+.aedionText {
+    font-size: 25px;
+    line-height: 25px;
+    color: #DFDFDF;
+}
+
+.sideText {
+    font-size: 20px;
+    color: #FFAD39;
+}
+
+.navTextItems {
+    font-size: 20px;
+    margin-right: 10px;
+    color: #CCCCCC;
+}
+
+.banner {
+    border-top: 8px solid #F0A942;
+    border-bottom: 8px solid #F0A942;
+}
+
+.contentDiv {
+    background-color: white;
+    height: 100%;
+    box-shadow: 0px 1px 5px 1px rgb(161 161 161);
+    padding: 0px 100px !important;
+}
+
+.lineHeight {
+    line-height: 12px;
+}
+
+.buttons {
+    width: 140px;
+    height: 60px;
+    margin: 0 15px;
+}
+
+.filterButton {
+    border: 4px solid #F6D9B0 !important;
+    padding: 0 30px !important;
+    margin-left: 10px;
+    border-radius: 12px !important;
+    height: 40px !important;
+}
+
+.filterPage {
+    margin: 0px 20px;
+}
+
+.card {
+    margin: 0 auto;
+}
+
+.roundCircle {
+    color: #F8E4BC;
+    margin-right: 10px;
+}
+
+.btnSupport {
+    background-color: #CCE5B0 !important;
+}
+
+.btnService {
+    margin: 0 auto;
+    width: 180px;
+    border-radius: 5px;
+    text-align: center;
+    padding: 10px;
+    font-weight: 700;
+    font-size: 20px;
+    color: white;
+}
+
+.btnQuotation {
+    background-color: #F5D79C !important;
+    margin-top: 10px;
+}
+
+.serviceText {
+    margin-bottom: 0 !important;
+}
+
+.navItems {
+    font-size: 20px;
+    color: #C9C9C9;
+    margin-left: -200px;
+}
+
+.seeMore {
+    border: 3px solid #F0A942;
+    border-radius: 10px;
+    margin: 15px 0px;
+}
+
+.footer {
+    height: 70px;
+    border-top: 8px solid #E7C18A;
+}

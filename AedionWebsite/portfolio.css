@@ -99,6 +99,13 @@ body {
 .skillDiv {
     border: 5px solid #DBF0F4;
     border-radius: 15px;
+    width: 275px;
+    margin-left: 30px;
+    padding-top: 5px;
+}
+
+.educationIcon {
+    margin-right: 10px;
 }
 
 .sideColor {
