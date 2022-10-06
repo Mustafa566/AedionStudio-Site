@@ -76,6 +76,77 @@ body {
     padding: 0px 100px !important;
 }
 
+.aedionInfo {
+    width: 60%;
+}
+
+.cardColor {
+    color: #B5B5B5;
+}
+
+.cardProfile {
+    width: 400px;
+    border-radius: 10px;
+    border: 3px solid #EDD4A4;
+    margin-left: 100px;
+    box-shadow: 1px 2px 5px 0px;
+}
+
+.cardImage {
+    margin-top: -20px;
+    margin-bottom: 20px;
+    margin-left: -20px;
+}
+
+.cardName {
+    margin-left: 10px;
+    font-weight: 600;
+}
+
+.cardHr {
+    border: 3px solid #E6C583;
+    width: 80%;
+    margin-left: 10px !important;
+}
+
+.facebookColor {
+    background-color: #A2C8D4;
+    padding: 10px 15px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.youtubeColor {
+    background-color: #F5AEAE;
+}
+
+.twitterColor {
+    background-color: #C4E1EB;
+}
+
+.gitColor {
+    background-color: #ABB3D2;
+    padding: 10px 13px !important;
+}
+
+.icon {
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin: 5px;
+}
+
+.portfolioBtn {
+    background-color: #F5D79C;
+    border: 3px solid #E3C68D;
+    border-radius: 10px;
+    padding: 9px 25px;
+    height: 45px;
+    margin-top: 5px;
+    margin-left: 25px;
+    color: white;
+    font-weight: 600;
+}
+
 .lineHeight {
     line-height: 12px;
 }
@@ -102,6 +173,11 @@ body {
     margin: 0 auto;
 }
 
+.cardBgImg {
+    background-image: url('./images/website.png');
+    height: 103%;
+}
+
 .roundCircle {
     color: #F8E4BC;
     margin-right: 10px;
@@ -109,6 +185,7 @@ body {
 
 .btnSupport {
     background-color: #CCE5B0 !important;
+    margin-top: -10px !important;
 }
 
 .btnService {

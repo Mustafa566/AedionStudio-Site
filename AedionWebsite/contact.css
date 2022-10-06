@@ -1,0 +1,6 @@
+.navImg {
+    background-image: url('./images/navImg.png');
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 80%;
+}
