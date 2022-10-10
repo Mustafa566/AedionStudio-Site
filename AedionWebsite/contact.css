@@ -7,6 +7,10 @@
     padding: 0 !important;
 }
 
+.textColor {
+    color: #515151;
+}
+
 .navImg {
     background-image: url('./images/navImg.png');
     background-repeat: no-repeat;
@@ -20,6 +24,7 @@
 
 .formContent {
     margin-left: 100px;
+    margin-top: 50px;
 }
 
 .roundCircle {
@@ -32,4 +37,36 @@
 
 .item {
     margin-left: 50px !important;
+}
+
+.formDiv {
+    margin-right: 100px;
+}
+
+.headerText {
+    font-size: 50px;
+    margin-left: 20px;
+}
+
+.form-select {
+    width: 10% !important;
+}
+
+.checkboxName {
+    margin-left: 5px;
+    margin-bottom: 0px;
+}
+
+.secondCheckboxRow {
+    margin-left: 50px;
+}
+
+.submitBtn {
+    background: linear-gradient(#f2b55d, #eac289);
+    padding: 20px;
+    box-shadow: 1px 1px 5px 1px rgb(80, 80, 80);
+    border-radius: 10px;
+    color: #FFFFFF;
+    font-size: 20px;
+    cursor: pointer;
 }
