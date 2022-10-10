@@ -74,7 +74,11 @@ body {
 }
 
 .profile {
-    margin-right: 10px;
+    margin-right: 20px;
+}
+
+.profImg {
+    width: 280px;
 }
 
 .myName {
@@ -132,6 +136,10 @@ body {
     margin: 0 15px;
 }
 
+.galleryImg {
+    margin: 0 auto;
+}
+
 .bar {
     background-color: #EBEBEB;
     height: 20px;
@@ -164,4 +172,384 @@ body {
     font-size: 20px;
     color: #C9C9C9;
     margin-left: -200px;
+}
+
+/* Laptop */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1400px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .profImg {
+        width: 220px;
+    }
+
+    .personName {
+        font-size: 30px;
+    }
+
+    .aboutText {
+        font-size: 16px;
+    }
+
+    .rowSkills {
+        margin-bottom: 0px !important;
+    }
+
+    .myName {
+        font-size: 19px;
+        width: 280px;
+        padding: 0.25rem 0;
+        padding-top: 10px;
+    }
+
+    .profileUnder {
+        margin-top: 15px;
+    }
+
+    .galleryImg {
+        width: 30%;
+    }
+
+    .buttons {
+        margin: 0px 2px;
+    }
+
+    .skillDiv {
+        width: 310px;
+    }
+}
+
+/* Laptop 2 */
+@media screen 
+  and (min-device-width: 990px) 
+  and (max-device-width: 1200px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .container {
+        max-width: 95% !important;
+    }
+
+    .contentDiv {
+        width: 100% !important;
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+
+    .skillDiv {
+        width: 20rem;
+    }
+
+    .profImg {
+        width: 220px;
+    }
+
+    .personName {
+        font-size: 30px;
+    }
+
+    .aboutText {
+        font-size: 16px;
+    }
+
+    .rowSkills {
+        margin-bottom: 0px !important;
+    }
+
+    .myName {
+        font-size: 19px;
+        width: 330px;
+        padding: 0.25rem 0;
+        padding-top: 10px;
+    }
+
+    .profileUnder {
+        margin-top: 15px;
+    }
+
+    .galleryImg {
+        width: 30%;
+    }
+
+    .buttons {
+        margin: 0px 2px;
+    }
+}
+
+/* Tablet */
+@media screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 990px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    .logo {
+        width: 70px;
+        height: 70px;
+    }
+
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+
+    .textDiv {
+        margin-top: 10px;
+    }
+
+    .container {
+        max-width: 95% !important;
+    }
+
+    .contentDiv {
+        width: 100% !important;
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+
+    .skillDiv {
+        width: 20rem;
+    }
+
+    .profImg {
+        width: 220px;
+    }
+
+    .personName {
+        font-size: 30px;
+    }
+
+    .aboutText {
+        font-size: 16px;
+    }
+
+    .rowSkills {
+        margin-bottom: 0px !important;
+    }
+
+    .myName {
+        font-size: 19px;
+        width: 330px;
+        padding: 0.25rem 0;
+        padding-top: 10px;
+    }
+
+    .profileUnder {
+        margin-top: 15px;
+    }
+
+    .galleryImg {
+        width: 30%;
+    }
+
+    .buttons {
+        margin: 0px 2px;
+    }
+}
+
+/* Tablet 2 */
+@media screen 
+  and (min-device-width: 768px) 
+  and (max-device-width: 935px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    body {
+        width: 915px;
+    }
+
+    .navTextItems {
+        margin-right: 20px;
+    }
+
+    .contentDiv > div:nth-child(1) {
+        flex-direction: column !important;
+    }
+
+    .contentDiv > div:nth-child(1) > div.d-flex.flex-column {
+        flex-direction: row !important;
+        margin-left: -6px;
+    }
+
+    .profile {
+        margin: 0 auto;
+    }
+
+    .myName {
+        display: none;
+    }
+
+    .contentDiv > div.profileUnder.d-flex.flex-row.w-100 > div.skillDiv.d-flex.flex-row.justify-content-center {
+        display: none !important;
+    }
+
+    .buttons {
+        width: 115px;
+    }
+
+    .profileUnder {
+        margin-left: -1px;
+    }
+
+    .filterButton {
+        padding: 0px 20px !important;
+    }
+
+    .gallery, #app > div.mt-5 > div.gallery.w-100 > div:nth-child(1),
+    .gallery, #app > div.mt-5 > div.gallery.w-100 > div:nth-child(2),
+    .gallery, #app > div.mt-5 > div.gallery.w-100 > div:nth-child(3) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .galleryImg {
+        width: 70%;
+    }
+
+    .navItems {
+        margin-left: auto;
+    }
+
+    body > nav.footer.navbar.navbar-expand-lg.bgWhite > div > div.d-flex.justify-content-between.navItems > div > ul > li {
+        margin-right: 20px;
+    }
+}
+
+/* Tablet 3 */
+@media screen 
+  and (min-device-width: 580px) 
+  and (max-device-width: 767px) 
+  and (-webkit-min-device-pixel-ratio: 1) { 
+    body {
+        width: 1030px;
+    }
+
+    .contentDiv {
+        padding: 0px 50px !important;
+    }
+
+    .aedionText, .sideText {
+        font-size: 30px;
+    }
+    
+    .navbar-expand-lg .navbar-nav {
+        flex-direction: row;
+    }
+
+    body > nav.navHeight.navbar.navbar-expand-lg.bgWhite > div > div.d-flex.flex-row.justify-content-start {
+        margin-top: 0px;
+    }
+
+    .navHeight {
+        height: 150px !important;
+    }
+
+    .navTextItems {
+        margin-right: 50px;
+    }
+
+    .navTextItems {
+        font-size: 25px;
+    }
+
+    .container {
+        max-width: 95% !important;
+    }
+
+    .contentDiv > div:nth-child(1) {
+        flex-direction: column !important;
+    }
+
+    .contentDiv > div:nth-child(1) > div.d-flex.flex-column {
+        flex-direction: row !important;
+        margin-left: -6px;
+    }
+
+    .profImg {
+        width: 350px;
+    }
+
+    .profile {
+        margin: 0 auto;
+    }
+
+    .personName {
+        font-size: 45px;
+        margin-top: 30px;
+    }
+
+    .aboutText {
+        font-size: 30px;
+    }
+
+    #app > div:nth-child(1) > div.mt-3 > div {
+        font-size: 25px;
+    }
+
+    .lineHeight, .roles {
+        line-height: 30px;
+    }
+
+    #app > div:nth-child(1) > div.d-flex.flex-column > div:nth-child(1) > div:nth-child(1) {
+        margin-left: 10px !important;
+    }
+
+    .skillText {
+        font-size: 30px;
+    }
+
+    .myName {
+        display: none;
+    }
+
+    .contentDiv > div.profileUnder.d-flex.flex-row.w-100 > div.skillDiv.d-flex.flex-row.justify-content-center {
+        display: none !important;
+    }
+
+    .buttons {
+        width: 150px;
+        margin-left: 0px !important;
+        margin-top: 20px;
+    }
+
+    .profileUnder {
+        margin-left: -1px;
+    }
+
+    .filterButton {
+        padding: 0px 20px !important;
+    }
+
+    .subText {
+        margin-top: 100px !important;
+        font-size: 35px;
+    }
+
+    #app > div.mt-5 > p:nth-child(2) {
+        font-size: 25px;
+    }
+
+    #app > div.mt-5 > p:nth-child(2) {
+        width: 100% !important;
+    }
+
+    #app > div.mt-5 > div.textColor.d-flex.flex-row.mt-5 > p:nth-child(1) {
+        font-size: 30px;
+    }
+
+    .filterButton {
+        font-size: 20px !important;
+    }
+
+    .gallery, #app > div.mt-5 > div.gallery.w-100 > div:nth-child(1),
+    .gallery, #app > div.mt-5 > div.gallery.w-100 > div:nth-child(2),
+    .gallery, #app > div.mt-5 > div.gallery.w-100 > div:nth-child(3) {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .galleryImg {
+        width: 70%;
+    }
+
+    .navItems {
+        margin-left: auto;
+    }
+
+    body > nav.footer.navbar.navbar-expand-lg.bgWhite > div > div.d-flex.justify-content-between.navItems > div > ul > li {
+        margin-right: 20px;
+    }
 }
