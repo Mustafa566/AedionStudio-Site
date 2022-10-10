@@ -1,6 +1,35 @@
+* {
+    font-family: 'Oxanium', cursive;
+}
+
+.noMargin {
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
 .navImg {
     background-image: url('./images/navImg.png');
     background-repeat: no-repeat;
     height: 100vh;
     width: 80%;
+}
+
+.formDiv {
+    border-left: 10px solid #F2B55E;
+}
+
+.formContent {
+    margin-left: 100px;
+}
+
+.roundCircle {
+    color: #F4BF72;
+}
+
+.navDiv {
+    color: #FFFFFF;
+}
+
+.item {
+    margin-left: 50px !important;
 }
