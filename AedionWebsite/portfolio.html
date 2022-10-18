@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>Aedion Studio homepage</title>
     <link rel="stylesheet" href="./portfolio.css">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
@@ -25,10 +25,7 @@
                     <p class="sideText align-middle sideColor">Portfolio</p>
                 </div>
             </div>
-            <div>
-                <!-- <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button> -->
+            <div class="navigation">
                 <div class="" id="">
                     <ul class="navbar-nav">
                         <li class="nav-item navTextItems">
@@ -48,6 +45,20 @@
             </div>
         </div>
     </nav>
+
+    <div class="hamburger-menu">
+        <input id="menu__toggle" type="checkbox" />
+        <label class="menu__btn" for="menu__toggle">
+          <span></span>
+        </label>
+    
+        <ul class="menu__box">
+          <li><a class="menu__item" href="#">Home</a></li>
+          <li><a class="menu__item" href="#">Blog</a></li>
+          <li><a class="menu__item" href="#">Contact</a></li>
+          <li><a class="menu__item" href="#">Quotation</a></li>
+        </ul>
+    </div>
 
     <img src="./images/banner.png" class="img-fluid banner">
     <div id="app" class="container contentDiv pt-5">
@@ -75,7 +86,7 @@
                 </div>
             </div>
             <div class="d-flex flex-column">
-                <div class="d-flex flex-row">
+                <div class="skill d-flex flex-row">
                     <div class="flex-column m-4 m-md-2">
                         <p class="skillText noMargin">php</p>
                         <hr class="noMargin mb-2">
@@ -91,7 +102,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex flex-row">
+                <div class="skill d-flex flex-row">
                     <div class="flex-column m-4 m-md-2">
                         <p class="skillText noMargin">C#</p>
                         <hr class="noMargin mb-2">
@@ -107,7 +118,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="d-flex flex-row">
+                <div class="skill d-flex flex-row">
                     <div class="flex-column m-4 m-md-2">
                         <p class="skillText noMargin">UE4</p>
                         <hr class="noMargin mb-2">
@@ -146,7 +157,7 @@
                 Some of the things are open source so feel free to use them to your extend!
             </p>
 
-            <div class="textColor d-flex flex-row mt-5">
+            <div class="filter textColor d-flex flex-row mt-5">
                 <p style="font-size: 25px;">Filter:</p>
                 <button type="button" class="btn filterButton">Games</button>
                 <button type="button" class="btn filterButton">3D Models</button>
@@ -182,7 +193,7 @@
         <hr class="hr noMargin my-4">
         
         <h3 class="subText textColor">My <span class="sideColor">Summary</span></h3>
-            <p class="summaryText w-75 pb-5">
+            <p class="summaryText pb-5">
                 Im gratefull for working at AedionStudio! It allowed me to learn Unreal Engine 4 and 5!
                 It also allowed me to try stuff with drawing and animation. Altough it wasn't for me.
                 I want to make sure to keep creating better things !
