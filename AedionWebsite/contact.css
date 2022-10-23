@@ -2,10 +2,6 @@
     font-family: 'Oxanium', cursive;
 }
 
-html {
-    overflow: hidden;
-}
-
 .noMargin {
     margin: 0 !important;
     padding: 0 !important;
@@ -80,6 +76,7 @@ html {
 .submitBtn {
     background: linear-gradient(#f2b55d, #eac289);
     padding: 20px;
+    margin-top: 50px;
     box-shadow: 1px 1px 5px 1px rgb(80, 80, 80);
     border-radius: 10px;
     color: #FFFFFF;
@@ -90,10 +87,29 @@ html {
 /* Pc */
 @media screen 
   and (min-device-width: 1400px) 
-  and (max-device-width: 1840px) 
+  and (max-device-width: 1800px) 
   and (-webkit-min-device-pixel-ratio: 1) {
-    body {
-        background-color: #515151;
+    .navImgs {
+        width: 50%;
+    }
+
+    .formDiv {
+        margin-right: 0;
+    }
+
+    .formContent {
+        margin: 0px 50px;
+        margin-left: 15%;
+        margin-right: 5%;
+    }
+}
+
+@media screen 
+  and (min-device-width: 1400px) 
+  and (max-device-width: 1800px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .form-select {
+        width: 15% !important;
     }
 }
 
@@ -209,6 +225,10 @@ html {
         color: #FFFFFF;
     }
 
+    .aedionHome {
+        margin-right: auto !important;
+    }
+
     .navImg {
         width: 100%;
         background-color: #efb96d;
@@ -225,6 +245,10 @@ html {
 
     .item {
         margin-left: 70px !important;
+    }
+
+    .item:last-child {
+        margin-right: 10px !important;
     }
 
     .form-select {
@@ -267,6 +291,10 @@ html {
         background-color: #efb96d;
     }
 
+    .aedionHome {
+        margin-right: auto !important;
+    }
+
     .navDiv {
         width: 100%;
         margin-bottom: 2rem;
@@ -278,6 +306,10 @@ html {
 
     .item {
         margin-left: 60px !important;
+    }
+
+    .item:last-child {
+        margin-right: 10px !important;
     }
 
     .form-select {
@@ -367,16 +399,19 @@ html {
 
     #menu__toggle:checked + .menu__btn > span {
         transform: rotate(45deg);
+        background-color: black;
     }
 
     #menu__toggle:checked + .menu__btn > span::before {
         top: 0;
         transform: rotate(0deg);
+        background-color: black;
     }
 
     #menu__toggle:checked + .menu__btn > span::after {
         top: 0;
         transform: rotate(90deg);
+        background-color: black;
     }
 
     #menu__toggle:checked ~ .menu__box {
@@ -423,6 +458,7 @@ html {
         height: auto;
         margin: 0;
         padding: 80px 0;
+        padding-bottom: 5px;
         list-style: none;
         background-color: #ECEFF1;
         box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
@@ -434,7 +470,7 @@ html {
         padding: 12px 24px;
         color: #333;
         font-family: 'Roboto', sans-serif;
-        font-size: 40px;
+        font-size: 30px;
         font-weight: 600;
         text-decoration: none;
         transition-duration: .25s;
@@ -465,7 +501,7 @@ html {
 
 /* Phone 2 */
 @media screen 
-  and (min-device-width: 300px) 
+  and (min-device-width: 280px) 
   and (max-device-width: 400px) 
   and (-webkit-min-device-pixel-ratio: 1) {
     html {
@@ -542,16 +578,19 @@ html {
 
     #menu__toggle:checked + .menu__btn > span {
         transform: rotate(45deg);
+        background-color: black;
     }
 
     #menu__toggle:checked + .menu__btn > span::before {
         top: 0;
         transform: rotate(0deg);
+        background-color: black;
     }
 
     #menu__toggle:checked + .menu__btn > span::after {
         top: 0;
         transform: rotate(90deg);
+        background-color: black;
     }
 
     #menu__toggle:checked ~ .menu__box {
@@ -598,6 +637,7 @@ html {
         height: auto;
         margin: 0;
         padding: 80px 0;
+        padding-bottom: 5px;
         list-style: none;
         background-color: #ECEFF1;
         box-shadow: 2px 2px 6px rgba(0, 0, 0, .4);
@@ -609,7 +649,7 @@ html {
         padding: 12px 24px;
         color: #333;
         font-family: 'Roboto', sans-serif;
-        font-size: 40px;
+        font-size: 20px;
         font-weight: 600;
         text-decoration: none;
         transition-duration: .25s;

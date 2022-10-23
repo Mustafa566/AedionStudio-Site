@@ -18,7 +18,7 @@
 }
 
 .textColor {
-    color: #747474;
+    color: #868686;
 }
 
 .sideColor {
@@ -31,6 +31,7 @@
 
 .fontLight {
     font-weight: 300;
+    color: #868686;
 }
 
 body {
@@ -50,7 +51,7 @@ body {
 .aedionText {
     font-size: 25px;
     line-height: 25px;
-    color: #DFDFDF;
+    color: #868686;
 }
 
 .sideText {
@@ -169,6 +170,11 @@ body {
     margin: 0px 20px;
 }
 
+.serviceCard {
+    max-width: 620px !important; 
+    height: 338px !important;
+}
+
 .card {
     margin: 0 auto;
 }
@@ -223,4 +229,26 @@ body {
 .footer {
     height: 70px;
     border-top: 8px solid #E7C18A;
+}
+
+/* Laptop */
+@media screen 
+  and (min-device-width: 1200px) 
+  and (max-device-width: 1400px) 
+  and (-webkit-min-device-pixel-ratio: 1) {
+    .container {
+        max-width: 90% !important;
+    }
+
+    .portfolioBtn {
+        margin-left: 5px;
+    }
+
+    .serviceCard {
+        max-width: 48% !important; 
+    }
+
+    .card-text {
+        font-size: 15px !important;
+    }
 }
