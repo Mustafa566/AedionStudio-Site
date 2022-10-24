@@ -231,6 +231,10 @@ body {
     border-top: 8px solid #E7C18A;
 }
 
+body > nav.footer.navbar.navbar-expand-lg.bgWhite > div > div.d-flex.flex-row.d-flex.justify-content-between > div:nth-child(1) > a {
+    margin-right: 0px;
+}
+
 /* Laptop */
 @media screen 
   and (min-device-width: 1200px) 

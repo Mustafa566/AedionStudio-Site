@@ -18,11 +18,21 @@
             <img src="./images/navImg.png" class="navImgs">
             <div class="navDiv mt-5">
                 <ul class="d-flex flex-row">
-                    <h5 class="aedionHome card-text noMargin"><span class="roundCircle">⬤</span> AedionStudio</h5>
-                    <h5 class="item card-text noMargin">Home</h5>
-                    <h5 class="item card-text noMargin">Blog</h5>
-                    <h5 class="item card-text noMargin">Contact</h5>
-                    <h5 class="item card-text noMargin">Quotation</h5>
+                    <a href="./index.html" class="nav-link">
+                        <h5 class="aedionHome card-text noMargin"><span class="roundCircle">⬤</span> AedionStudio</h5>
+                    </a>
+                    <a href="./index.html" class="nav-link">
+                        <h5 class="item card-text noMargin">Home</h5>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <h5 class="item card-text noMargin">Blog</h5>
+                    </a>
+                    <a href="./contact.html" class="nav-link">
+                        <h5 class="item card-text noMargin">Contact</h5>
+                    </a>
+                    <a href="#" class="nav-link">
+                        <h5 class="item card-text noMargin">Quotation</h5>
+                    </a>
                 </ul>
             </div>
 
@@ -41,78 +51,82 @@
             </div>
         </div>
 
-        <div class="formDiv d-flex w-100">
-            <div class="formContent w-100">
-                <div class="d-flex flex-row">
-                    <img src="./images/arrow.png" class="h-100">
-                    <div class="textColor flex-column pl-5">
-                        <h1 class="headerText">Contact us about your,</h1>
-                        <h1 class="headerText">ideas.</h1>
-                    </div>
-                </div>
-                <div class="form mt-3">
-                    <label for="formGroupExampleInput" class="form-label mt-4">Name</label>
-                    <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Your Name">
-
-                    <label for="formGroupExampleInput" class="form-label mt-4">Email</label>
-                    <input type="email" class="form-control" id="formGroupExampleInput" placeholder="Your Email">
-                    
-                    <label for="inputState" class="form-label mt-4">Phone number</label>
+        <form action="./post.php" method="post">
+            <div class="formDiv d-flex w-100">
+                <div class="formContent w-100">
                     <div class="d-flex flex-row">
-                        <select id="inputState" class="form-select">
-                            <option selected>EU</option>
-                            <option>+31</option>
-                            <option>+31</option>
-                            <option>+31</option>
-                        </select>
-                        <input type="number" class="form-control" id="formGroupExampleInput" placeholder="+31 (00) 000-000">
-                    </div>
-
-                    <label for="inputState" class="form-label mt-4">How can we help?</label>
-                    <textarea class="form-control" placeholder="Inform us about the project..." rows="5"></textarea>
-
-                    <label for="inputState" class="form-label mt-4">Services</label> <br>
-                    <div class="d-flex flex-row">
-                        <div class="d-flex flex-column">
-                            <div class="d-flex flex-row">
-                                <input class="form-check-input" type="checkbox" value="">
-                                <p class="checkboxName">Website Design</p>
-                            </div>
-
-                            <div class="d-flex flex-row">
-                                <input class="form-check-input" type="checkbox" value="">
-                                <p class="checkboxName">3D Modelling</p>
-                            </div>
-
-                            <div class="d-flex flex-row">
-                                <input class="form-check-input" type="checkbox" value="">
-                                <p class="checkboxName">UX Design</p>
-                            </div>
-                        </div>
-
-                        <div class="d-flex flex-column secondCheckboxRow">
-                            <div class="d-flex flex-row">
-                                <input class="form-check-input" type="checkbox" value="">
-                                <p class="checkboxName">Music Production</p>
-                            </div>
-
-                            <div class="d-flex flex-row">
-                                <input class="form-check-input" type="checkbox" value="">
-                                <p class="checkboxName">Modeling</p>
-                            </div>
-
-                            <div class="d-flex flex-row">
-                                <input class="form-check-input" type="checkbox" value="">
-                                <p class="checkboxName">UX Design</p>
-                            </div>
+                        <img src="./images/arrow.png" class="h-100">
+                        <div class="textColor flex-column pl-5">
+                            <h1 class="headerText">Contact us about your,</h1>
+                            <h1 class="headerText">ideas.</h1>
                         </div>
                     </div>
-                    <div class="submitBtn">
-                        <p class="text-center noMargin">Submit form</p>
+                    <div class="form mt-3">
+                        <label for="formGroupExampleInput" class="form-label mt-4">Name</label>
+                        <input type="text" name="first_name" class="form-control" id="formGroupExampleInput" placeholder="Your Name">
+    
+                        <label for="formGroupExampleInput" class="form-label mt-4">Email</label>
+                        <input type="email" name="email" class="form-control" id="formGroupExampleInput" placeholder="Your Email">
+                        
+                        <label for="inputState" class="form-label mt-4">Phone number</label>
+                        <div class="d-flex flex-row">
+                            <select id="inputState" class="form-select">
+                                <option selected>EU</option>
+                                <option>+31</option>
+                                <option>+31</option>
+                                <option>+31</option> 
+                            </select>
+                            <input type="number" class="form-control" id="formGroupExampleInput" placeholder="+31 (00) 000-000">
+                        </div>
+    
+                        <label for="inputState" class="form-label mt-4">How can we help?</label>
+                        <textarea class="form-control" name="message" placeholder="Inform us about the project..." rows="5"></textarea>
+    
+                        <label for="inputState" class="form-label mt-4">Services</label> <br>
+                        <div class="d-flex flex-row">
+                            <div class="d-flex flex-column">
+                                <div class="d-flex flex-row">
+                                    <input class="form-check-input" type="checkbox" value="">
+                                    <p class="checkboxName">Website Design</p>
+                                </div>
+    
+                                <div class="d-flex flex-row">
+                                    <input class="form-check-input" type="checkbox" value="">
+                                    <p class="checkboxName">3D Modelling</p>
+                                </div>
+    
+                                <div class="d-flex flex-row">
+                                    <input class="form-check-input" type="checkbox" value="">
+                                    <p class="checkboxName">UX Design</p>
+                                </div>
+                            </div>
+    
+                            <div class="d-flex flex-column secondCheckboxRow">
+                                <div class="d-flex flex-row">
+                                    <input class="form-check-input" type="checkbox" value="">
+                                    <p class="checkboxName">Music Production</p>
+                                </div>
+    
+                                <div class="d-flex flex-row">
+                                    <input class="form-check-input" type="checkbox" value="">
+                                    <p class="checkboxName">Modeling</p>
+                                </div>
+    
+                                <div class="d-flex flex-row">
+                                    <input class="form-check-input" type="checkbox" value="">
+                                    <p class="checkboxName">UX Design</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="submitBtn">
+                            <p class="text-center noMargin">Submit form</p>
+                        </div>
+                        
                     </div>
                 </div>
             </div>
-        </div>
+            <input type="submit" name="submit" value="Submit">
+        </form>
     </div>
 </body>
 </html>
