@@ -2,6 +2,10 @@
     font-family: 'Oxanium', cursive;
 }
 
+html {
+    overflow-x: hidden;
+}
+
 .orangeColor {
     color: #FFAD39;
     opacity: .77;
@@ -178,6 +182,41 @@ hr {
 
 .gameIcon {
     margin-right: 30px;
+}
+
+.carousel-indicators [data-bs-target] {
+    text-indent: 0 !important;
+}
+
+.carLogo {
+    width: 100px;
+    margin-top: -20px;
+    padding-right: 20px;
+}
+
+.carousel-indicators [data-bs-target] {
+    height: 0px !important;
+    margin-top: -45%;
+    width: 90px !important;
+}
+
+.carousel-control-next, .carousel-control-prev {
+    bottom: unset !important;
+    top: 35px !important;
+}
+
+.carousel-control-next {
+    right: -100px !important;
+}
+
+.carousel-control-prev {
+    right: 240px !important;
+    left: unset !important;
+}
+
+.carousel-indicators {
+    right: -220px !important;
+    bottom: -97px !important;
 }
 
 /* -------------------------------------------------- */
