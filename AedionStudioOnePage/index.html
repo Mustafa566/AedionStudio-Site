@@ -13,206 +13,53 @@
     <link href="https://fonts.googleapis.com/css2?family=Oxanium:wght@300;400;500&display=swap" rel="stylesheet">
 </head>
 <body>
-    <nav class="navHeight navbar navbar-expand-lg bgWhite" style="height: 80px;">
-        <div class="container-fluid">
-            <div class="d-flex flex-row justify-content-start">
-                <div>
-                    <a class="navbar-brand" href="#">
-                        <img src="./images/AedionStudio.png" width="110" height="110">
-                    </a>
-                </div>
-                <div class="textDiv">
-                    <p class="aedionText align-middle noMargin">AedionStudio</p>
-                    <p class="sideText align-middle sideColor">Home</p>
-                </div>
+<div id="app">
+
+    <!-- FULL PAGE IMAGE -->
+    <div class="mainPage">
+        <nav class="navbar navbar-expand-lg w-100">
+            <div class="col">
+                <a class="navbar-brand" href="#">
+                    <img src="./images/AedionStudio.png" width="70" height="50">
+                    AedionStudio
+                </a>
             </div>
-            <div>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
+            <div class="col float-end">
+                <div class="collapse navbar-collapse float-end" id="navbarNav">
                     <ul class="navbar-nav">
-                        <li class="nav-item navTextItems">
-                            <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Home</a>
                         </li>
-                        <li class="nav-item navTextItems">
-                            <a class="nav-link" href="#">Blog</a>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">About Us</a>
                         </li>
-                        <li class="nav-item navTextItems">
-                            <a class="nav-link" href="./contact.html">Contact</a>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Games</a>
                         </li>
-                        <li class="nav-item navTextItems">
-                            <a class="nav-link" href="#">Quotation</a>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Contact</a>
                         </li>
                     </ul>
                 </div>
             </div>
-        </div>
-    </nav>
+        </nav>
+        <img src="./images/arrowDown.png" class="arrowDown">
+    </div>
 
-    <img src="./images/banner.png" class="img-fluid banner">
-    <div id="app" class="container contentDiv pt-5">
-        <div class="d-flex flex-row">
-            
-        </div>
-        <div class="mt-5 pb-3">
-            <h2 class="subText textColor">Meet <span class="sideColor">AedionStudio</span>!</h2>
-            <div class="d-flex flex-row">
-                <p class="aedionInfo fontLight fs-5">
-                    AedionStudio is a software company founded in the Netherlands.
-                    We strive to create the most complex and visually stunning projects,
-                    whether that means creating a survival game, application or website.
-                    Its always a unique experience. While still being a team of 3 people
-                    we aim to create a humble company that loves what they do.
-                </p>
-
-                <div class="cardProfile cardColor float-end">
-                    <div class="d-flex flex-row">
-                        <img src="./images/mustafa.png" class="cardImage">
-                        <div class="w-100">
-                            <h3 class="cardName mt-2 ml-5">Mustafa Bolat</h3>
-                            <hr class="cardHr noMargin">
-                            <ul class="fs-5 mt-1">
-                                <li>Main Developer</li>
-                                <li>Web Developer</li>
-                            </ul>
-                        </div>
-                    </div>
-                    <div class="d-flex flex-row">
-                        <div class="facebookColor"><img src="./images/facebookIcon.png" class="mt-0" height="20px"></div>
-                        <div class="icon youtubeColor"><img src="./images/youtubeIcon.png" class="mt-0" height="20px"></div>
-                        <div class="icon twitterColor"><img src="./images/twitterIcon.png" class="mt-0" height="20px"></div>
-                        <div class="icon gitColor"><img src="./images/gitIcon.png" height="20px"></div>
-
-                        <a href="./portfolio.html" class="nav-link">
-                            <div class="portfolioBtn">
-                                <p class="noMargin">Portfolio</p>
-                            </div>
-                        </a>
-                    </div>
-                </div>
-            </div>
-
-            <h2 class="subText textColor mt-5">Our <span class="sideColor">Services</span>!</h2>
-            <p class="fontLight w-75 fs-5">
-                We as a game development studio, do not only create games but also websites and software.
-                We have a 24/7 support line that allows our clients to get the best help they can get!
-                AedionStudio wants to assure that the client gets the best product possible.
-            </p>
-
-            <div class="textColor d-flex flex-row mt-4">
-                <p style="font-size: 25px;">Filter:</p>
-                <button type="button" class="btn filterButton">Games</button>
-                <button type="button" class="btn filterButton">3D Models</button>
-                <button type="button" class="btn filterButton">Websites</button>
-                <button type="button" class="btn filterButton">Music</button>
-
-                <p style="font-size: 25px;" class="filterPage">2/64</p>
-
-                <button type="button" class="btn filterButton"><</button>
-                <button type="button" class="btn filterButton">></button>
-            </div>
-        <hr class="hr mt-0">
-
-            <div class="row">
-                <div class="serviceCard card mb-3">
-                    <div class="row">
-                        <div class="col-md-5 textColor">
-                            <div class="card-body">
-                                <h3 class="card-title">Websites</h3>
-                                <p class="card-text noMargin mt-2"><span class="roundCircle">⬤</span>Monthly hosting. <img src="./images/check.png" class="float-end mt-1"></p>
-                                <p class="card-text noMargin mt-2"><span class="roundCircle">⬤</span>24/7 Web support. <img src="./images/check.png" class="float-end mt-1"></p>
-                                <p class="card-text noMargin mt-2"><span class="roundCircle">⬤</span>Responsive Design. <img src="./images/check.png" class="float-end mt-1"></p>
-                                <p class="card-text noMargin mt-2"><span class="roundCircle">⬤</span>Ecommerce support. <img src="./images/check.png" class="float-end mt-1"></p>
-                                <p class="card-text noMargin mt-2"><span class="roundCircle">⬤</span>Live chat. <img src="./images/check.png" class="float-end mt-1"></p>
-                            </div>
-                            <div class="btnService btnSupport">Support</div>
-                            <div class="btnService btnQuotation">Quotation</div>
-                        </div>
-                        <div class="cardBgImg col-md-7 noMargin"></div>
-                    </div>
-                </div>
-
-                <div class="serviceCard card mb-3">
-                    <div class="row">
-                        <div class="col-md-5 textColor">
-                            <div class="card-body">
-                                <h3 class="card-title">Websites</h3>
-                                <p class="card-text noMargin mt-2"><span class="roundCircle">⬤</span>Monthly hosting. <img src="./images/check.png" class="float-end mt-1"></p>
-                                <p class="card-text noMargin mt-2"><span class="roundCircle">⬤</span>24/7 Web support. <img src="./images/check.png" class="float-end mt-1"></p>
-                                <p class="card-text noMargin mt-2"><span class="roundCircle">⬤</span>Responsive Design. <img src="./images/check.png" class="float-end mt-1"></p>
-                                <p class="card-text noMargin mt-2"><span class="roundCircle">⬤</span>Ecommerce support. <img src="./images/check.png" class="float-end mt-1"></p>
-                                <p class="card-text noMargin mt-2"><span class="roundCircle">⬤</span>Live chat. <img src="./images/check.png" class="float-end mt-1"></p>
-                            </div>
-                            <div class="btnService btnSupport">Support</div>
-                            <div class="btnService btnQuotation">Quotation</div>
-                        </div>
-                        <div class="cardBgImg col-md-7 noMargin"></div>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row">
-                <div class="serviceCard card mb-3">
-                    <div class="row">
-                        <div class="col-md-5 textColor">
-                            <div class="card-body">
-                                <h3 class="card-title">Websites</h3>
-                                <p class="card-text noMargin mt-2"><span class="roundCircle">⬤</span>Monthly hosting. <img src="./images/check.png" class="float-end mt-1"></p>
-                                <p class="card-text noMargin mt-2"><span class="roundCircle">⬤</span>24/7 Web support. <img src="./images/check.png" class="float-end mt-1"></p>
-                                <p class="card-text noMargin mt-2"><span class="roundCircle">⬤</span>Responsive Design. <img src="./images/check.png" class="float-end mt-1"></p>
-                                <p class="card-text noMargin mt-2"><span class="roundCircle">⬤</span>Ecommerce support. <img src="./images/check.png" class="float-end mt-1"></p>
-                                <p class="card-text noMargin mt-2"><span class="roundCircle">⬤</span>Live chat. <img src="./images/check.png" class="float-end mt-1"></p>
-                            </div>
-                            <div class="btnService btnSupport">Support</div>
-                            <div class="btnService btnQuotation">Quotation</div>
-                        </div>
-                        <div class="cardBgImg col-md-7 noMargin"></div>
-                    </div>
-                </div>
-
-                <div class="serviceCard card mb-3">
-                    <div class="row">
-                        <div class="col-md-5 textColor">
-                            <div class="card-body">
-                                <h3 class="card-title">Websites</h3>
-                                <p class="card-text noMargin mt-2"><span class="roundCircle">⬤</span>Monthly hosting. <img src="./images/check.png" class="float-end mt-1"></p>
-                                <p class="card-text noMargin mt-2"><span class="roundCircle">⬤</span>24/7 Web support. <img src="./images/check.png" class="float-end mt-1"></p>
-                                <p class="card-text noMargin mt-2"><span class="roundCircle">⬤</span>Responsive Design. <img src="./images/check.png" class="float-end mt-1"></p>
-                                <p class="card-text noMargin mt-2"><span class="roundCircle">⬤</span>Ecommerce support. <img src="./images/check.png" class="float-end mt-1"></p>
-                                <p class="card-text noMargin mt-2"><span class="roundCircle">⬤</span>Live chat. <img src="./images/check.png" class="float-end mt-1"></p>
-                            </div>
-                            <div class="btnService btnSupport">Support</div>
-                            <div class="btnService btnQuotation">Quotation</div>
-                        </div>
-                        <div class="cardBgImg col-md-7 noMargin"></div>
-                    </div>
-                </div>
-            </div>
-
-        <hr class="hr noMargin my-4">
-        
-            <h2 class="subText textColor">Our <span class="sideColor">Blog</span></h2>
-            <p class="fontLight fs-5 w-75">
-                We as a game development studio, do not only create games but also websites and software.
-                We have a 24/7 support line that allows our clients to get the best help they can get!
-                AedionStudio wants to assure that the client gets the best product possible.
-            </p>
-
-            <img src="./images/gallery.png" class="img-fluid noMargin">
-            <img src="./images/gallery.png" class="img-fluid noMargin">
-            <img src="./images/gallery.png" class="img-fluid noMargin">
-
-            <div class="seeMore w-100">
-                <h2 class="textColor text-center mt-2">See More!</h2>
+    <!-- MEET AEDIONSTUDIO -->
+    <div class="container">
+        <div class="row">
+            <div class="column">
+                <h2>Meet <span class="orangeColor">AedionStudio</span>!</h2>
             </div>
         </div>
     </div>
-    
+
+    <!-- FOOTER -->
     <nav class="footer navbar navbar-expand-lg bgWhite">
         <div class="container-fluid">
             <div class="d-flex flex-row d-flex justify-content-between">
-                <div class="">
+                <div>
                     <a class="navbar-brand" href="#">
                         <img src="./images/AedionStudio.png" width="80" height="80">
                     </a>
@@ -246,6 +93,7 @@
             <div class="d-flex justify-content-between"></div>
         </div>
     </nav>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
