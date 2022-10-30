@@ -6,6 +6,11 @@ html {
     overflow-x: hidden;
 }
 
+.form-control:focus {
+    border: 1px solid #ced4da !important;
+    box-shadow: none !important;
+}
+
 .orangeColor {
     color: #FFAD39;
     opacity: .77;
@@ -32,10 +37,17 @@ html {
 }
 
 .mainPage {
-    background-image: url('./images/mainPage.png');
-    background-repeat: no-repeat;
+    /* background-image: url('./images/mainPage.png');
+    background-repeat: no-repeat; */
     width: 100%;
     height: 100vh;
+}
+
+.video {
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    position: absolute;
 }
 
 .navbar {
@@ -85,7 +97,7 @@ hr {
 .teamDiv {
     background-color: #F2F2F2;
     width: 100%;
-    height: 650px;
+    height: 100%;
 }
 
 .cardColor {
@@ -129,9 +141,12 @@ hr {
     margin-top: 10px;
 }
 
+.iconDiv {
+    margin-top: 60px !important;
+}
+
 .icons {
     margin: 0 10px;
-    margin-top: 60px;
 }
 
 .link {
@@ -219,6 +234,29 @@ hr {
     bottom: -97px !important;
 }
 
+.contactImg {
+    width: 500px !important;
+    margin: 0 auto;
+    margin-bottom: 50px;
+    transform: rotate(0deg);
+}
+
+.formColor {
+    color: #919191;
+}
+
+.rowHeight {
+    height: 100%;
+}
+
+.submitBtn {
+    height: 60px;
+    background-color: #FFD787 !important;
+    border: none !important;
+    font-size: 30px !important;
+    font-weight: 600 !important;
+}
+
 /* -------------------------------------------------- */
 .navItems {
     font-size: 20px;
@@ -230,6 +268,22 @@ hr {
     margin-top: 50px;
     box-shadow: 0 -5px 8px -3px #dedede;
     height: 70px;
+}
+
+#app > nav > div.col.col-xl-1 {
+    width: 5.33333333%;
+}
+
+.lineHeight {
+    line-height: 0.2;
+}
+
+.footerTextDiv {
+    margin-top: 35px;
+}
+
+.footerColor {
+    color: #C6C6C6 !important;
 }
 
 body > nav.footer.navbar.navbar-expand-lg.bgWhite > div > div.d-flex.flex-row.d-flex.justify-content-between > div:nth-child(1) > a {

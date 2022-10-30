@@ -11,7 +11,7 @@ createApp({
             var element = this.$refs[refName];
             var top = element.offsetTop;
       
-            window.scrollTo(0, top);
+            window.scrollTo(0, top - 300);
         }
     }
 }).mount('#app')
