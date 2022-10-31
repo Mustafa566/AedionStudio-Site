@@ -6,6 +6,15 @@ html {
     overflow-x: hidden;
 }
 
+.nav-item {
+    list-style-type: none;
+}
+
+.nav-link {
+    margin-bottom: 0px !important;
+    color: red;
+}
+
 .form-control:focus {
     border: 1px solid #ced4da !important;
     box-shadow: none !important;

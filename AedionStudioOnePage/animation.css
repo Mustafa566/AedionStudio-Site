@@ -12,9 +12,10 @@
     }
 }
 
-.arrowDown:hover {
+.arrowDown {
     animation-name: arrowMovement;
-    animation-duration: 1s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
 }
 
 @keyframes smiggleRotate {
@@ -59,17 +60,32 @@
 @keyframes navLine {
     0% {
         text-decoration: none;
-        margin-bottom: 0px;
     }
 
     100% {
         text-decoration: underline;
-        margin-bottom: 30px;
     }
 }
 
-#navbarNav > ul > li:nth-child(2) > a:hover {
-    animation-name: navLine !important;
-    animation-duration: 1s !important;
-    animation-fill-mode: forwards !important;
+.nav-item:hover {
+    animation-name: navLine;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
 }
+
+/* @keyframes cardBackground {
+    0% {
+        background-image: linear-gradient(#BBDEE6 30%, #fff 30%);
+    }
+
+    100% {
+        background-image: linear-gradient(#BBDEE6, #fff);
+    }
+}
+
+.cardColor:hover {
+    animation-name: cardBackground;
+    animation-duration: 1s;
+    animation-fill-mode: forwards;
+    animation-timing-function: linear;
+} */
