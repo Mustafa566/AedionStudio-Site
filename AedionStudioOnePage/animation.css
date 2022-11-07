@@ -53,25 +53,29 @@
 
 .link:hover {
     animation-name: portfolioLink;
-    animation-duration: 1s;
+    animation-duration: .2s;
     animation-fill-mode: forwards;
 }
 
-@keyframes navLine {
+/* @keyframes navLine {
     0% {
         text-decoration: none;
+        margin-bottom: 0px !important;
     }
 
     100% {
         text-decoration: underline;
+        margin-bottom: 30px !important;
     }
 }
 
-.nav-item:hover {
-    animation-name: navLine;
-    animation-duration: 1s;
-    animation-fill-mode: forwards;
-}
+.nav-link:hover {
+    animation-name: navLine !important;
+    animation-duration: 1s !important; 
+    animation-fill-mode: forwards !important;
+} */
+
+
 
 /* @keyframes cardBackground {
     0% {
