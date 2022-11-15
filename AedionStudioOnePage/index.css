@@ -264,22 +264,21 @@ hr {
 
 .carLogo {
     width: 100px;
-    margin-top: -20px;
+    margin-top: -75px;
     padding-right: 20px;
 }
 
 .carousel-indicators [data-bs-target] {
-    height: 0px !important;
-    margin-top: -45%;
-    width: 90px !important;
+    margin: 0 50px !important;
+    background-color: transparent !important;
 }
 
-.carousel-control-next, .carousel-control-prev {
+/* .carousel-control-next, .carousel-control-prev {
     bottom: unset !important;
     top: 35px !important;
-}
+} */
 
-.carousel-control-next {
+/* .carousel-control-next {
     right: -100px !important;
 }
 
@@ -291,6 +290,14 @@ hr {
 .carousel-indicators {
     right: -220px !important;
     bottom: -97px !important;
+} */
+
+.appImage {
+    float: right;
+}
+
+.appSlider {
+    display: none;
 }
 
 .contactImg {
@@ -337,14 +344,209 @@ hr {
     line-height: 0.2;
 }
 
-.footerTextDiv {
-    margin-top: 35px;
-}
-
-.footerColor {
-    color: #C6C6C6 !important;
+.footerImg {
+    width: 250px;
 }
 
 body > nav.footer.navbar.navbar-expand-lg.bgWhite > div > div.d-flex.flex-row.d-flex.justify-content-between > div:nth-child(1) > a {
     margin-right: 0px;
+}
+
+@media (min-width: 1130px) and (max-width: 1500px) { 
+    .container {
+        max-width: 100% !important;
+    }
+
+    .column, .columnHeader {
+        flex: 1 0 100% !important;
+    }
+
+    .headerText {
+        text-align: center !important;
+    }
+
+    .first {
+        margin: 30px 0px !important;
+    }
+
+    .aedionStudioText {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .teamDiv {
+        padding: 0px 40px !important;
+    }
+
+    .personalCard {
+        flex: 0 0 auto !important;
+        width: 50% !important;
+    }
+    
+    .profileImg {
+        width: 200px !important;
+        margin-top: 46px !important;
+    }
+
+    .nameDescr {
+        padding: 0px 60px !important;
+    }
+
+    .aboutContainer {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+
+    .appImage {
+        display: none !important;
+    }
+
+    .appSlider {
+        display: block;
+        background-color: #F2F2F2;
+    }
+
+    .appSlider > img {
+        margin: 10px 20px;
+    }
+
+    #app > div.container.mb-5 > div > div:nth-child(2) {
+        padding: 1px !important;
+    }
+
+    #app > div.container.mb-5 {
+        margin-bottom: 0 !important;
+    }
+
+    .carousel-item > img {
+        height: 70vh !important;
+    }
+
+    .form {
+        padding: 0 10% !important;
+    }
+
+    .contactImg {
+        display: none;
+    }
+
+    .submitBtn {
+        margin-top: 20px;
+        flex: 0 0 auto !important;
+        width: 100% !important;
+    }
+
+    .footerNav {
+        display: none !important;
+    }
+}
+
+@media (min-width: 950px) and (max-width: 1130px) { 
+    .nav-item {
+        display: none !important;
+    }
+
+    .bigText, .textDiv {
+        text-align: center;
+    }
+
+    .textDiv {
+        top: 40%;
+        left: 70px;
+    }
+
+    .container {
+        max-width: 100% !important;
+    }
+
+    .column, .columnHeader {
+        flex: 1 0 100% !important;
+    }
+
+    .headerText {
+        text-align: center !important;
+    }
+
+    .first {
+        margin: 30px 0px !important;
+    }
+
+    .aedionStudioText {
+        text-align: center;
+        margin-bottom: 50px;
+    }
+
+    .teamDiv {
+        padding: 0px 40px !important;
+    }
+
+    .personalCard {
+        flex: 0 0 auto !important;
+        width: 50% !important;
+    }
+    
+    .profileImg {
+        width: 200px !important;
+        margin-top: 46px !important;
+    }
+
+    .iconDiv {
+        margin-top: 30px !important;
+    }
+
+    .nameDescr {
+        padding: 0px 60px !important;
+    }
+
+    .aboutContainer {
+        padding-left: 50px !important;
+        padding-right: 50px !important;
+    }
+
+    .appImage {
+        display: none !important;
+    }
+
+    .appSlider {
+        display: block;
+        background-color: #F2F2F2;
+    }
+
+    .appSlider > img {
+        margin: 10px 20px;
+    }
+
+    #app > div.container.mb-5 > div > div:nth-child(2) {
+        padding: 1px !important;
+    }
+
+    #app > div.container.mb-5 {
+        margin-bottom: 0 !important;
+    }
+
+    .carousel-item > img {
+        height: 70vh !important;
+    }
+
+    .form {
+        padding: 0 10% !important;
+    }
+
+    .contactImg {
+        display: none;
+    }
+
+    .submitBtn {
+        margin-top: 20px;
+        flex: 0 0 auto !important;
+        width: 100% !important;
+    }
+
+    .footerImg {
+        width: 300px;
+    }
+
+    .footerNav {
+        display: none !important;
+    }
 }
